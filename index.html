@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abicsi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="myFunction()" style="margin:0;">
+
+    <div id="loading-page"> <img src="map-2.gif"><br> <p class="loading-text">Loading Forcast Data... </p> </div>
+    
+    
+<div id="full-page">  
+
+   <div class="topheader"> 
+    <img src="/left_eye3.png" class="top_eyes" id="left_eye"> 
+    <a class="toplogo"> Abicsi </a>
+    <img src="/right_eye2.png" class="top_eyes" id="right_eye"> 
+  
+  </div> 
+  <img src="/UVIscale.png" class="UVIscale"> 
+<p class="daily-uv-text">Daily UV Forcast </p>
+  <img src="/gradien_bar_v3.png" class="gradient_bar"> 
+
+  <div class="gradient-text "> 
+     <div class="low">Low <br> <span class="no-bold"> 1-2</span> </div>
+     <div class="moderate" > Moderate <br> <span class="no-bold"> 3-5</span> </div>
+     <div class="high" > High <br> <span class="no-bold"> 6-7</span> </div>
+      <div class="veryhigh">Very High <br> <span class="no-bold"> 8-10</span> </div>
+      <div class="extreme"> Extreme <br> <span class="no-bold"> 11+</span> </div>  
+  </div>
+
+<div class="date-text"> Featured Locations for: <span class="full-date"> <span id="weekday"> </span> <span id="month"></span> <span id="day"> </span> <span id="year"> </span> </span> </div>
+    <div class="horizontal-bars"> 
+      <div class="row" id="one"> 
+     <span class="location">  <span id="city_name_one"></span> <span class="country_name" id="country_name_one"></span> </span> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_one">  <span class="uvi-level" id="uvi_one"> </span> </span>
+      </div>
+      <div class="row"  id= "two"> 
+         <span class="location">  <span id="city_name_two"></span> <span class="country_name"  id="country_name_two"></span> </span> <a class="uv-advice" id="advice-two"></a><span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_two"> <span class="uvi-level" id="uvi_two"></span> </span>
+      </div>
+      
+      <div class="row" id="three" > 
+        <span class="location"> <span id="city_name_three"></span> <span class="country_name"  id="country_name_three"></span>  </span> <a class="uv-advice" id="advice-three"></a> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_three">    <span class="uvi-level"  id="uvi_three"></span> </span>
+      </div>
+      <div class="row" id="four"> 
+         <span class="location"> <span id="city_name_four"></span> <span class="country_name"  id="country_name_four"></span> </span> <a class="uv-advice" id="advice-four"></a> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_four">  <span class="uvi-level"  id="uvi_four"></span> </span> 
+      </div>
+      <div class="row" id="five" > 
+          <span class="location"> <span id="city_name_five"></span> <span class="country_name"  id="country_name_five"></span> </span> <a class="uv-advice" id="advice-five"></a> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_five">   <span class="uvi-level" id="uvi_five"></span>  </span> 
+      </div>
+
+      <div class="row" id="six"> 
+      <span class="location">  <span id="city_name_six"></span> <span class="country_name"  id="country_name_six" style=" display: inline;"></span> </span> <a class="uv-advice" id="advice-six"></a><span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_six">  <span class="uvi-level" id="uvi_six"> </span>  </span>
+        </div>
+        <div class="row"  id= "seven"> 
+          <span class="location">  <span id="city_name_seven"></span> <span class="country_name"  id="country_name_seven" style=" display: inline;"></span> </span> <a class="uv-advice" id="advice-seven"></a> <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_seven">   <span class="uvi-level" id="uvi_seven"> </span> </span> 
+        </div>
+        
+        <div class="row" id="eight" > 
+        <span class="location"> <span id="city_name_eight"></span> <span class="country_name"  id="country_name_eight"></span></span> <a class="uv-advice" id="advice-eight"></a><span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_eight">    <span class="uvi-level"  id="uvi_eight"> </span> </span> 
+        </div>
+        <div class="row" id="nine"> 
+          <span class="location"> <span id="city_name_nine"></span> <span class="country_name"  id="country_name_nine"></span> </span><div  class="uv-advice" id="advice-container"><a class="uv-advice" id="advice-nine"> </a> </div> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_nine">  <span class="uvi-level"  id="uvi_nine"> </span> </span> 
+        </div>
+        <div class="row" id="ten" > 
+         <span class="location"> <span id="city_name_ten"></span> <span class="country_name" id="country_name_ten"></span>  </span> <a class="uv-advice" id="advice-ten"></a>  <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_ten">  <span class="uvi-level" id="uvi_ten"> </span>   </span> 
+        </div>
+        <div class="row" id="eleven" > 
+          <span class="location"> <span id="city_name_eleven"></span> <span class="country_name" id="country_name_eleven" style=" display: inline;"></span>  </span> <a class="uv-advice" id="advice-eleven"></a>  <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_eleven">  <span class="uvi-level" id="uvi_eleven"> </span>   </span> 
+         </div>
+      </div>
+<div class="middle-section"> 
+      <p class="avail-now"> UV400 sunglasses available soon!</p>
+     <img class="arrow-graphic" src="/arrow_graphic.png">  
+
+
+     <video class="vid-placehold" src="/no-sound-7mb.mp4" loop autoplay muted playsinline style="pointer-events: none;"></video>
+     <br>
+    <div class="temis-map" >  <img style="width: 65%;" src="https://d1qb6yzwaaq4he.cloudfront.net/uvradiation/UVI/uvief0_wd_who.gif"> </img> <br>
+     
+    </div>
+    </div>
+    <div class="temis-credit">Map courtesy of <a href="https://www.temis.nl/index.php" target="_blank" style="font-style: oblique;">TEMIS</a> </div>
+
+    <div class="horizontal-bars" style="margin-top: 2%;"> 
+      <div class="row" id="twelve"> 
+     <span class="location">  <span id="city_name_twelve"></span> <span class="country_name" id="country_name_twelve"></span> </span> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_twelve">  <span class="uvi-level" id="uvi_twelve"> </span> </span>
+      </div>
+      <div class="row"  id= "thirteen"> 
+         <span class="location">  <span id="city_name_thirteen"></span> <span class="country_name"  id="country_name_thirteen"></span> </span> <a class="uv-advice" id="advice-thirteen"></a><span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_thirteen"> <span class="uvi-level" id="uvi_thirteen"></span> </span>
+      </div>
+      
+      <div class="row" id="fourteen" > 
+        <span class="location" > <span id="city_name_fourteen" ></span> <span class="country_name"  id="country_name_fourteen"></span>  </span> <a class="uv-advice" id="advice-fourteen"></a> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_fourteen">    <span class="uvi-level"  id="uvi_fourteen"></span> </span>
+      </div>
+      <div class="row" id="fifteen"> 
+         <span class="location"> <span id="city_name_fifteen"></span> <span class="country_name"  id="country_name_fifteen"></span> </span> <a class="uv-advice" id="advice-fifteen"></a> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_fifteen">  <span class="uvi-level"  id="uvi_fifteen"></span> </span> 
+      </div>
+      <div class="row" id="sixteen" > 
+          <span class="location"> <span id="city_name_sixteen"></span> <span class="country_name"  id="country_name_sixteen"></span> </span> <a class="uv-advice" id="advice-sixteen"></a> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_sixteen">   <span class="uvi-level" id="uvi_sixteen"></span>  </span> 
+      </div>
+
+      <div class="row" id="seventeen"> 
+      <span class="location">  <span id="city_name_seventeen"></span> <span class="country_name"  id="country_name_seventeen"></span> </span> <a class="uv-advice" id="advice-seventeen"></a><span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_seventeen">  <span class="uvi-level" id="uvi_seventeen"> </span>  </span>
+        </div>
+        <div class="row"  id= "eighteen"> 
+          <span class="location">  <span id="city_name_eighteen"></span> <span class="country_name"  id="country_name_eighteen"></span> </span> <a class="uv-advice" id="advice-eighteen"></a> <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_eighteen">   <span class="uvi-level" id="uvi_eighteen"> </span> </span> 
+        </div>
+        
+        <div class="row" id="nineteen" > 
+        <span class="location"> <span id="city_name_nineteen"></span> <span class="country_name"  id="country_name_nineteen"></span></span> <a class="uv-advice" id="advice-nineteen"></a><span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_nineteen">    <span class="uvi-level"  id="uvi_nineteen"> </span> </span> 
+        </div>
+        <div class="row" id="twenty"> 
+          <span class="location"> <span id="city_name_twenty"></span> <span class="country_name"  id="country_name_twenty"></span> </span><div  class="uv-advice" id="advice-container"><a class="uv-advice" id="advice-twenty"> </a> </div> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_twenty">  <span class="uvi-level"  id="uvi_twenty"> </span> </span> 
+        </div>
+        <div class="row" id="twentyone" > 
+         <span class="location"> <span id="city_name_twentyone"></span> <span class="country_name" id="country_name_twentyone"></span>  </span> <a class="uv-advice" id="advice-twentyone"></a>  <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_twentyone">  <span class="uvi-level" id="uvi_twentyone"> </span>   </span> 
+        </div>
+        <div class="row" id="twentytwo" > 
+          <span class="location"> <span id="city_name_twentytwo"></span> <span class="country_name" id="country_name_twentytwo"></span>  </span> <a class="uv-advice" id="advice-twentytwo"></a>  <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_twentytwo">  <span class="uvi-level" id="uvi_twentytwo"> </span>   </span> 
+         </div>
+         <div class="row"  id= "twentythree"> 
+          <span class="location">  <span id="city_name_twentythree"></span> <span class="country_name"  id="country_name_twentythree"></span> </span> <a class="uv-advice" id="advice-twentythree"></a><span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_twentythree"> <span class="uvi-level" id="uvi_twentythree"></span> </span>
+       </div>
+       
+       <div class="row" id="twentyfour" > 
+         <span class="location"> <span id="city_name_twentyfour"></span> <span class="country_name"  id="country_name_twentyfour"></span>  </span> <a class="uv-advice" id="advice-twentyfour"></a> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_twentyfour">    <span class="uvi-level"  id="uvi_twentyfour"></span> </span>
+       </div>
+       <div class="row" id="twentyfive"> 
+          <span class="location"> <span id="city_name_twentyfive"></span> <span class="country_name"  id="country_name_twentyfive"></span> </span> <a class="uv-advice" id="advice-twentyfive"></a> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_twentyfive">  <span class="uvi-level"  id="uvi_twentyfive"></span> </span> 
+       </div>
+       <div class="row" id="twentysix" > 
+           <span class="location"> <span id="city_name_twentysix"></span> <span class="country_name"  id="country_name_twentysix"></span> </span> <a class="uv-advice" id="advice-twentysix"></a> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_twentysix">   <span class="uvi-level" id="uvi_twentysix"></span>  </span> 
+       </div>
+ 
+       <div class="row" id="twentyseven"> 
+       <span class="location">  <span id="city_name_twentyseven"></span> <span class="country_name"  id="country_name_twentyseven"></span> </span> <a class="uv-advice" id="advice-twentyseven"></a><span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_twentyseven">  <span class="uvi-level" id="uvi_twentyseven"> </span>  </span>
+         </div>
+         <div class="row"  id= "twentyeight"> 
+           <span class="location">  <span id="city_name_twentyeight"></span> <span class="country_name"  id="country_name_twentyeight"></span> </span> <a class="uv-advice" id="advice-twentyeight"></a> <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_twentyeight">   <span class="uvi-level" id="uvi_twentyeight"> </span> </span> 
+         </div>
+         
+         <div class="row" id="twentynine" > 
+         <span class="location"> <span id="city_name_twentynine"></span> <span class="country_name"  id="country_name_twentynine"></span></span> <a class="uv-advice" id="advice-twentynine"></a><span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_twentynine">    <span class="uvi-level"  id="uvi_twentynine"> </span> </span> 
+         </div>
+         <div class="row" id="thirty"> 
+           <span class="location"> <span id="city_name_thirty"></span> <span class="country_name"  id="country_name_thirty"></span> </span><div  class="uv-advice" id="advice-container"><a class="uv-advice" id="advice-thirty"> </a> </div> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_thirty">  <span class="uvi-level"  id="uvi_thirty"> </span> </span> 
+         </div>
+         <div class="row" id="thirtyone" > 
+          <span class="location"> <span id="city_name_thirtyone"></span> <span class="country_name" id="country_name_thirtyone"></span>  </span> <a class="uv-advice" id="advice-thirtyone"></a>  <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_thirtyone">  <span class="uvi-level" id="uvi_thirtyone"> </span>   </span> 
+         </div>
+        
+      </div>
+
+    </div>
+<div id="weather"></div>
+      <div id="overlay"></div>
+
+
+<script type="text/javascript" src="script.js"> </script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+html, body {
+    height: 100%;
+    
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+.back{
+    top: 0;
+    left: 0;
+}
+.back a{
+    color: red;
+}
+.container-1{
+    width: 100vw;
+    height: 70vh;
+    
+   
+}
+
+.product-image{
+    width: 55%;
+    height: 84%;
+    border: 1px solid black;
+    margin-left: 6%;
+    margin-top: 3%;
+float: left;
+
+}
+
+.product-info{
+    float: left;
+    height: 84%;
+    width: 20%;
+  
+    
+    margin-top: 3%;
+    margin-left: 2%;
+}
+.product-info p{ 
+    font-family: helvetica;
+    font-weight: lighter;
+    font-size: 1.3vw;
+}
+.container-2{
+    width: 100vw;
+    height: 70vh;
+    
+   text-align: center;
+}
+
+.product-image-2{
+    width: 55%;
+    height: 84%;
+    border: 1px solid black;
+    margin-left: 6%;
+    margin-top: 3%;
+float: left;
+
+}
+
+.product-info-2{
+    float: left;
+    height: 84%;
+    width: 20%;
+ 
+    
+    margin-top: 3%;
+    margin-left: 2%;
+}
+.circle{
+    border-radius: 50%;
+  width: 100%;
+  padding-bottom: 100%;
+  background: white;
+    border: solid black 2px;
+    margin-top: 10%;
+}
+.inner-text{
+    vertical-align: middle;
+    text-align: center;
+}     
+ .container-3 {
+    display: flex;
+  }
+
+  .container-3 :first-child {
+    width: 57%;
+    height: 100%;
+  }
+
+  .container-3 > * {
+    flex: 0 0 auto;
+  }

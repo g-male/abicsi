@@ -1,0 +1,402 @@
+html, body {
+    height: 100%;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+@font-face {
+    font-family: Linea-font;
+    src: url(Linea.ttf);
+  }
+#full-page{
+opacity: 0;
+transition: opacity 2s;
+width: 100%;
+}
+#loading-page{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 1s;
+    overflow-y: hidden;
+}
+#loading-page img{
+    width:850px;
+}
+.loading-text{
+    font-family: helvetica;
+    font-weight: 600;
+    font-size: 1.5vw;
+    color: #e82c0e;
+    font-style: oblique 20deg;
+    text-align: center;
+}
+
+
+.UVIscale{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+text-align: center;
+width: 38%;
+margin-top: -8.5%;
+margin-bottom: 30px;
+
+}
+.daily-uv-text{
+    text-align: center;
+    font-weight: 830;
+    font-size: 2vw;
+    color: #e82c0e;
+    font-style: oblique 20deg;
+    font-family: helvetica;
+    margin-bottom: 30px;
+}
+.topheader{
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+
+}
+.top_eyes{
+    width: 28%;
+    display: inline-block;
+}
+#right_eye{
+   
+}
+#left_eye{
+    margin-right: 1%;
+}
+.toplogo{
+    font-family: Linea-font;
+
+  font-size: 17vw;
+  margin-top: -10%;
+
+}
+
+.gradient_bar{
+    width: 100%;
+}
+
+.gradient-text{
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 0.5%;
+    margin-right: .5%;
+    font-family: helvetica;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+.no-bold{
+    font-weight: 400;
+}
+
+.moderate{
+font-style: oblique;
+}
+
+.high{
+font-style: oblique 10deg;      
+}
+.veryhigh{
+    font-style: oblique 15deg;
+}
+.extreme{
+    font-style: oblique 20deg;
+}
+
+.row{
+  border: solid 2px transparent;
+    height:95px;
+    position: relative;
+    width: 100%;
+   max-height: 110px;
+   
+line-height: normal;
+ text-align: center;
+}
+.date-text{
+    font-size: 1.5vw;
+    font-weight: 700;
+    font-family: helvetica;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+.full-date{
+    color: #d8001d;
+}
+.middle-section{
+    text-align: center;
+}
+.temis-map{
+    margin-top: 2%;
+}
+.temis-credit{
+    margin-left: 20%;
+    font-family: helvetica;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.vid-placehold{
+margin: auto;
+width: 100%;
+margin-top: 3%;
+}
+.arrow-graphic{
+    margin: auto;
+    width: 50%;
+    margin-top: 1%;
+}
+.avail-now{
+    font-family: helvetica;
+    font-size: 3vw;
+    color: #d8001d;
+    font-weight: 700;
+    margin-top: 3%;
+}
+.here-details{
+    font-family: helvetica;
+    font-size: 3vw;
+    font-weight: 700;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: block;
+}
+.here{
+    color: #d8001d;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.horizontal-bars{
+    height: auto;
+    width: 100%;
+height: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: block;
+    margin: 0 auto;
+  
+}
+#advice-container{
+width: 500px;
+height: 125px;
+margin: 0 auto;
+}
+.uv-advice{
+text-align: center;
+font-family: helvetica;
+font-size: 1vw;
+width: 500px;
+height: 125px;
+
+display: none;
+}
+.country_name{
+    display: none;
+    font-family: helvetica;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: -8px;
+}
+
+.levelone{
+background-color: #4eb400;
+}
+.leveltwo{
+    background-color:   #a0ce00;
+}
+
+.levelthree{
+    background-color:   #f7e400;
+}
+.levelfour{
+    background-color:   #f8b600;
+}
+.levelfive{
+    background-color: #f88700;
+    }
+.levelsix{
+        background-color:   #f85900;
+    }
+    
+.levelseven{
+        background-color:   #e82c0e;
+    }
+.leveleight{
+        background-color:   #d8001d;
+    }
+ .levelnine{
+        background-color:   #ff0099;
+    }
+    
+.levelten{
+        background-color:   #b54cff;
+    }
+.leveleleven{
+        background-color:   #998cff;
+    }
+
+
+.lowlevel{
+    background-color: green;
+}
+.moderatelevel{
+    background-color: yellow;
+}
+.highlevel{
+    background-color: orange;
+}
+.veryhighlevel{
+    background-color: red;
+
+}
+.extremelevel{
+    background-color: purple;
+}
+
+
+
+.location{ 
+line-height: 70px;
+
+
+ left: 8px;
+ font-family: Linea-font;
+ font-size: 9rem;
+ 
+ padding-left: 1% ;
+
+ position: absolute;
+}
+.uvi-info{
+margin-right:  0.5px;
+  position: absolute;
+    right: 1px;
+    font-weight: bolder;
+   
+    font-family: helvetica;
+
+}
+
+
+.UV-icon{
+max-width: 85%;
+max-height: 110px;
+width: auto;
+
+height: 100%;
+display:  inline-block;
+vertical-align: middle;
+margin-top: 1px;
+
+}
+.center{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 1px;
+}
+.text-level1{
+
+    font-weight: bolder;
+    font-size: 4vw;
+    font-family: helvetica;
+   
+    
+}
+.product-info{
+border: 1px solid green;
+width: 100%;
+text-align: center;
+}
+.uvi-info1{
+    padding-right: 10%;
+    position:absolute;
+    right: 8px;
+    font-weight: bolder;
+    font-size: 4vw;
+    font-family: helvetica;
+    z-index: 10;
+    bottom: 1px;
+}
+
+.uvi-level{
+display: none;
+}
+
+/*SMARTPHONE MEDIA QUERIES */
+
+@media screen and (max-width: 480px) {
+    #loading-page img{
+        width:340px
+    }
+    .loading-text{
+    font-size: 3vw;
+    }
+  
+    .topheader{
+      margin-top: 2vh;
+  }
+  .UVIscale{
+      margin-bottom: 15px;
+  }
+  .daily-uv-text{
+font-size: 1.5vh;
+margin-bottom: 15px;
+  }
+
+  .date-text{
+      font-size: 1.3vh;
+  }
+    .location{
+line-height: 50px;
+font-size: 7vh;
+  }
+  .temis-credit{
+      font-size: 0.8rem;
+  }
+  .full-page{
+      width: 100%;
+  }
+  .uvi-info{
+    width: 25%;
+      position: right;
+      margin-right: -3px;
+  }
+.UV-icon{
+width: 90%;
+margin-top: 2px;
+}
+
+.row{
+     max-height: 55px;
+     
+  line-height: 35px;
+   text-align: center;
+  }
+  .country_name{
+      font-size: 1.2vh;
+  
+  }
+ 
+#city_name_fourteen{
+    font-size: 6vh;
+    
+}
+#city_name_nineteen{
+    font-size: 6vh;
+    
+}
+  }
