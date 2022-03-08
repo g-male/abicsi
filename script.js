@@ -54,7 +54,7 @@ daily_uvi_value = daily_uvi_data.daily[1].uvi;
 dailytest();
 async function rowOne(){
     uvi_url_one = 'https://api.openweathermap.org/data/2.5/onecall?lat=48.85341&lon=2.3488&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_one = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=48.85341&lng=2.3488&username=skinnyreggae'
+    location_name_one = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=48.85341&lng=2.3488&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_one = await fetch (uvi_url_one);
@@ -241,7 +241,7 @@ else if (uvi_round_one == 3 )
   
   async function rowTwo(){
     uvi_url_two = 'https://api.openweathermap.org/data/2.5/onecall?lat=43.77925&lon=11.24626&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_two = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=43.77925&lng=11.24626&username=skinnyreggae'
+    location_name_two = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=43.77925&lng=11.24626&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_two = await fetch (uvi_url_two);
@@ -424,7 +424,7 @@ else if (uvi_round_one == 3 )
   
   async function rowThree(){
     uvi_url_three= 'https://api.openweathermap.org/data/2.5/onecall?lat=35.6895&lon=139.69171&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_three= 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=35.6895&lng=139.69171&username=skinnyreggae'
+    location_name_three= 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=35.6895&lng=139.69171&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_three = await fetch (uvi_url_three);
@@ -611,7 +611,7 @@ else if (uvi_round_one == 3 )
   
   async function rowFour(){
     uvi_url_four = 'https://api.openweathermap.org/data/2.5/onecall?lat=31.63416&lon=-7.99994&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_four = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=31.63416&lng=-7.99994&username=skinnyreggae'
+    location_name_four = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=31.63416&lng=-7.99994&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_four = await fetch (uvi_url_four);
@@ -794,7 +794,7 @@ else if (uvi_round_one == 3 )
   
   async function rowFive(){
     uvi_url_five = 'https://api.openweathermap.org/data/2.5/onecall?lat=28.63576&lon=77.22445&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_five = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=28.63576&lng=77.22445&username=skinnyreggae'
+    location_name_five = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=28.63576&lng=77.22445&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_five = await fetch (uvi_url_five);
@@ -977,7 +977,7 @@ else if (uvi_round_one == 3 )
   
   async function rowSix(){
     uvi_url_six = 'https://api.openweathermap.org/data/2.5/onecall?lat=24.14437&lon=-110.3005&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_six = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=24.14437&lng=-110.3005&radius=30&username=skinnyreggae'
+    location_name_six = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=24.14437&lng=-110.3005&radius=30&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_six = await fetch (uvi_url_six);
@@ -1163,7 +1163,7 @@ else if (uvi_round_one == 3 )
   
   async function rowSeven(){
     uvi_url_seven = 'https://api.openweathermap.org/data/2.5/onecall?lat=17.99702&lon=-76.79358&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_seven = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=17.99702&lng= -76.79358&radius=30&username=skinnyreggae'
+    location_name_seven = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=17.99702&lng= -76.79358&radius=30&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_seven = await fetch (uvi_url_seven);
@@ -1351,7 +1351,7 @@ else if (uvi_round_one == 3 )
   
   async function rowEight(){
     uvi_url_eight = 'https://api.openweathermap.org/data/2.5/onecall?lat=14.6042&lon=120.9822&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_eight = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=14.6042&lng=120.9822&radius=30&username=skinnyreggae'
+    location_name_eight = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=14.6042&lng=120.9822&radius=30&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_eight = await fetch (uvi_url_eight);
@@ -1541,7 +1541,7 @@ else if (uvi_round_one == 3 )
   
   async function rowNine(){
     uvi_url_nine = 'https://api.openweathermap.org/data/2.5/onecall?lat=6.8334&lon=80.9853&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_nine = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=6.8334&lng=80.9853&username=skinnyreggae'
+    location_name_nine = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=6.8334&lng=80.9853&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_nine = await fetch (uvi_url_nine);
@@ -1727,7 +1727,7 @@ else if (uvi_round_one == 3 )
   
   async function rowTen(){
     uvi_url_ten = 'https://api.openweathermap.org/data/2.5/onecall?lat=9.07333&lon=-63.505&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_ten= 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=9.07333&lng=-63.505&username=skinnyreggae'
+    location_name_ten= 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=9.07333&lng=-63.505&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_ten = await fetch (uvi_url_ten);
@@ -1914,7 +1914,7 @@ else if (uvi_round_one == 3 )
 
   async function rowEleven(){
     uvi_url_eleven = 'https://api.openweathermap.org/data/2.5/onecall?lat=-33.45694&lon=-70.64827&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_eleven= 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=-33.45694&lng=-70.64827&username=skinnyreggae'
+    location_name_eleven= 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=-33.45694&lng=-70.64827&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_eleven = await fetch (uvi_url_eleven);
@@ -2098,7 +2098,7 @@ else if (uvi_round_one == 3 )
 
   async function rowtwelve(){
     uvi_url_twelve = 'https://api.openweathermap.org/data/2.5/onecall?lat=25.04776&lon=121.53185&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_twelve = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=25.04776&lng=121.53185&username=skinnyreggae'
+    location_name_twelve = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=25.04776&lng=121.53185&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_twelve = await fetch (uvi_url_twelve);
@@ -2280,7 +2280,7 @@ else if (uvi_round_one == 3 )
   
   async function rowthirteen(){
     uvi_url_thirteen = 'https://api.openweathermap.org/data/2.5/onecall?lat=15.35472&lon=44.20667&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_thirteen = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=15.35472&lng=44.20667&username=skinnyreggae'
+    location_name_thirteen = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=15.35472&lng=44.20667&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_thirteen = await fetch (uvi_url_thirteen);
@@ -2429,7 +2429,7 @@ else if (uvi_round_one == 3 )
   
   async function rowfourteen(){
     uvi_url_fourteen = 'https://api.openweathermap.org/data/2.5/onecall?lat=-22.90642&lon=-43.18223&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_fourteen = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=-22.90642&lng=-43.18223&username=skinnyreggae'
+    location_name_fourteen = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=-22.90642&lng=-43.18223&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_fourteen = await fetch (uvi_url_fourteen);
@@ -2611,7 +2611,7 @@ else if (uvi_round_one == 3 )
   
   async function rowfifteen(){
     uvi_url_fifteen = 'https://api.openweathermap.org/data/2.5/onecall?lat=37.566&lon=126.9784&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_fifteen = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=37.566&lng=126.9784&username=skinnyreggae'
+    location_name_fifteen = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=37.566&lng=126.9784&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_fifteen = await fetch (uvi_url_fifteen);
@@ -2793,7 +2793,7 @@ else if (uvi_round_one == 3 )
   
   async function rowsixteen(){
     uvi_url_sixteen = 'https://api.openweathermap.org/data/2.5/onecall?lat=1.28967&lon=103.85007&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_sixteen = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=1.28967&lng=103.85007&username=skinnyreggae'
+    location_name_sixteen = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=1.28967&lng=103.85007&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_sixteen = await fetch (uvi_url_sixteen);
@@ -2975,7 +2975,7 @@ else if (uvi_round_one == 3 )
   
   async function rowseventeen(){
     uvi_url_seventeen = 'https://api.openweathermap.org/data/2.5/onecall?lat=51.50853&lon=-0.12574&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_seventeen = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=51.50853&lng=-0.12574&username=skinnyreggae'
+    location_name_seventeen = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=51.50853&lng=-0.12574&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_seventeen = await fetch (uvi_url_seventeen);
@@ -3157,7 +3157,7 @@ else if (uvi_round_one == 3 )
   
   async function roweighteen(){
     uvi_url_eighteen = 'https://api.openweathermap.org/data/2.5/onecall?lat=22.27832&lon=114.17469&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_eighteen = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=22.27832&lng=114.17469&username=skinnyreggae'
+    location_name_eighteen = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=22.27832&lng=114.17469&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_eighteen = await fetch (uvi_url_eighteen);
@@ -3339,7 +3339,7 @@ else if (uvi_round_one == 3 )
   
   async function rownineteen(){
     uvi_url_nineteen = 'https://api.openweathermap.org/data/2.5/onecall?lat=-26.202272&lon=28.04363&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_nineteen = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=-26.20227&lng=28.04363&username=skinnyreggae'
+    location_name_nineteen = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=-26.20227&lng=28.04363&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_nineteen = await fetch (uvi_url_nineteen);
@@ -3521,7 +3521,7 @@ else if (uvi_round_one == 3 )
 
   async function rowtwenty(){
     uvi_url_twenty = 'https://api.openweathermap.org/data/2.5/onecall?lat=24.8608&lon=67.0104&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_twenty = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=24.8608&lng=67.0104&username=skinnyreggae'
+    location_name_twenty = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=24.8608&lng=67.0104&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_twenty = await fetch (uvi_url_twenty);
@@ -3703,7 +3703,7 @@ else if (uvi_round_one == 3 )
 
   async function rowtwentyone(){
     uvi_url_twentyone = 'https://api.openweathermap.org/data/2.5/onecall?lat=-12.04318&lon=-77.02824&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_twentyone = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=-12.04318&lng=-77.02824&username=skinnyreggae'
+    location_name_twentyone = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=-12.04318&lng=-77.02824&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_twentyone = await fetch (uvi_url_twentyone);
@@ -3885,7 +3885,7 @@ else if (uvi_round_one == 3 )
 
   async function rowtwentytwo(){
     uvi_url_twentytwo = 'https://api.openweathermap.org/data/2.5/onecall?lat=-33.86785&lon=151.20732&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_twentytwo = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=-33.86785&lng=151.20732&username=skinnyreggae'
+    location_name_twentytwo = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=-33.86785&lng=151.20732&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_twentytwo = await fetch (uvi_url_twentytwo);
@@ -4067,7 +4067,7 @@ else if (uvi_round_one == 3 )
   
   async function rowtwentythree(){
     uvi_url_twentythree = 'https://api.openweathermap.org/data/2.5/onecall?lat=43.70011&lon=-79.4163&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_twentythree = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=43.70011&lng=-79.4163&username=skinnyreggae'
+    location_name_twentythree = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=43.70011&lng=-79.4163&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_twentythree = await fetch (uvi_url_twentythree);
@@ -4249,7 +4249,7 @@ else if (uvi_round_one == 3 )
   
   async function rowtwentyfour(){
     uvi_url_twentyfour = 'https://api.openweathermap.org/data/2.5/onecall?lat=19.42847&lon=-99.12766&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_twentyfour = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=19.42847&lng=-99.12766&username=skinnyreggae'
+    location_name_twentyfour = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=19.42847&lng=-99.12766&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_twentyfour = await fetch (uvi_url_twentyfour);
@@ -4431,7 +4431,7 @@ else if (uvi_round_one == 3 )
   
   async function rowtwentyfive(){
     uvi_url_twentyfive = 'https://api.openweathermap.org/data/2.5/onecall?lat=6.45407&lon=3.39467&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_twentyfive = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=6.45407&lng=3.39467&username=skinnyreggae'
+    location_name_twentyfive = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=6.45407&lng=3.39467&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_twentyfive = await fetch (uvi_url_twentyfive);
@@ -4613,7 +4613,7 @@ else if (uvi_round_one == 3 )
   
   async function rowtwentysix(){
     uvi_url_twentysix = 'https://api.openweathermap.org/data/2.5/onecall?lat=40.71427&lon=-74.00597&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_twentysix = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=40.71427&lng=-74.00597&username=skinnyreggae'
+    location_name_twentysix = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=40.71427&lng=-74.00597&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_twentysix = await fetch (uvi_url_twentysix);
@@ -4795,7 +4795,7 @@ else if (uvi_round_one == 3 )
   
   async function rowtwentyseven(){
     uvi_url_twentyseven = 'https://api.openweathermap.org/data/2.5/onecall?lat=28.26689&lon=83.96851&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_twentyseven = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=28.26689&lng=83.96851&username=skinnyreggae'
+    location_name_twentyseven = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=28.26689&lng=83.96851&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_twentyseven = await fetch (uvi_url_twentyseven);
@@ -4977,7 +4977,7 @@ else if (uvi_round_one == 3 )
   
   async function rowtwentyeight(){
     uvi_url_twentyeight = 'https://api.openweathermap.org/data/2.5/onecall?lat=15.33805&lon=38.93184&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_twentyeight = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=15.33805&lng=38.93184&username=skinnyreggae'
+    location_name_twentyeight = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=15.33805&lng=38.93184&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_twentyeight = await fetch (uvi_url_twentyeight);
@@ -5159,7 +5159,7 @@ else if (uvi_round_one == 3 )
   
   async function rowtwentynine(){
     uvi_url_twentynine = 'https://api.openweathermap.org/data/2.5/onecall?lat=52.52437&lon=13.41053&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_twentynine = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=52.52437&lng=13.41053&username=skinnyreggae'
+    location_name_twentynine = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=52.52437&lng=13.41053&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_twentynine = await fetch (uvi_url_twentynine);
@@ -5341,7 +5341,7 @@ else if (uvi_round_one == 3 )
 
   async function rowthirty(){
     uvi_url_thirty = 'https://api.openweathermap.org/data/2.5/onecall?lat=5.55602&lon=-0.1969&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_thirty = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=5.55602&lng=-0.1969&username=skinnyreggae'
+    location_name_thirty = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=5.55602&lng=-0.1969&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_thirty = await fetch (uvi_url_thirty);
@@ -5523,7 +5523,7 @@ else if (uvi_round_one == 3 )
   
   async function rowthirtyone(){
     uvi_url_thirtyone = 'https://api.openweathermap.org/data/2.5/onecall?lat=52.37403&lon=4.88969&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_thirtyone = 'http://api.geonames.org/findNearbyPlaceNameJSON?lat=52.37403&lng=4.88969&username=skinnyreggae'
+    location_name_thirtyone = 'http://secure.geonames.org/findNearbyPlaceNameJSON?lat=52.37403&lng=4.88969&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_thirtyone = await fetch (uvi_url_thirtyone);
