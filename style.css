@@ -37,6 +37,7 @@ width: 100%;
     color: #e82c0e;
     font-style: oblique 20deg;
     text-align: center;
+    margin-top: 3%;
 }
 
 
@@ -45,7 +46,7 @@ width: 100%;
     margin-left: auto;
     margin-right: auto;
 text-align: center;
-width: 38%;
+width: 40%;
 margin-top: -8.5%;
 margin-bottom: 30px;
 
@@ -71,10 +72,10 @@ margin-bottom: 30px;
     display: inline-block;
 }
 #right_eye{
-   
+    margin-left: 2%;
 }
 #left_eye{
-    margin-right: 1%;
+    margin-right: 2%;
 }
 .toplogo{
     font-family: Linea-font;
@@ -87,16 +88,25 @@ margin-bottom: 30px;
 .gradient_bar{
     width: 100%;
 }
+.gradimg{
+    max-width: 100%;
+}
+.high img{
 
+}
+.veryhigh img{
+
+}
 .gradient-text{
     display: flex;
     justify-content: space-between;
 
     margin-left: 0.5%;
     margin-right: .5%;
-    font-family: helvetica;
-    font-weight: 700;
-    font-size: 1.5vw;
+
+
+    align-items: flex-start;
+ 
 }
 .no-bold{
     font-weight: 400;
@@ -349,6 +359,14 @@ display: none;
     .topheader{
       margin-top: 2vh;
   }
+.gradient-text{
+  flex-basis: auto;
+}
+
+
+.extreme{
+ 
+}
   .UVIscale{
       margin-bottom: 15px;
   }
@@ -360,6 +378,16 @@ margin-bottom: 15px;
   .date-text{
       font-size: 1.3vh;
   }
+.gradimg{
+    max-height: 28px;
+  
+  
+}
+.item{
+    max-height: 30px;
+    max-width: 70px;
+}
+
     .location{
 line-height: 50px;
 font-size: 7vh;
