@@ -14,6 +14,13 @@ html, body {
     font-family: Linea-font;
     src: url(Linea.ttf);
   }
+#canadian-cities{
+    opacity: 0;
+transition: opacity 2s;
+}
+#horizontal-bars-2{
+    transition: opacity 1s;
+}
 #full-page{
 opacity: 0;
 transition: opacity 2s;
@@ -149,14 +156,26 @@ line-height: normal;
 .middle-section{
     text-align: center;
 }
+.toggle-locations{
+  
+    
+    
+        font-family: helvetica;
+        font-size: 1.5rem;
+        font-weight: 600;
+    
+}
+
 .temis-map{
     margin-top: 2%;
+    text-align: center;
 }
 .temis-credit{
-    margin-left: 20%;
+    
+    
     font-family: helvetica;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 .vid-placehold{
 margin: auto;
@@ -380,17 +399,18 @@ margin-bottom: 15px;
   }
 .gradimg{
     max-height: 28px;
-  
-  
 }
 .item{
-    max-height: 30px;
+    max-height: 35px;
     max-width: 70px;
+}
+.veryhigh img{
+    height: 27px;
 }
 
     .location{
 line-height: 50px;
-font-size: 7vh;
+font-size: 8.5vh;
   }
   .temis-credit{
       font-size: 0.8rem;
@@ -420,11 +440,23 @@ margin-top: 2px;
   }
  
 #city_name_fourteen{
-    font-size: 6vh;
+    font-size: 14vw;
     
 }
 #city_name_nineteen{
-    font-size: 6vh;
+    font-size: 6.5vh;
+    
+}
+#city_name_nine{
+    font-size: 7.4vh;
+    
+}
+#city_name_twentyfour{
+    font-size: 7.8vh;
+    
+}
+#city_name_thirtyone{
+    font-size: 7.8vh;
     
 }
   }
