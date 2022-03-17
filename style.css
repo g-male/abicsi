@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    overflow-x: hidden;
   }
   * {
     margin: 0;
@@ -17,6 +18,12 @@ html, body {
 #canadian-cities{
     opacity: 0;
 transition: opacity 2s;
+display: none;
+}
+.hyperlink{
+    text-decoration: underline;
+    color: #FF0000;
+   font-style: oblique;
 }
 #horizontal-bars-2{
     transition: opacity 1s;
@@ -53,16 +60,16 @@ width: 100%;
     margin-left: auto;
     margin-right: auto;
 text-align: center;
-width: 40%;
-margin-top: -8.5%;
-margin-bottom: 30px;
+width: 38%;
+margin-top: -9.5%;
+margin-bottom: 1%;
 
 }
 .daily-uv-text{
     text-align: center;
     font-weight: 830;
     font-size: 2vw;
-    color: #e82c0e;
+    color: #FF0000;
     font-style: oblique 20deg;
     font-family: helvetica;
     margin-bottom: 30px;
@@ -77,6 +84,7 @@ margin-bottom: 30px;
 .top_eyes{
     width: 28%;
     display: inline-block;
+    margin-top: 2%;
 }
 #right_eye{
     margin-left: 2%;
@@ -96,7 +104,11 @@ margin-bottom: 30px;
     width: 100%;
 }
 .gradimg{
-    max-width: 100%;
+    max-width: 65%;
+}
+
+.item{
+
 }
 .high img{
 
@@ -111,7 +123,7 @@ margin-bottom: 30px;
     margin-left: 0.5%;
     margin-right: .5%;
 
-
+  margin-bottom: 3%;
     align-items: flex-start;
  
 }
@@ -148,34 +160,40 @@ line-height: normal;
     font-weight: 700;
     font-family: helvetica;
     margin-top: 3%;
-    margin-bottom: 1%;
+    margin-bottom: 0.7%;
 }
 .full-date{
-    color: #d8001d;
+    color: #ff0000;
 }
 .middle-section{
     text-align: center;
 }
-.toggle-locations{
-  
-    
-    
-        font-family: helvetica;
-        font-size: 1.5rem;
-        font-weight: 600;
-    
-}
+
 
 .temis-map{
     margin-top: 2%;
     text-align: center;
+   
 }
 .temis-credit{
     
+    float: left;
+    font-family: helvetica;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 13%;
+}
+.toggle-locations{
+    float: right;
     
     font-family: helvetica;
     font-size: 1rem;
     font-weight: 600;
+    margin-right: 13%;
+}
+
+.temis-credit.toggle-locations{
+    margin-top: -5%;
 }
 .vid-placehold{
 margin: auto;
@@ -190,7 +208,7 @@ margin-top: 3%;
 .avail-now{
     font-family: helvetica;
     font-size: 3vw;
-    color: #d8001d;
+    color: #FF0000;
     font-weight: 700;
     margin-top: 3%;
 }
@@ -237,7 +255,7 @@ display: none;
     font-family: helvetica;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: -8px;
+    margin-left: -15px;
 }
 
 .levelone{
@@ -295,11 +313,14 @@ background-color: #4eb400;
     background-color: purple;
 }
 
-
+.temis-map img{
+    width: 80%;
+}
 
 .location{ 
 line-height: 70px;
 
+z-index: 99;
 
  left: 8px;
  font-family: Linea-font;
@@ -375,23 +396,71 @@ display: none;
     font-size: 3vw;
     }
   
+   #right_eye{
+       display: none;
+   }
     .topheader{
       margin-top: 2vh;
   }
-.gradient-text{
-  flex-basis: auto;
+  .topheader{
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+
 }
-
-
-.extreme{
+  .toplogo{
+  font-size: 25vw;
+  margin-right: 2%;
+  }
+  #left_eye{
+    width: 38%;
+    margin-right: 3%;
+    
+}
+.gradient-text:last-child{
+    margin-left: auto;
  
 }
-  .UVIscale{
-      margin-bottom: 15px;
+.moderate{
+    margin-right: 5%;
+}
+.low{
+    margin-right: 10%;
+}
+.high{
+    margin-right: 5%;
+}
+.veryhigh{
+    
+}
+.gradient-text{
+    flex-basis: auto;
+  width: 105%;
   }
-  .daily-uv-text{
+
+.gradient_bar{
+
+}
+
+.item{
+
+}
+  .UVIscale{
+   
+    margin-left: none;
+    margin-right: 2%;
+text-align: right;
+float: right;
+     width: 55%;
+  }
+  
+  .daily-uv-text  {
 font-size: 1.5vh;
 margin-bottom: 15px;
+float: right;
+margin-right: 4%;
+margin-left: 18%;
   }
 
   .date-text{
@@ -399,13 +468,28 @@ margin-bottom: 15px;
   }
 .gradimg{
     max-height: 28px;
+    
 }
-.item{
-    max-height: 35px;
-    max-width: 70px;
+.veryhigh img{
+   
+}
+
+.extreme{
+ 
+   
 }
 .veryhigh img{
     height: 27px;
+}
+.temis-map img{
+    width: 90%;
+}
+
+.toggle-locations{
+ margin-right: 8%;
+ font-size: 0.6rem;
+
+ margin-bottom: 3%;
 }
 
     .location{
@@ -413,7 +497,8 @@ line-height: 50px;
 font-size: 8.5vh;
   }
   .temis-credit{
-      font-size: 0.8rem;
+      font-size: 0.6rem;
+      margin-left: 8%;
   }
   .full-page{
       width: 100%;
@@ -456,6 +541,18 @@ margin-top: 2px;
     
 }
 #city_name_thirtyone{
+    font-size: 7.8vh;
+    
+}
+#city_name_thirtyfour{
+    font-size: 7.8vh;
+    
+}
+#city_name_thirtyeight{
+    font-size: 6.5vh;
+    
+}
+#city_name_forty{
     font-size: 7.8vh;
     
 }

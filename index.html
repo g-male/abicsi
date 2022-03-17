@@ -20,15 +20,15 @@
   
   </div> 
   <img src="/UVIscale.png" class="UVIscale"> 
-<p class="daily-uv-text">Daily UV Forcast </p>
+<div class="daily-uv-text"> <a>Daily UV Forcast </a> </div>
   <img src="/gradien_bar_v3.png" class="gradient_bar"> 
 
   <div class="gradient-text "> 
-     <div class="item low"> <img class="gradimg" src="/Low-2.png"> </div>
-     <div class="item moderate" > <img class="gradimg"  src="/Moderate.png">  </div>
-     <div class="item high"> <img class="gradimg"  src="/High.png">  </div>
-      <div class="item veryhigh"><img class="gradimg"  src="/Very-High.png">  </div>
-      <div class="item extreme"> <img class="gradimg" src="/Extreme.png">  </div>  
+     <div class="item low"> <img class="gradimg" src="/Low.svg" height="70" width="70"> </div>
+     <div class="item moderate" > <img class="gradimg"  src="/Moderate.svg" height="70" width="170">  </div>
+     <div class="item high"> <img class="gradimg"  src="/High.svg" height="70" width="100">  </div>
+      <div class="item veryhigh"><img class="gradimg"  src="/Very High.svg" height="70" width="190">  </div>
+      <div class="item extreme"> <img class="gradimg" src="/Extreme.svg" height="70" width="175">  </div>  
   </div>
 
 <div class="date-text"> Featured Locations for: <span class="full-date"> <span id="weekday"> </span> <span id="month"></span> <span id="day"> </span> <span id="year"> </span> </span> </div>
@@ -76,14 +76,16 @@
 
 
      <video class="vid-placehold" src="/5mb-nosound-360.mp4" loop autoplay muted playsinline style="pointer-events: none;"></video>
-     <div class="toggle-locations" style="cursor:pointer;"> <span onclick="showCanada()"> Canada</span>/<span onclick="showWorld()">Rest of World</span> </div>
+   
      <br>
 <div  id="horizontal-bars-2">    
-    <div class="temis-map" >  <img style="width: 65%;" src="https://d1qb6yzwaaq4he.cloudfront.net/uvradiation/UVI/uvief0_wd_who.gif"> </img> <br>
+    <div class="temis-map" >  <img  src="https://d1qb6yzwaaq4he.cloudfront.net/uvradiation/UVI/uvief0_wd_who.gif"> </img> <br>
      
     </div>
     
-    <div class="temis-credit">Map courtesy of <a href="https://www.temis.nl/index.php" target="_blank" style="font-style: oblique;">TEMIS</a> </div>
+    <div class="temis-credit">Map Courtesy of <a  class="hyperlink" href="https://www.temis.nl/index.php" target="_blank" style="font-style: oblique;">TEMIS</a> </div>
+
+    <div class="toggle-locations" style="cursor:pointer;">Click <span class="hyperlink" onclick="showCanada()"> HERE </span> For Canadian Forcast</div>
 
     <div class="horizontal-bars" style="margin-top: 2%;"> 
       <div class="row" id="twelve"> 
@@ -122,9 +124,7 @@
         <div class="row" id="twentytwo" > 
           <span class="location"> <span id="city_name_twentytwo"></span> <span class="country_name" id="country_name_twentytwo"></span>  </span> <a class="uv-advice" id="advice-twentytwo"></a>  <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_twentytwo">  <span class="uvi-level" id="uvi_twentytwo"> </span>   </span> 
          </div>
-         <div class="row"  id= "twentythree"> 
-          <span class="location">  <span id="city_name_twentythree"></span> <span class="country_name"  id="country_name_twentythree"></span> </span> <a class="uv-advice" id="advice-twentythree"></a><span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_twentythree"> <span class="uvi-level" id="uvi_twentythree"></span> </span>
-       </div>
+        
        
        <div class="row" id="twentyfour" > 
          <span class="location"> <span id="city_name_twentyfour"></span> <span class="country_name"  id="country_name_twentyfour"></span>  </span> <a class="uv-advice" id="advice-twentyfour"></a> <span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_twentyfour">    <span class="uvi-level"  id="uvi_twentyfour"></span> </span>
@@ -157,11 +157,13 @@
     </div>  
   </div>
 <div class="CA-Section" id="canadian-cities">   
-  <div class="temis-map" >  <img style="width: 65%;" src="https://d1qb6yzwaaq4he.cloudfront.net/uvradiation/UVI/uvief0_ca_who.gif"> </img> <br>
+  <div class="temis-map" >  <img  src="https://d1qb6yzwaaq4he.cloudfront.net/uvradiation/UVI/uvief0_ca_who.gif"> </img> <br>
      
   </div>
   
-  <div class="temis-credit">Map courtesy of <a href="https://www.temis.nl/index.php" target="_blank" style="font-style: oblique;">TEMIS</a> </div>
+  <div class="temis-credit">Map courtesy of <a class="hyperlink" href="https://www.temis.nl/index.php" target="_blank" style="font-style: oblique;">TEMIS</a> </div>
+  <div class="toggle-locations" style="cursor:pointer;">Click <span class="hyperlink" onclick="showWorld()"> HERE </span> For Global Forcast </div>
+    
 <div class="horizontal-bars" style="margin-top: 2%;" >
   <div class="row" id="thirtytwo" > 
     <span class="location"> <span id="city_name_thirtytwo"></span> <span class="country_name" id="country_name_thirtytwo"></span>  </span>   <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_thirtytwo">  <span class="uvi-level" id="uvi_thirtytwo"> </span>   </span> 
@@ -175,6 +177,41 @@
 <div class="row" id="thirtyfive" > 
     <span class="location"> <span id="city_name_thirtyfive"></span> <span class="country_name" id="country_name_thirtyfive"></span>  </span>   <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_thirtyfive">  <span class="uvi-level" id="uvi_thirtyfive"> </span>   </span> 
    </div>
+   <div class="row" id="thirtysix" > 
+    <span class="location"> <span id="city_name_thirtysix"></span> <span class="country_name" id="country_name_thirtysix"></span>  </span>   <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_thirtysix">  <span class="uvi-level" id="uvi_thirtysix"> </span>   </span> 
+   </div>
+
+   <div class="row" id="thirtyseven" > 
+    <span class="location"> <span id="city_name_thirtyseven"></span> <span class="country_name" id="country_name_thirtyseven"></span>  </span>   <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_thirtyseven">  <span class="uvi-level" id="uvi_thirtyseven"> </span>   </span> 
+   </div>
+
+   <div class="row" id="thirtyeight" > 
+    <span class="location"> <span id="city_name_thirtyeight"></span> <span class="country_name" id="country_name_thirtyeight"></span>  </span>   <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_thirtyeight">  <span class="uvi-level" id="uvi_thirtyeight"> </span>   </span> 
+   </div>
+
+
+   <div class="row" id="thirtynine" > 
+    <span class="location"> <span id="city_name_thirtynine"></span> <span class="country_name" id="country_name_thirtynine"></span>  </span>   <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_thirtynine">  <span class="uvi-level" id="uvi_thirtynine"> </span>   </span> 
+   </div>
+   <div class="row" id="forty" > 
+    <span class="location"> <span id="city_name_forty"></span> <span class="country_name" id="country_name_forty"></span>  </span>   <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_forty">  <span class="uvi-level" id="uvi_forty"> </span>   </span> 
+   </div>
+
+   <div class="row" id="fortyone" > 
+    <span class="location"> <span id="city_name_fortyone"></span> <span class="country_name" id="country_name_fortyone"></span>  </span>   <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_fortyone">  <span class="uvi-level" id="uvi_fortyone"> </span>   </span> 
+   </div>
+   <div class="row" id="fortytwo" > 
+    <span class="location"> <span id="city_name_fortytwo"></span> <span class="country_name" id="country_name_fortytwo"></span>  </span>   <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_fortytwo">  <span class="uvi-level" id="uvi_fortytwo"> </span>   </span> 
+   </div>
+   <div class="row"  id= "twentythree"> 
+    <span class="location">  <span id="city_name_twentythree"></span> <span class="country_name"  id="country_name_twentythree"></span> </span> <a class="uv-advice" id="advice-twentythree"></a><span class="uvi-info"> <img src="" class="UV-icon" id="uvi_icon_twentythree"> <span class="uvi-level" id="uvi_twentythree"></span> </span>
+ </div>
+ <div class="row" id="fortythree" > 
+  <span class="location"> <span id="city_name_fortythree"></span> <span class="country_name" id="country_name_fortythree"></span>  </span>   <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_fortythree">  <span class="uvi-level" id="uvi_fortythree"> </span>   </span> 
+ </div>
+ <div class="row" id="fortyfour" > 
+  <span class="location"> <span id="city_name_fortyfour"></span> <span class="country_name" id="country_name_fortyfour"></span>  </span>   <span class="uvi-info">  <img src="" class="UV-icon" id="uvi_icon_fortyfour">  <span class="uvi-level" id="uvi_fortyfour"> </span>   </span> 
+ </div>
 
 </div>
 </div>

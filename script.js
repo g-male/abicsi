@@ -38,7 +38,7 @@ function showWorld(){
   document.getElementById("horizontal-bars-2").style.display = 'block';
     
     document.getElementById("canadian-cities").style.opacity = '0';
-    document.getElementById("canadian-cities").style.display = 'none'
+    document.getElementById("canadian-cities").style.display = 'none';
   }
   
   
@@ -5727,8 +5727,8 @@ else if (uvi_round_one == 3 )
 
   
   async function rowthirtytwo(){
-    uvi_url_thirtytwo = 'https://api.openweathermap.org/data/2.5/onecall?lat=62.45411&lon=-114.37248&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_thirtytwo = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=62.45411&lng=-114.37248&username=skinnyreggae'
+    uvi_url_thirtytwo = 'https://api.openweathermap.org/data/2.5/onecall?lat=47.56494&lon=-52.70931&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
+    location_name_thirtytwo = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=47.56494&lng=-52.70931&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_thirtytwo = await fetch (uvi_url_thirtytwo);
@@ -5909,8 +5909,8 @@ else if (uvi_round_one == 3 )
 
     
   async function rowthirtythree(){
-    uvi_url_thirtythree = 'https://api.openweathermap.org/data/2.5/onecall?lat=45.41117&lon=-75.69812&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_thirtythree = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=45.41117&lng=-75.69812&username=skinnyreggae'
+    uvi_url_thirtythree = 'https://api.openweathermap.org/data/2.5/onecall?lat=51.05011&lon=-114.08529&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
+    location_name_thirtythree = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=51.05011&lng=-114.08529&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_thirtythree = await fetch (uvi_url_thirtythree);
@@ -6091,8 +6091,8 @@ else if (uvi_round_one == 3 )
 
    
   async function rowthirtyfour(){
-    uvi_url_thirtyfour = 'https://api.openweathermap.org/data/2.5/onecall?lat=50.45008&lon=-104.6178&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_thirtyfour = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=50.45008&lng=-104.6178&username=skinnyreggae'
+    uvi_url_thirtyfour = 'https://api.openweathermap.org/data/2.5/onecall?lat=62.453972&lon=-114.371788&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
+    location_name_thirtyfour = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=62.453972&lng=-114.371788&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_thirtyfour = await fetch (uvi_url_thirtyfour);
@@ -6121,7 +6121,8 @@ else if (uvi_round_one == 3 )
       console.log(country_name_thirtyfour)
       const uvi_round_thirtyfour = Math.round(uvi_thirtyfour);
        
-     
+     console.log(country_name_thirtyfour);
+     console.log(city_name_thirtyfour);
       //display on html 
      //UVI
        document.getElementById('uvi_thirtyfour').textContent = uvi_round_thirtyfour;
@@ -6273,8 +6274,8 @@ else if (uvi_round_one == 3 )
 
   
   async function rowthirtyfive(){
-    uvi_url_thirtyfive = 'https://api.openweathermap.org/data/2.5/onecall?lat=46.23459&lon=-63.1256&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_thirtyfive = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=46.23459&lng=-63.1256&username=skinnyreggae'
+    uvi_url_thirtyfive = 'https://api.openweathermap.org/data/2.5/onecall?lat=52.13238&lon=-106.66892&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
+    location_name_thirtyfive = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=52.13238&lng=-106.66892&username=skinnyreggae'
   
   //Pull data for Weather Info
     response_thirtyfive = await fetch (uvi_url_thirtyfive);
@@ -6452,3 +6453,1641 @@ else if (uvi_round_one == 3 )
   
   }
   rowthirtyfive();
+
+  
+  async function rowthirtysix(){
+    uvi_url_thirtysix = 'https://api.openweathermap.org/data/2.5/onecall?lat=63.74697&lon=-68.51727&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
+    location_name_thirtysix = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=63.74697&lng=-68.51727&username=skinnyreggae'
+  
+  //Pull data for Weather Info
+    response_thirtysix = await fetch (uvi_url_thirtysix);
+    data_thirtysix = await response_thirtysix.json();
+  
+    //Pull data for location info
+    localresponse_thirtysix = await fetch(location_name_thirtysix);
+    localdata_thirtysix = await localresponse_thirtysix.json();
+  // check to see if data is being pulled 
+  
+  
+  
+  
+  //getting co-ordinates 
+       const latitude_thirtysix= data_thirtysix.lat;
+        
+        const longitude_thirtysix = data_thirtysix.lon;
+       const uvi_thirtysix = data_thirtysix.daily[1].uvi;
+        
+     
+  
+  // getting exact location information 
+      country_name_thirtysix = localdata_thirtysix.geonames[0].countryName;
+      city_name_thirtysix = localdata_thirtysix.geonames[0].name;
+  
+      console.log(country_name_thirtysix)
+      const uvi_round_thirtysix = Math.round(uvi_thirtysix);
+       
+     
+      //display on html 
+     //UVI
+       document.getElementById('uvi_thirtysix').textContent = uvi_round_thirtysix;
+      //Location name 
+      document.getElementById('city_name_thirtysix').textContent = city_name_thirtysix;
+      document.getElementById('country_name_thirtysix').textContent = country_name_thirtysix;
+     
+      //SET ROW COLOUR 
+   
+      if (uvi_round_thirtysix <=1 ) {
+        // setting colour
+        var element = document.getElementById('thirtysix');
+        element.classList.add("levelone");
+        // setting icon
+        document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv1.png";
+        // Add advice
+        var uvadvice = document.getElementById('advice-thirtysix');
+        var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+      
+    
+    
+        }
+        else if (uvi_round_thirtysix == 2 )
+        {
+        // Adding row color
+        var element = document.getElementById('thirtysix');
+        element.classList.add("leveltwo");
+        // setting icon 
+        document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv2.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-thirtysix');
+            var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+          
+        
+        }  
+    else if (uvi_round_thirtysix == 3 )
+        {
+          var element = document.getElementById('thirtysix');
+          element.classList.add("levelthree");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv3.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-thirtysix');
+            var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+      
+        
+        }  
+        else if (uvi_round_thirtysix == 4 )
+        {
+          var element = document.getElementById('thirtysix');
+          element.classList.add("levelfour");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv4.png";
+    
+          // Add advice
+          var uvadvice = document.getElementById('advice-thirtysix');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+  
+        }  
+        else if (uvi_round_thirtysix == 5 )
+        {
+          var element = document.getElementById('thirtysix');
+          element.classList.add("levelfive");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv5.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-thirtysix');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+       
+        }  
+        else if (uvi_round_thirtysix == 6 )
+        {
+          var element = document.getElementById('thirtysix');
+          element.classList.add("levelsix");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv6.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-thirtysix');
+          var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_thirtysix == 7 )
+        {
+          var element = document.getElementById('thirtysix');
+          element.classList.add("levelseven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv7.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtysix');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+       
+        }  
+        else if (uvi_round_thirtysix == 8 )
+        {
+          var element = document.getElementById('thirtysix');
+          element.classList.add("leveleight");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv8.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtysix');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_thirtysix == 9 )
+        {
+          var element = document.getElementById('thirtysix');
+          element.classList.add("levelnine");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv9.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtysix');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+          
+        }  
+        else if (uvi_round_thirtysix == 10 )
+        {
+          var element = document.getElementById('thirtysix');
+          element.classList.add("levelten");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv10.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtysix');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+   
+        }  
+        else if (uvi_round_thirtysix >= 11 )
+        {
+          var element = document.getElementById('thirtysix');
+          element.classList.add("leveleleven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv11.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtysix');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+        
+        }  
+  
+  }
+  rowthirtysix();
+
+  
+  async function rowthirtyseven(){
+    uvi_url_thirtyseven = 'https://api.openweathermap.org/data/2.5/onecall?lat=52.13238&lon=-106.66892&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
+    location_name_thirtyseven = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=52.13238&lng=-106.66892&username=skinnyreggae'
+  
+  //Pull data for Weather Info
+    response_thirtyseven = await fetch (uvi_url_thirtyseven);
+    data_thirtyseven = await response_thirtyseven.json();
+  
+    //Pull data for location info
+    localresponse_thirtyseven = await fetch(location_name_thirtyseven);
+    localdata_thirtyseven = await localresponse_thirtyseven.json();
+  // check to see if data is being pulled 
+  
+  
+  
+  
+  //getting co-ordinates 
+       const latitude_thirtyseven= data_thirtyseven.lat;
+        
+        const longitude_thirtyseven = data_thirtyseven.lon;
+       const uvi_thirtyseven = data_thirtyseven.daily[1].uvi;
+        
+     
+  
+  // getting exact location information 
+      country_name_thirtyseven = localdata_thirtyseven.geonames[0].countryName;
+      city_name_thirtyseven = localdata_thirtyseven.geonames[0].name;
+  
+      console.log(country_name_thirtyseven)
+      const uvi_round_thirtyseven = Math.round(uvi_thirtyseven);
+       
+     
+      //display on html 
+     //UVI
+       document.getElementById('uvi_thirtyseven').textContent = uvi_round_thirtyseven;
+      //Location name 
+      document.getElementById('city_name_thirtyseven').textContent = city_name_thirtyseven;
+      document.getElementById('country_name_thirtyseven').textContent = country_name_thirtyseven;
+     
+      //SET ROW COLOUR 
+   
+      if (uvi_round_thirtyseven <=1 ) {
+        // setting colour
+        var element = document.getElementById('thirtyseven');
+        element.classList.add("levelone");
+        // setting icon
+        document.getElementById("uvi_icon_thirtyseven").src="../uv-icons/uv1.png";
+        // Add advice
+        var uvadvice = document.getElementById('advice-thirtyseven');
+        var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+      
+    
+    
+        }
+        else if (uvi_round_thirtyseven == 2 )
+        {
+        // Adding row color
+        var element = document.getElementById('thirtyseven');
+        element.classList.add("leveltwo");
+        // setting icon 
+        document.getElementById("uvi_icon_thirtyseven").src="../uv-icons/uv2.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-thirtyseven');
+            var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+          
+        
+        }  
+    else if (uvi_round_thirtyseven == 3 )
+        {
+          var element = document.getElementById('thirtyseven');
+          element.classList.add("levelthree");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyseven").src="../uv-icons/uv3.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-thirtyseven');
+            var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+      
+        
+        }  
+        else if (uvi_round_thirtyseven == 4 )
+        {
+          var element = document.getElementById('thirtyseven');
+          element.classList.add("levelfour");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyseven").src="../uv-icons/uv4.png";
+    
+          // Add advice
+          var uvadvice = document.getElementById('advice-thirtyseven');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+  
+        }  
+        else if (uvi_round_thirtyseven == 5 )
+        {
+          var element = document.getElementById('thirtyseven');
+          element.classList.add("levelfive");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyseven").src="../uv-icons/uv5.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-thirtyseven');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+       
+        }  
+        else if (uvi_round_thirtyseven == 6 )
+        {
+          var element = document.getElementById('thirtyseven');
+          element.classList.add("levelsix");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyseven").src="../uv-icons/uv6.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-thirtyseven');
+          var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_thirtyseven == 7 )
+        {
+          var element = document.getElementById('thirtyseven');
+          element.classList.add("levelseven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyseven").src="../uv-icons/uv7.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtyseven');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+       
+        }  
+        else if (uvi_round_thirtyseven == 8 )
+        {
+          var element = document.getElementById('thirtyseven');
+          element.classList.add("leveleight");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyseven").src="../uv-icons/uv8.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtyseven');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_thirtyseven == 9 )
+        {
+          var element = document.getElementById('thirtyseven');
+          element.classList.add("levelnine");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyseven").src="../uv-icons/uv9.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtyseven');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+          
+        }  
+        else if (uvi_round_thirtyseven == 10 )
+        {
+          var element = document.getElementById('thirtyseven');
+          element.classList.add("levelten");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyseven").src="../uv-icons/uv10.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtyseven');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+   
+        }  
+        else if (uvi_round_thirtyseven >= 11 )
+        {
+          var element = document.getElementById('thirtyseven');
+          element.classList.add("leveleleven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyseven").src="../uv-icons/uv11.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtyseven');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+        
+        }  
+  
+  }
+  rowthirtyseven();
+
+  
+  async function rowthirtyeight(){
+    uvi_url_thirtyeight = 'https://api.openweathermap.org/data/2.5/onecall?lat=46.23459&lon=-63.1256&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
+    location_name_thirtyeight = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=46.23459&lng=-63.1256&username=skinnyreggae'
+  
+  //Pull data for Weather Info
+    response_thirtyeight = await fetch (uvi_url_thirtyeight);
+    data_thirtyeight = await response_thirtyeight.json();
+  
+    //Pull data for location info
+    localresponse_thirtyeight = await fetch(location_name_thirtyeight);
+    localdata_thirtyeight = await localresponse_thirtyeight.json();
+  // check to see if data is being pulled 
+  
+  
+  
+  
+  //getting co-ordinates 
+       const latitude_thirtyeight= data_thirtyeight.lat;
+        
+        const longitude_thirtyeight = data_thirtyeight.lon;
+       const uvi_thirtyeight = data_thirtyeight.daily[1].uvi;
+        
+     
+  
+  // getting exact location information 
+      country_name_thirtyeight = localdata_thirtyeight.geonames[0].countryName;
+      city_name_thirtyeight = localdata_thirtyeight.geonames[0].name;
+  
+      console.log(country_name_thirtyeight)
+      const uvi_round_thirtyeight = Math.round(uvi_thirtyeight);
+       
+     
+      //display on html 
+     //UVI
+       document.getElementById('uvi_thirtyeight').textContent = uvi_round_thirtyeight;
+      //Location name 
+      document.getElementById('city_name_thirtyeight').textContent = city_name_thirtyeight;
+      document.getElementById('country_name_thirtyeight').textContent = country_name_thirtyeight;
+     
+      //SET ROW COLOUR 
+   
+      if (uvi_round_thirtyeight <=1 ) {
+        // setting colour
+        var element = document.getElementById('thirtyeight');
+        element.classList.add("levelone");
+        // setting icon
+        document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv1.png";
+        // Add advice
+        var uvadvice = document.getElementById('advice-thirtyeight');
+        var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+      
+    
+    
+        }
+        else if (uvi_round_thirtyeight == 2 )
+        {
+        // Adding row color
+        var element = document.getElementById('thirtyeight');
+        element.classList.add("leveltwo");
+        // setting icon 
+        document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv2.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-thirtyeight');
+            var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+          
+        
+        }  
+    else if (uvi_round_thirtyeight == 3 )
+        {
+          var element = document.getElementById('thirtyeight');
+          element.classList.add("levelthree");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv3.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-thirtyeight');
+            var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+      
+        
+        }  
+        else if (uvi_round_thirtyeight == 4 )
+        {
+          var element = document.getElementById('thirtyeight');
+          element.classList.add("levelfour");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv4.png";
+    
+          // Add advice
+          var uvadvice = document.getElementById('advice-thirtyeight');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+  
+        }  
+        else if (uvi_round_thirtyeight == 5 )
+        {
+          var element = document.getElementById('thirtyeight');
+          element.classList.add("levelfive");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv5.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-thirtyeight');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+       
+        }  
+        else if (uvi_round_thirtyeight == 6 )
+        {
+          var element = document.getElementById('thirtyeight');
+          element.classList.add("levelsix");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv6.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-thirtyeight');
+          var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_thirtyeight == 7 )
+        {
+          var element = document.getElementById('thirtyeight');
+          element.classList.add("levelseven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv7.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtyeight');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+       
+        }  
+        else if (uvi_round_thirtyeight == 8 )
+        {
+          var element = document.getElementById('thirtyeight');
+          element.classList.add("leveleight");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv8.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtyeight');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_thirtyeight == 9 )
+        {
+          var element = document.getElementById('thirtyeight');
+          element.classList.add("levelnine");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv9.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtyeight');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+          
+        }  
+        else if (uvi_round_thirtyeight == 10 )
+        {
+          var element = document.getElementById('thirtyeight');
+          element.classList.add("levelten");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv10.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtyeight');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+   
+        }  
+        else if (uvi_round_thirtyeight >= 11 )
+        {
+          var element = document.getElementById('thirtyeight');
+          element.classList.add("leveleleven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv11.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtyeight');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+        
+        }  
+  
+  }
+  rowthirtyeight();
+
+  
+  async function rowthirtynine(){
+    uvi_url_thirtynine = 'https://api.openweathermap.org/data/2.5/onecall?lat=49.24966&lon=-123.11934&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
+    location_name_thirtynine = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=49.24966&lng=-123.11934&username=skinnyreggae'
+  
+  //Pull data for Weather Info
+    response_thirtynine = await fetch (uvi_url_thirtynine);
+    data_thirtynine = await response_thirtynine.json();
+  
+    //Pull data for location info
+    localresponse_thirtynine = await fetch(location_name_thirtynine);
+    localdata_thirtynine = await localresponse_thirtynine.json();
+  // check to see if data is being pulled 
+  
+  
+  
+  
+  //getting co-ordinates 
+       const latitude_thirtynine= data_thirtynine.lat;
+        
+        const longitude_thirtynine = data_thirtynine.lon;
+       const uvi_thirtynine = data_thirtynine.daily[1].uvi;
+        
+     
+  
+  // getting exact location information 
+      country_name_thirtynine = localdata_thirtynine.geonames[0].countryName;
+      city_name_thirtynine = localdata_thirtynine.geonames[0].name;
+  
+      console.log(country_name_thirtynine)
+      const uvi_round_thirtynine = Math.round(uvi_thirtynine);
+       
+     
+      //display on html 
+     //UVI
+       document.getElementById('uvi_thirtynine').textContent = uvi_round_thirtynine;
+      //Location name 
+      document.getElementById('city_name_thirtynine').textContent = city_name_thirtynine;
+      document.getElementById('country_name_thirtynine').textContent = country_name_thirtynine;
+     
+      //SET ROW COLOUR 
+   
+      if (uvi_round_thirtynine <=1 ) {
+        // setting colour
+        var element = document.getElementById('thirtynine');
+        element.classList.add("levelone");
+        // setting icon
+        document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv1.png";
+        // Add advice
+        var uvadvice = document.getElementById('advice-thirtynine');
+        var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+      
+    
+    
+        }
+        else if (uvi_round_thirtynine == 2 )
+        {
+        // Adding row color
+        var element = document.getElementById('thirtynine');
+        element.classList.add("leveltwo");
+        // setting icon 
+        document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv2.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-thirtynine');
+            var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+          
+        
+        }  
+    else if (uvi_round_thirtynine == 3 )
+        {
+          var element = document.getElementById('thirtynine');
+          element.classList.add("levelthree");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv3.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-thirtynine');
+            var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+      
+        
+        }  
+        else if (uvi_round_thirtynine == 4 )
+        {
+          var element = document.getElementById('thirtynine');
+          element.classList.add("levelfour");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv4.png";
+    
+          // Add advice
+          var uvadvice = document.getElementById('advice-thirtynine');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+  
+        }  
+        else if (uvi_round_thirtynine == 5 )
+        {
+          var element = document.getElementById('thirtynine');
+          element.classList.add("levelfive");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv5.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-thirtynine');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+       
+        }  
+        else if (uvi_round_thirtynine == 6 )
+        {
+          var element = document.getElementById('thirtynine');
+          element.classList.add("levelsix");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv6.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-thirtynine');
+          var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_thirtynine == 7 )
+        {
+          var element = document.getElementById('thirtynine');
+          element.classList.add("levelseven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv7.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtynine');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+       
+        }  
+        else if (uvi_round_thirtynine == 8 )
+        {
+          var element = document.getElementById('thirtynine');
+          element.classList.add("leveleight");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv8.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtynine');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_thirtynine == 9 )
+        {
+          var element = document.getElementById('thirtynine');
+          element.classList.add("levelnine");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv9.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtynine');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+          
+        }  
+        else if (uvi_round_thirtynine == 10 )
+        {
+          var element = document.getElementById('thirtynine');
+          element.classList.add("levelten");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv10.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtynine');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+   
+        }  
+        else if (uvi_round_thirtynine >= 11 )
+        {
+          var element = document.getElementById('thirtynine');
+          element.classList.add("leveleleven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv11.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-thirtynine');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+        
+        }  
+  
+  }
+  rowthirtynine();
+
+  
+  async function rowforty(){
+    uvi_url_forty = 'https://api.openweathermap.org/data/2.5/onecall?lat=60.71611&lon=-135.05375&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
+    location_name_forty = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=60.71611&lng=-135.05375&username=skinnyreggae'
+  
+  //Pull data for Weather Info
+    response_forty = await fetch (uvi_url_forty);
+    data_forty = await response_forty.json();
+  
+    //Pull data for location info
+    localresponse_forty = await fetch(location_name_forty);
+    localdata_forty = await localresponse_forty.json();
+  // check to see if data is being pulled 
+  
+  
+  
+  
+  //getting co-ordinates 
+       const latitude_forty= data_forty.lat;
+        
+        const longitude_forty = data_forty.lon;
+       const uvi_forty = data_forty.daily[1].uvi;
+        
+     
+  
+  // getting exact location information 
+      country_name_forty = localdata_forty.geonames[0].countryName;
+      city_name_forty = localdata_forty.geonames[0].name;
+  
+      console.log(country_name_forty)
+      const uvi_round_forty = Math.round(uvi_forty);
+       
+     
+      //display on html 
+     //UVI
+       document.getElementById('uvi_forty').textContent = uvi_round_forty;
+      //Location name 
+      document.getElementById('city_name_forty').textContent = city_name_forty;
+      document.getElementById('country_name_forty').textContent = country_name_forty;
+     
+      //SET ROW COLOUR 
+   
+      if (uvi_round_forty <=1 ) {
+        // setting colour
+        var element = document.getElementById('forty');
+        element.classList.add("levelone");
+        // setting icon
+        document.getElementById("uvi_icon_forty").src="../uv-icons/uv1.png";
+        // Add advice
+        var uvadvice = document.getElementById('advice-forty');
+        var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+      
+    
+    
+        }
+        else if (uvi_round_forty == 2 )
+        {
+        // Adding row color
+        var element = document.getElementById('forty');
+        element.classList.add("leveltwo");
+        // setting icon 
+        document.getElementById("uvi_icon_forty").src="../uv-icons/uv2.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-forty');
+            var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+          
+        
+        }  
+    else if (uvi_round_forty == 3 )
+        {
+          var element = document.getElementById('forty');
+          element.classList.add("levelthree");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_forty").src="../uv-icons/uv3.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-forty');
+            var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+      
+        
+        }  
+        else if (uvi_round_forty == 4 )
+        {
+          var element = document.getElementById('forty');
+          element.classList.add("levelfour");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_forty").src="../uv-icons/uv4.png";
+    
+          // Add advice
+          var uvadvice = document.getElementById('advice-forty');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+  
+        }  
+        else if (uvi_round_forty == 5 )
+        {
+          var element = document.getElementById('forty');
+          element.classList.add("levelfive");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_forty").src="../uv-icons/uv5.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-forty');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+       
+        }  
+        else if (uvi_round_forty == 6 )
+        {
+          var element = document.getElementById('forty');
+          element.classList.add("levelsix");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_forty").src="../uv-icons/uv6.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-forty');
+          var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_forty == 7 )
+        {
+          var element = document.getElementById('forty');
+          element.classList.add("levelseven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_forty").src="../uv-icons/uv7.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-forty');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+       
+        }  
+        else if (uvi_round_forty == 8 )
+        {
+          var element = document.getElementById('forty');
+          element.classList.add("leveleight");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_forty").src="../uv-icons/uv8.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-forty');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_forty == 9 )
+        {
+          var element = document.getElementById('forty');
+          element.classList.add("levelnine");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_forty").src="../uv-icons/uv9.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-forty');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+          
+        }  
+        else if (uvi_round_forty == 10 )
+        {
+          var element = document.getElementById('forty');
+          element.classList.add("levelten");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_forty").src="../uv-icons/uv10.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-forty');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+   
+        }  
+        else if (uvi_round_forty >= 11 )
+        {
+          var element = document.getElementById('forty');
+          element.classList.add("leveleleven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_forty").src="../uv-icons/uv11.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-forty');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+        
+        }  
+  
+  }
+  rowforty();
+
+  
+  async function rowfortyone(){
+    uvi_url_fortyone = 'https://api.openweathermap.org/data/2.5/onecall?lat=49.8844&lon=-97.14704&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
+    location_name_fortyone = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=49.8844&lng=-97.14704&username=skinnyreggae'
+  
+  //Pull data for Weather Info
+    response_fortyone = await fetch (uvi_url_fortyone);
+    data_fortyone = await response_fortyone.json();
+  
+    //Pull data for location info
+    localresponse_fortyone = await fetch(location_name_fortyone);
+    localdata_fortyone = await localresponse_fortyone.json();
+  // check to see if data is being pulled 
+  
+  
+  
+  
+  //getting co-ordinates 
+       const latitude_fortyone= data_fortyone.lat;
+        
+        const longitude_fortyone = data_fortyone.lon;
+       const uvi_fortyone = data_fortyone.daily[1].uvi;
+        
+     
+  
+  // getting exact location information 
+      country_name_fortyone = localdata_fortyone.geonames[0].countryName;
+      city_name_fortyone = localdata_fortyone.geonames[0].name;
+  
+      console.log(country_name_fortyone)
+      const uvi_round_fortyone = Math.round(uvi_fortyone);
+       
+     
+      //display on html 
+     //UVI
+       document.getElementById('uvi_fortyone').textContent = uvi_round_fortyone;
+      //Location name 
+      document.getElementById('city_name_fortyone').textContent = city_name_fortyone;
+      document.getElementById('country_name_fortyone').textContent = country_name_fortyone;
+     
+      //SET ROW COLOUR 
+   
+      if (uvi_round_fortyone <=1 ) {
+        // setting colour
+        var element = document.getElementById('fortyone');
+        element.classList.add("levelone");
+        // setting icon
+        document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv1.png";
+        // Add advice
+        var uvadvice = document.getElementById('advice-fortyone');
+        var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+      
+    
+    
+        }
+        else if (uvi_round_fortyone == 2 )
+        {
+        // Adding row color
+        var element = document.getElementById('fortyone');
+        element.classList.add("leveltwo");
+        // setting icon 
+        document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv2.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-fortyone');
+            var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+          
+        
+        }  
+    else if (uvi_round_fortyone == 3 )
+        {
+          var element = document.getElementById('fortyone');
+          element.classList.add("levelthree");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv3.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-fortyone');
+            var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+      
+        
+        }  
+        else if (uvi_round_fortyone == 4 )
+        {
+          var element = document.getElementById('fortyone');
+          element.classList.add("levelfour");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv4.png";
+    
+          // Add advice
+          var uvadvice = document.getElementById('advice-fortyone');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+  
+        }  
+        else if (uvi_round_fortyone == 5 )
+        {
+          var element = document.getElementById('fortyone');
+          element.classList.add("levelfive");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv5.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-fortyone');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+       
+        }  
+        else if (uvi_round_fortyone == 6 )
+        {
+          var element = document.getElementById('fortyone');
+          element.classList.add("levelsix");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv6.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-fortyone');
+          var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_fortyone == 7 )
+        {
+          var element = document.getElementById('fortyone');
+          element.classList.add("levelseven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv7.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortyone');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+       
+        }  
+        else if (uvi_round_fortyone == 8 )
+        {
+          var element = document.getElementById('fortyone');
+          element.classList.add("leveleight");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv8.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortyone');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_fortyone == 9 )
+        {
+          var element = document.getElementById('fortyone');
+          element.classList.add("levelnine");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv9.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortyone');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+          
+        }  
+        else if (uvi_round_fortyone == 10 )
+        {
+          var element = document.getElementById('fortyone');
+          element.classList.add("levelten");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv10.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortyone');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+   
+        }  
+        else if (uvi_round_fortyone >= 11 )
+        {
+          var element = document.getElementById('fortyone');
+          element.classList.add("leveleleven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv11.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortyone');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+        
+        }  
+  
+  }
+  rowfortyone();
+
+  
+  async function rowfortytwo(){
+    uvi_url_fortytwo = 'https://api.openweathermap.org/data/2.5/onecall?lat=46.09454&lon=-64.7965&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
+    location_name_fortytwo = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=46.09454&lng=-64.7965&username=skinnyreggae'
+  
+  //Pull data for Weather Info
+    response_fortytwo = await fetch (uvi_url_fortytwo);
+    data_fortytwo = await response_fortytwo.json();
+  
+    //Pull data for location info
+    localresponse_fortytwo = await fetch(location_name_fortytwo);
+    localdata_fortytwo = await localresponse_fortytwo.json();
+  // check to see if data is being pulled 
+  
+  
+  
+  
+  //getting co-ordinates 
+       const latitude_fortytwo= data_fortytwo.lat;
+        
+        const longitude_fortytwo = data_fortytwo.lon;
+       const uvi_fortytwo = data_fortytwo.daily[1].uvi;
+        
+     
+  
+  // getting exact location information 
+      country_name_fortytwo = localdata_fortytwo.geonames[0].countryName;
+      city_name_fortytwo = localdata_fortytwo.geonames[0].name;
+  
+      console.log(country_name_fortytwo)
+      const uvi_round_fortytwo = Math.round(uvi_fortytwo);
+       
+     
+      //display on html 
+     //UVI
+       document.getElementById('uvi_fortytwo').textContent = uvi_round_fortytwo;
+      //Location name 
+      document.getElementById('city_name_fortytwo').textContent = city_name_fortytwo;
+      document.getElementById('country_name_fortytwo').textContent = country_name_fortytwo;
+     
+      //SET ROW COLOUR 
+   
+      if (uvi_round_fortytwo <=1 ) {
+        // setting colour
+        var element = document.getElementById('fortytwo');
+        element.classList.add("levelone");
+        // setting icon
+        document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv1.png";
+        // Add advice
+        var uvadvice = document.getElementById('advice-fortytwo');
+        var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+      
+    
+    
+        }
+        else if (uvi_round_fortytwo == 2 )
+        {
+        // Adding row color
+        var element = document.getElementById('fortytwo');
+        element.classList.add("leveltwo");
+        // setting icon 
+        document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv2.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-fortytwo');
+            var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+          
+        
+        }  
+    else if (uvi_round_fortytwo == 3 )
+        {
+          var element = document.getElementById('fortytwo');
+          element.classList.add("levelthree");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv3.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-fortytwo');
+            var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+      
+        
+        }  
+        else if (uvi_round_fortytwo == 4 )
+        {
+          var element = document.getElementById('fortytwo');
+          element.classList.add("levelfour");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv4.png";
+    
+          // Add advice
+          var uvadvice = document.getElementById('advice-fortytwo');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+  
+        }  
+        else if (uvi_round_fortytwo == 5 )
+        {
+          var element = document.getElementById('fortytwo');
+          element.classList.add("levelfive");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv5.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-fortytwo');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+       
+        }  
+        else if (uvi_round_fortytwo == 6 )
+        {
+          var element = document.getElementById('fortytwo');
+          element.classList.add("levelsix");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv6.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-fortytwo');
+          var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_fortytwo == 7 )
+        {
+          var element = document.getElementById('fortytwo');
+          element.classList.add("levelseven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv7.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortytwo');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+       
+        }  
+        else if (uvi_round_fortytwo == 8 )
+        {
+          var element = document.getElementById('fortytwo');
+          element.classList.add("leveleight");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv8.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortytwo');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_fortytwo == 9 )
+        {
+          var element = document.getElementById('fortytwo');
+          element.classList.add("levelnine");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv9.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortytwo');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+          
+        }  
+        else if (uvi_round_fortytwo == 10 )
+        {
+          var element = document.getElementById('fortytwo');
+          element.classList.add("levelten");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv10.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortytwo');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+   
+        }  
+        else if (uvi_round_fortytwo >= 11 )
+        {
+          var element = document.getElementById('fortytwo');
+          element.classList.add("leveleleven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv11.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortytwo');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+        
+        }  
+  
+  }
+  rowfortytwo();
+
+  
+  async function rowfortythree(){
+    uvi_url_fortythree = 'https://api.openweathermap.org/data/2.5/onecall?lat=44.6464&lon=-63.57291&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
+    location_name_fortythree = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=44.6464&lng=-63.57291&username=skinnyreggae'
+  
+  //Pull data for Weather Info
+    response_fortythree = await fetch (uvi_url_fortythree);
+    data_fortythree = await response_fortythree.json();
+  
+    //Pull data for location info
+    localresponse_fortythree = await fetch(location_name_fortythree);
+    localdata_fortythree = await localresponse_fortythree.json();
+  // check to see if data is being pulled 
+  
+  
+  
+  
+  //getting co-ordinates 
+       const latitude_fortythree= data_fortythree.lat;
+        
+        const longitude_fortythree = data_fortythree.lon;
+       const uvi_fortythree = data_fortythree.daily[1].uvi;
+        
+     
+  
+  // getting exact location information 
+      country_name_fortythree = localdata_fortythree.geonames[0].countryName;
+      city_name_fortythree = localdata_fortythree.geonames[0].name;
+  
+      console.log(country_name_fortythree)
+      const uvi_round_fortythree = Math.round(uvi_fortythree);
+       
+     
+      //display on html 
+     //UVI
+       document.getElementById('uvi_fortythree').textContent = uvi_round_fortythree;
+      //Location name 
+      document.getElementById('city_name_fortythree').textContent = city_name_fortythree;
+      document.getElementById('country_name_fortythree').textContent = country_name_fortythree;
+     
+      //SET ROW COLOUR 
+   
+      if (uvi_round_fortythree <=1 ) {
+        // setting colour
+        var element = document.getElementById('fortythree');
+        element.classList.add("levelone");
+        // setting icon
+        document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv1.png";
+        // Add advice
+        var uvadvice = document.getElementById('advice-fortythree');
+        var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+      
+    
+    
+        }
+        else if (uvi_round_fortythree == 2 )
+        {
+        // Adding row color
+        var element = document.getElementById('fortythree');
+        element.classList.add("leveltwo");
+        // setting icon 
+        document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv2.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-fortythree');
+            var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+          
+        
+        }  
+    else if (uvi_round_fortythree == 3 )
+        {
+          var element = document.getElementById('fortythree');
+          element.classList.add("levelthree");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv3.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-fortythree');
+            var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+      
+        
+        }  
+        else if (uvi_round_fortythree == 4 )
+        {
+          var element = document.getElementById('fortythree');
+          element.classList.add("levelfour");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv4.png";
+    
+          // Add advice
+          var uvadvice = document.getElementById('advice-fortythree');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+  
+        }  
+        else if (uvi_round_fortythree == 5 )
+        {
+          var element = document.getElementById('fortythree');
+          element.classList.add("levelfive");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv5.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-fortythree');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+       
+        }  
+        else if (uvi_round_fortythree == 6 )
+        {
+          var element = document.getElementById('fortythree');
+          element.classList.add("levelsix");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv6.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-fortythree');
+          var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_fortythree == 7 )
+        {
+          var element = document.getElementById('fortythree');
+          element.classList.add("levelseven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv7.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortythree');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+       
+        }  
+        else if (uvi_round_fortythree == 8 )
+        {
+          var element = document.getElementById('fortythree');
+          element.classList.add("leveleight");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv8.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortythree');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_fortythree == 9 )
+        {
+          var element = document.getElementById('fortythree');
+          element.classList.add("levelnine");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv9.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortythree');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+          
+        }  
+        else if (uvi_round_fortythree == 10 )
+        {
+          var element = document.getElementById('fortythree');
+          element.classList.add("levelten");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv10.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortythree');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+   
+        }  
+        else if (uvi_round_fortythree >= 11 )
+        {
+          var element = document.getElementById('fortythree');
+          element.classList.add("leveleleven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv11.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortythree');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+        
+        }  
+  
+  }
+  rowfortythree();
+
+  
+  async function rowfortyfour(){
+    uvi_url_fortyfour = 'https://api.openweathermap.org/data/2.5/onecall?lat=45.50884&lon=-73.58781&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
+    location_name_fortyfour = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=45.50884&lng=-73.58781&username=skinnyreggae'
+  
+  //Pull data for Weather Info
+    response_fortyfour = await fetch (uvi_url_fortyfour);
+    data_fortyfour = await response_fortyfour.json();
+  
+    //Pull data for location info
+    localresponse_fortyfour = await fetch(location_name_fortyfour);
+    localdata_fortyfour = await localresponse_fortyfour.json();
+  // check to see if data is being pulled 
+  
+  
+  
+  
+  //getting co-ordinates 
+       const latitude_fortyfour= data_fortyfour.lat;
+        
+        const longitude_fortyfour = data_fortyfour.lon;
+       const uvi_fortyfour = data_fortyfour.daily[1].uvi;
+        
+     
+  
+  // getting exact location information 
+      country_name_fortyfour = localdata_fortyfour.geonames[0].countryName;
+      city_name_fortyfour = localdata_fortyfour.geonames[0].name;
+  
+      console.log(country_name_fortyfour)
+      const uvi_round_fortyfour = Math.round(uvi_fortyfour);
+       
+     
+      //display on html 
+     //UVI
+       document.getElementById('uvi_fortyfour').textContent = uvi_round_fortyfour;
+      //Location name 
+      document.getElementById('city_name_fortyfour').textContent = city_name_fortyfour;
+      document.getElementById('country_name_fortyfour').textContent = country_name_fortyfour;
+     
+      //SET ROW COLOUR 
+   
+      if (uvi_round_fortyfour <=1 ) {
+        // setting colour
+        var element = document.getElementById('fortyfour');
+        element.classList.add("levelone");
+        // setting icon
+        document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv1.png";
+        // Add advice
+        var uvadvice = document.getElementById('advice-fortyfour');
+        var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+      
+    
+    
+        }
+        else if (uvi_round_fortyfour == 2 )
+        {
+        // Adding row color
+        var element = document.getElementById('fortyfour');
+        element.classList.add("leveltwo");
+        // setting icon 
+        document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv2.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-fortyfour');
+            var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+          
+        
+        }  
+    else if (uvi_round_fortyfour == 3 )
+        {
+          var element = document.getElementById('fortyfour');
+          element.classList.add("levelthree");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv3.png";
+            // Add advice
+            var uvadvice = document.getElementById('advice-fortyfour');
+            var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+      
+        
+        }  
+        else if (uvi_round_fortyfour == 4 )
+        {
+          var element = document.getElementById('fortyfour');
+          element.classList.add("levelfour");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv4.png";
+    
+          // Add advice
+          var uvadvice = document.getElementById('advice-fortyfour');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+  
+        }  
+        else if (uvi_round_fortyfour == 5 )
+        {
+          var element = document.getElementById('fortyfour');
+          element.classList.add("levelfive");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv5.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-fortyfour');
+          var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+       
+        }  
+        else if (uvi_round_fortyfour == 6 )
+        {
+          var element = document.getElementById('fortyfour');
+          element.classList.add("levelsix");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv6.png";
+          // Add advice
+          var uvadvice = document.getElementById('advice-fortyfour');
+          var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_fortyfour == 7 )
+        {
+          var element = document.getElementById('fortyfour');
+          element.classList.add("levelseven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv7.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortyfour');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+       
+        }  
+        else if (uvi_round_fortyfour == 8 )
+        {
+          var element = document.getElementById('fortyfour');
+          element.classList.add("leveleight");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv8.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortyfour');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+         
+        }  
+        else if (uvi_round_fortyfour == 9 )
+        {
+          var element = document.getElementById('fortyfour');
+          element.classList.add("levelnine");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv9.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortyfour');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+          
+        }  
+        else if (uvi_round_fortyfour == 10 )
+        {
+          var element = document.getElementById('fortyfour');
+          element.classList.add("levelten");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv10.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortyfour');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+   
+        }  
+        else if (uvi_round_fortyfour >= 11 )
+        {
+          var element = document.getElementById('fortyfour');
+          element.classList.add("leveleleven");
+         
+           // setting icon 
+        document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv11.png";
+           // Add advice
+           var uvadvice = document.getElementById('advice-fortyfour');
+           var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+        
+        }  
+  
+  }
+  rowfortyfour();
