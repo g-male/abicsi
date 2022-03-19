@@ -259,7 +259,8 @@ display: none;
     font-family: helvetica;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: -10px;
+    margin-left: -8px;
+    font-style: oblique;
 }
 
 .levelone{
@@ -679,4 +680,23 @@ margin-top: 4px;
     font-size: 22vw;
     
 }
+}
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    .UV-icon{
+margin-top: 5px;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 450px)  and (min-width: 405px)  { 
+.UV-icon{
+    margin-top: 2px;
+}
+
+
 }
