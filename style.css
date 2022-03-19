@@ -28,6 +28,7 @@ display: none;
 #horizontal-bars-2{
     transition: opacity 1s;
 }
+
 #full-page{
 opacity: 0;
 transition: opacity 2s;
@@ -123,8 +124,10 @@ margin-bottom: 1%;
     margin-left: 0.5%;
     margin-right: .5%;
 
-  margin-bottom: 3%;
+  margin-bottom: 0.5%;
     align-items: flex-start;
+
+    margin-top: -0.5%;
  
 }
 .no-bold{
@@ -159,7 +162,7 @@ line-height: normal;
     font-size: 1.5vw;
     font-weight: 700;
     font-family: helvetica;
-    margin-top: 3%;
+ 
     margin-bottom: 0.7%;
 }
 .full-date{
@@ -190,6 +193,7 @@ line-height: normal;
     font-size: 1rem;
     font-weight: 600;
     margin-right: 13%;
+    margin-bottom: 3%;
 }
 
 .temis-credit.toggle-locations{
@@ -234,7 +238,7 @@ height: auto;
     overflow-x: hidden;
     display: block;
     margin: 0 auto;
-  
+
 }
 #advice-container{
 width: 500px;
@@ -255,7 +259,7 @@ display: none;
     font-family: helvetica;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: -15px;
+    margin-left: -10px;
 }
 
 .levelone{
@@ -320,7 +324,7 @@ background-color: #4eb400;
 .location{ 
 line-height: 70px;
 
-z-index: 99;
+z-index: 999;
 
  left: 8px;
  font-family: Linea-font;
@@ -386,6 +390,7 @@ text-align: center;
 display: none;
 }
 
+
 /*SMARTPHONE MEDIA QUERIES */
 
 @media screen and (max-width: 480px) {
@@ -431,21 +436,13 @@ display: none;
 .high{
     margin-right: 5%;
 }
-.veryhigh{
-    
-}
+
 .gradient-text{
     flex-basis: auto;
   width: 105%;
   }
 
-.gradient_bar{
 
-}
-
-.item{
-
-}
   .UVIscale{
    
     margin-left: none;
@@ -470,14 +467,7 @@ margin-left: 18%;
     max-height: 28px;
     
 }
-.veryhigh img{
-   
-}
 
-.extreme{
- 
-   
-}
 .veryhigh img{
     height: 27px;
 }
@@ -487,7 +477,7 @@ margin-left: 18%;
 
 .toggle-locations{
  margin-right: 8%;
- font-size: 0.6rem;
+ font-size: 0.7rem;
 
  margin-bottom: 3%;
 }
@@ -497,9 +487,13 @@ line-height: 50px;
 font-size: 8.5vh;
   }
   .temis-credit{
-      font-size: 0.6rem;
+      font-size: 0.5rem;
       margin-left: 8%;
   }
+
+  .hyperlink{
+ font-size: 0.8rem;
+}
   .full-page{
       width: 100%;
   }
@@ -510,7 +504,7 @@ font-size: 8.5vh;
   }
 .UV-icon{
 width: 90%;
-margin-top: 2px;
+margin-top: 4px;
 }
 
 .row{
@@ -557,3 +551,132 @@ margin-top: 2px;
     
 }
   }
+
+
+  @media  screen and  (min-width: 600px) and (max-width: 770px) {
+    
+    #city_name_nine{
+        font-size: 16vw;
+        
+    }#city_name_twentyfour{
+        font-size: 14vw;
+        
+    }
+    #city_name_nineteen{
+        font-size: 10.5vh;
+        
+    }
+    #city_name_fourteen{
+        font-size: 11vh;
+        
+    }
+    #city_name_thirtyone{
+        font-size: 13vh;
+        
+    }
+    #city_name_thirtyfour{
+        font-size: 13vh;
+        
+    }
+    #city_name_thirtyeight{
+        font-size: 11vh;
+        
+    }
+    #city_name_forty{
+        font-size: 13vh;
+        
+    }
+
+}
+
+
+/*Iphone 4 - 5 SMARTPHONE MEDIA QUERIES */
+
+@media screen and (max-width: 350px)  and (min-width: 300px)  { 
+.toggle-locations{
+    margin-right: 0.5%;
+    
+}
+.temis-credit{
+    margin-left: 0.5%;
+}
+.country_name{
+    font-size: 2.5vw;
+}
+.UV-icon{
+   margin-top: 8px;
+}
+    .location{
+        font-size: 14vh;
+        line-height: 40px;
+    } 
+
+    #city_name_four{
+        font-size: 12vh;
+        
+    }
+#city_name_fourteen{
+    font-size: 14.5vw;
+    
+}
+#city_name_sixteen{
+    font-size: 20vw;
+    
+}
+#city_name_eighteen{
+    font-size: 20vw;
+    
+}
+#city_name_nineteen{
+    font-size: 14vw;
+    
+}
+#city_name_nine{
+    font-size: 10.5vh;
+    
+}
+#city_name_twentyfour{
+    font-size: 17vw;
+    
+}
+#city_name_twentysix{
+    font-size: 22vw;
+    
+}
+#city_name_thirtyone{
+    font-size: 18vw;
+    
+}
+#city_name_thirtyfour{
+    font-size: 17.5vw;
+    
+}
+#city_name_thirtyfive{
+    font-size: 19vw;
+    
+}
+#city_name_thirtyeight{
+    font-size: 14vw;
+    
+}
+#city_name_thirtynine{
+    font-size: 19vw;
+    
+}
+#city_name_forty{
+    font-size: 17vw;
+    
+}
+#city_name_fortyone{
+    font-size: 22vw;
+    
+}
+#city_name_fortytwo{
+    font-size: 23vw;
+    
+}
+#city_name_fortyfour{
+    font-size: 22vw;
+    
+}
+}
