@@ -16,13 +16,22 @@ function myFunction() {
 }
 
 function showPage() {
-  document.getElementById("loading-page").style.opacity = '0';
+  /** if (localStorage.getItem("hasCodeRunBefore") === null) {
+    Your code here. **/
+    document.getElementById("loading-page").style.opacity = '0';
 
-  document.getElementById("loading-page").style.display = 'none';
- // document.getElementById("loading-page").style.display = "none";
-  //document.getElementById("full-page").style.display = "block";
-  document.getElementById("full-page").style.opacity = '1';
+    document.getElementById("loading-page").style.display = 'none';
+
+    //document.getElementById("full-page").style.display = "block";
+    document.getElementById("full-page").style.opacity = '1';
+
+    localStorage.setItem("hasCodeRunBefore", true);
 }
+
+
+
+
+
 
 
 function showCanada(){
@@ -77,193 +86,185 @@ daily_uvi_value = daily_uvi_data.daily[1].uvi;
 
 }
 dailytest();
-async function rowOne(){
-    uvi_url_one = 'https://api.openweathermap.org/data/2.5/onecall?lat=48.85341&lon=2.3488&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-    location_name_one = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=48.85341&lng=2.3488&username=skinnyreggae'
-  
-  //Pull data for Weather Info
-    response_one = await fetch (uvi_url_one);
-    data_one = await response_one.json();
-  
-    //Pull data for location info
-    localresponse_one = await fetch(location_name_one);
-    localdata_one = await localresponse_one.json();
-  // check to see if data is being pulled 
 
-      
-  //getting co-ordinates 
-       const latitude_one = data_one.lat;
-        
-        const longitude_one = data_one.lon;
-        // exact uvi value
-       const uvi_one = data_one.daily[1].uvi;
-        
-  
-  // ROUNDING UVI data to single unit. 
-       const uvi_round_one = Math.round(uvi_one);
-      
-     
-  
-  // getting exact location information 
-      country_name_one = localdata_one.geonames[0].countryName;
-      city_name_one = localdata_one.geonames[0].name;
-  
+  var uvi_round_one;
+  function rowOne_UV() {
+   
+    $.ajax({
+      type: 'GET',
+      dataType: 'json',
+      beforeSend: function(request) {
+        request.setRequestHeader('x-access-token', '347a6ce4a59336d586ed8516c4d4a434');
+      },
+      url: 'https://api.openuv.io/api/v1/uv?lat=48.85341&lng=2.3488',
+      success: function(response) {
+        //handle successful response
+        $.each(response, function(i, result){
+          console.log(result.uv_max)
+
+          uvi_round_1 = Math.round(result.uv_max);
+
+          console.log(uvi_round_1);
+        })
+        //passing to other function.
+        rowOne(uvi_round_1);
+        console.log(response)
+      },
+      error: function(response) {
+        // handle error response
+        console.log('error', response);
+      }
+    });
+
+   console.log(uvi_round_one);
     
+}
 
-       console.log(country_name_one)
-      
-      //display on html 
-     //UVI
-       document.getElementById('uvi_one').textContent = uvi_round_one;
-      //Location name 
-      document.getElementById('city_name_one').textContent = city_name_one;
-      document.getElementById('country_name_one').textContent = country_name_one;
-  
-  
+rowOne_UV();
+
+async function rowOne(uvi_round_one){
+  // uvi_url_one = 'https://api.openweathermap.org/data/2.5/onecall?lat=48.85341&lon=2.3488&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
+   location_name_one = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=48.85341&lng=2.3488&username=skinnyreggae'
+ 
+console.log(uvi_round_one)
+   //Pull data for location info
+   localresponse_one = await fetch(location_name_one);
+   localdata_one = await localresponse_one.json();
+ // check to see if data is being pulled 
+
+ //Pull data for Weather Info
+  // response_one = await fetch (uvi_url_one);
+  // data_one = await response_one.json();
  
      
-    if (uvi_round_one <=1 ) {
-    // setting colour
-    var element = document.getElementById('one');
-    element.classList.add("levelone");
-    // setting icon
-    document.getElementById("uvi_icon_one").src="../uv-icons/uv1.png";
-    // Add advice
  
+       // exact uvi value
+    //  const uvi_one = data_one.daily[1].uvi;
+       
 
+ 
+ // getting exact location information 
+     country_name_one = localdata_one.geonames[0].countryName;
+     city_name_one = localdata_one.geonames[0].name;
 
-    }
-    else if (uvi_round_one == 2 )
-    {
-    // Adding row color
-    var element = document.getElementById('one');
-    element.classList.add("leveltwo");
-    // setting icon 
-    document.getElementById("uvi_icon_one").src="../uv-icons/uv2.png";
-        // Add advice
-        var uvadvice = document.getElementById('advice-one');
-        var addadvice = document.createTextNode("Wear Sunglasses on bright days. Apply SPF 30+ sunscreen ");
+    //UVI
+      document.getElementById('uvi_one').textContent = uvi_round_one;
+     //Location name 
+     document.getElementById('city_name_one').textContent = city_name_one;
+     document.getElementById('country_name_one').textContent = country_name_one;
+ 
+ 
+ 
+     if (uvi_round_one <=1 ) {
+       // setting colour
+       var element = document.getElementById('one');
+       element.classList.add("levelone");
+       // setting icon
+       document.getElementById("uvi_icon_one").src="../uv-icons/uv1.png";
+       // Add advice
+    
+   
+   
+       }
+       else if (uvi_round_one == 2 )
+       {
+       // Adding row color
+       var element = document.getElementById('one');
+       element.classList.add("leveltwo");
+       // setting icon 
+       document.getElementById("uvi_icon_one").src="../uv-icons/uv2.png";
+       
+       
+       }  
+   else if (uvi_round_one == 3 )
+       {
+         var element = document.getElementById('one');
+         element.classList.add("levelthree");
         
-    
-    
-    }  
-else if (uvi_round_one == 3 )
-    {
-      var element = document.getElementById('one');
-      element.classList.add("levelthree");
-     
-       // setting icon 
-    document.getElementById("uvi_icon_one").src="../uv-icons/uv3.png";
-        // Add advice
-        var uvadvice = document.getElementById('advice-one');
-        var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+          // setting icon 
+       document.getElementById("uvi_icon_one").src="../uv-icons/uv3.png";
+         
+       }  
+       else if (uvi_round_one == 4 )
+       {
+         var element = document.getElementById('one');
+         element.classList.add("levelfour");
         
-    
-    
-    }  
-    else if (uvi_round_one == 4 )
-    {
-      var element = document.getElementById('one');
-      element.classList.add("levelfour");
-     
-       // setting icon 
-    document.getElementById("uvi_icon_one").src="../uv-icons/uv4.png";
-
-      // Add advice
-      var uvadvice = document.getElementById('advice-one');
-      var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+          // setting icon 
+       document.getElementById("uvi_icon_one").src="../uv-icons/uv4.png";
+   
       
-    }  
-    else if (uvi_round_one == 5 )
-    {
-      var element = document.getElementById('one');
-      element.classList.add("levelfive");
-     
-       // setting icon 
-    document.getElementById("uvi_icon_one").src="../uv-icons/uv5.png";
-      // Add advice
-      var uvadvice = document.getElementById('advice-one');
-      var addadvice = document.createTextNode("Wear Sunglasses, a wide brim hat, and protective clothing. Apply SPF 30+ sunscreen. Stay in Shade near mid day when sun is strongest. ");
+       }  
+       else if (uvi_round_one == 5 )
+       {
+         var element = document.getElementById('one');
+         element.classList.add("levelfive");
+        
+          // setting icon 
+       document.getElementById("uvi_icon_one").src="../uv-icons/uv5.png";
       
-    }  
-    else if (uvi_round_one == 6 )
-    {
-      var element = document.getElementById('one');
-      element.classList.add("levelsix");
-     
-       // setting icon 
-    document.getElementById("uvi_icon_one").src="../uv-icons/uv6.png";
-      // Add advice
-      var uvadvice = document.getElementById('advice-one');
-      var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+       }  
+       else if (uvi_round_one == 6 )
+       {
+         var element = document.getElementById('one');
+         element.classList.add("levelsix");
+        
+          // setting icon 
+       document.getElementById("uvi_icon_one").src="../uv-icons/uv6.png";
       
-    }  
-    else if (uvi_round_one == 7 )
-    {
-      var element = document.getElementById('one');
-      element.classList.add("levelseven");
-     
-       // setting icon 
-    document.getElementById("uvi_icon_one").src="../uv-icons/uv7.png";
-       // Add advice
-       var uvadvice = document.getElementById('advice-one');
-       var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+       }  
+       else if (uvi_round_one == 7 )
+       {
+         var element = document.getElementById('one');
+         element.classList.add("levelseven");
+        
+          // setting icon 
+       document.getElementById("uvi_icon_one").src="../uv-icons/uv7.png";
        
-    }  
-    else if (uvi_round_one == 8 )
-    {
-      var element = document.getElementById('one');
-      element.classList.add("leveleight");
-     
-       // setting icon 
-    document.getElementById("uvi_icon_one").src="../uv-icons/uv8.png";
-       // Add advice
-       var uvadvice = document.getElementById('advice-one');
-       var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
+       }  
+       else if (uvi_round_one == 8 )
+       {
+         var element = document.getElementById('one');
+         element.classList.add("leveleight");
+        
+          // setting icon 
+       document.getElementById("uvi_icon_one").src="../uv-icons/uv8.png";
+      
+       }  
+       else if (uvi_round_one == 9 )
+       {
+         var element = document.getElementById('one');
+         element.classList.add("levelnine");
+        
+          // setting icon 
+       document.getElementById("uvi_icon_one").src="../uv-icons/uv9.png";
+      
+       }  
+       else if (uvi_round_one == 10 )
+       {
+         var element = document.getElementById('one');
+         element.classList.add("levelten");
+        
+          // setting icon 
+       document.getElementById("uvi_icon_one").src="../uv-icons/uv10.png";
+        
+       }  
+       else if (uvi_round_one >= 11 )
+       {
+         var element = document.getElementById('one');
+         element.classList.add("leveleleven");
+        
+          // setting icon 
+       document.getElementById("uvi_icon_one").src="../uv-icons/uv11.png";
+        
+       }  
        
-    }  
-    else if (uvi_round_one == 9 )
-    {
-      var element = document.getElementById('one');
-      element.classList.add("levelnine");
-     
-       // setting icon 
-    document.getElementById("uvi_icon_one").src="../uv-icons/uv9.png";
-       // Add advice
-       var uvadvice = document.getElementById('advice-one');
-       var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
-       
-    }  
-    else if (uvi_round_one == 10 )
-    {
-      var element = document.getElementById('one');
-      element.classList.add("levelten");
-     
-       // setting icon 
-    document.getElementById("uvi_icon_one").src="../uv-icons/uv10.png";
-       // Add advice
-       var uvadvice = document.getElementById('advice-one');
-       var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
-       
-    }  
-    else if (uvi_round_one >= 11 )
-    {
-      var element = document.getElementById('one');
-      element.classList.add("leveleleven");
-     
-       // setting icon 
-    document.getElementById("uvi_icon_one").src="../uv-icons/uv11.png";
-       // Add advice
-       var uvadvice = document.getElementById('advice-one');
-       var addadvice = document.createTextNode("Wear sunglasses, a wide brim hat and protective clothing. Apply SPF 30+ sunscreen. Reduce time in the sun between 10:00 and 16:00");
-       
-    }  
-    
-
+ 
+ }
+ rowOne();
   
-  }
-  rowOne();
-  
+
+
   async function rowTwo(){
     uvi_url_two = 'https://api.openweathermap.org/data/2.5/onecall?lat=43.77925&lon=11.24626&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
     location_name_two = 'https://secure.geonames.org/findNearbyPlaceNameJSON?lat=43.77925&lng=11.24626&username=skinnyreggae'
@@ -278,7 +279,8 @@ else if (uvi_round_one == 3 )
   // check to see if data is being pulled 
   
   
-  
+  console.log(data_two)
+ 
   
   //getting co-ordinates 
        const latitude_two= data_two.lat;
@@ -292,7 +294,7 @@ else if (uvi_round_one == 3 )
       country_name_two = localdata_two.geonames[0].countryName;
       city_name_two = localdata_two.geonames[0].name;
   
-      console.log(country_name_two)
+      
       const uvi_round_two = Math.round(uvi_two);
        
      
@@ -477,7 +479,7 @@ else if (uvi_round_one == 3 )
       city_name_three = localdata_three.geonames[0].name;
   
     
-      console.log(country_name_three)
+     
    
       
        const uvi_round_three = Math.round(uvi_three);
@@ -662,7 +664,7 @@ else if (uvi_round_one == 3 )
       city_name_four = localdata_four.geonames[0].name;
   
     
-      console.log(country_name_four)
+     
        
       const uvi_round_four = Math.round(uvi_four);
       //display on html 
@@ -855,7 +857,7 @@ else if (uvi_round_one == 3 )
       document.getElementById('city_name_five').textContent = city_name_five;
       document.getElementById('country_name_five').textContent = country_name_five;
   
-      console.log(country_name_five)
+     
   
       if (uvi_round_five <=1 ) {
         // setting colour
@@ -1014,7 +1016,7 @@ else if (uvi_round_one == 3 )
   // check to see if data is being pulled 
   
   
-       
+  console.log(data_six)
   
   //getting co-ordinates 
        const latitude_six= data_six.lat;
@@ -1034,7 +1036,7 @@ else if (uvi_round_one == 3 )
       const uvi_round_six = Math.round(uvi_six);
     
 
-      console.log(country_name_six)
+     
       //display on html 
      //UVI
        document.getElementById('uvi_six').textContent = uvi_round_six;
@@ -1217,7 +1219,7 @@ else if (uvi_round_one == 3 )
       city_name_seven = localdata_seven.geonames[0].name;
   
     
-      console.log(country_name_seven)
+      
        
     
       //display on html 
@@ -1405,7 +1407,7 @@ else if (uvi_round_one == 3 )
       city_name_eight = localdata_eight.geonames[0].name;
   
     
-      console.log(country_name_eight)
+      
        
    // ROUNDING  THE UVI NUMBER
    const uvi_round_eight = Math.round(uvi_eight);
@@ -1419,6 +1421,8 @@ else if (uvi_round_one == 3 )
       document.getElementById('country_name_eight').textContent = country_name_eight;
  
   
+  
+
       if (uvi_round_eight <=1 ) {
         // setting colour
         var element = document.getElementById('eight');
@@ -1593,7 +1597,7 @@ else if (uvi_round_one == 3 )
       country_name_nine = localdata_nine.geonames[0].countryName;
       city_name_nine = localdata_nine.geonames[0].name;
   
-      console.log(country_name_nine)   
+     
    // ROUNDING  THE UVI NUMBER
    const uvi_round_nine = Math.round(uvi_nine);
     
@@ -1780,7 +1784,7 @@ else if (uvi_round_one == 3 )
       city_name_ten = localdata_ten.geonames[0].name;
   
     
-      console.log(country_name_ten)   
+ 
         // ROUNDING  THE UVI NUMBER
       const uvi_round_ten = Math.round(uvi_ten);
     
@@ -1958,15 +1962,14 @@ else if (uvi_round_one == 3 )
         
         const longitude_eleven = data_eleven.lon;
        const uvi_eleven = data_eleven.daily[1].uvi;
-        
-   
+  
   
   // getting exact location information  
   // exception for UNITED STATES country name = adminName city name = .name
       country_name_eleven = localdata_eleven.geonames[0].countryName;
       city_name_eleven = localdata_eleven.geonames[0].name;
+    
   
-      console.log(country_name_eleven)   
      
         // ROUNDING  THE UVI NUMBER
       const uvi_round_eleven = Math.round(uvi_eleven);
@@ -2149,7 +2152,7 @@ else if (uvi_round_one == 3 )
       country_name_twelve = localdata_twelve.geonames[0].countryName;
       city_name_twelve = localdata_twelve.geonames[0].name;
   
-      console.log(country_name_twelve)
+    
       const uvi_round_twelve = Math.round(uvi_twelve);
        
      
@@ -2331,7 +2334,7 @@ else if (uvi_round_one == 3 )
       country_name_thirteen = localdata_thirteen.geonames[0].countryName;
       city_name_thirteen = localdata_thirteen.geonames[0].name;
   
-      console.log(country_name_thirteen)
+    
       const uvi_round_thirteen = Math.round(uvi_thirteen);
        
      
@@ -2474,13 +2477,13 @@ else if (uvi_round_one == 3 )
         const longitude_fourteen = data_fourteen.lon;
        const uvi_fourteen = data_fourteen.daily[1].uvi;
         
-     
+       console.log(data_fourteen)
   
   // getting exact location information 
       country_name_fourteen = localdata_fourteen.geonames[0].countryName;
       city_name_fourteen = localdata_fourteen.geonames[0].name;
   
-      console.log(country_name_fourteen)
+     
       const uvi_round_fourteen = Math.round(uvi_fourteen);
        
      
@@ -2662,7 +2665,7 @@ else if (uvi_round_one == 3 )
       country_name_fifteen = localdata_fifteen.geonames[0].countryName;
       city_name_fifteen = localdata_fifteen.geonames[0].name;
   
-      console.log(country_name_fifteen)
+    
       const uvi_round_fifteen = Math.round(uvi_fifteen);
        
      
@@ -2844,7 +2847,7 @@ else if (uvi_round_one == 3 )
       country_name_sixteen = localdata_sixteen.geonames[0].countryName;
       city_name_sixteen = localdata_sixteen.geonames[0].name;
   
-      console.log(country_name_sixteen)
+     
       const uvi_round_sixteen = Math.round(uvi_sixteen);
        
      
@@ -3026,7 +3029,7 @@ else if (uvi_round_one == 3 )
       country_name_seventeen = localdata_seventeen.geonames[0].countryName;
       city_name_seventeen = localdata_seventeen.geonames[0].name;
   
-      console.log(country_name_seventeen)
+     
       const uvi_round_seventeen = Math.round(uvi_seventeen);
        
      
@@ -3194,7 +3197,7 @@ else if (uvi_round_one == 3 )
   // check to see if data is being pulled 
   
   
-  
+ 
   
   //getting co-ordinates 
        const latitude_eighteen= data_eighteen.lat;
@@ -3208,7 +3211,7 @@ else if (uvi_round_one == 3 )
       country_name_eighteen = localdata_eighteen.geonames[0].countryName;
       city_name_eighteen = localdata_eighteen.geonames[0].name;
   
-      console.log(country_name_eighteen)
+   
       const uvi_round_eighteen = Math.round(uvi_eighteen);
        
      
@@ -3384,13 +3387,13 @@ else if (uvi_round_one == 3 )
         const longitude_nineteen = data_nineteen.lon;
        const uvi_nineteen = data_nineteen.daily[1].uvi;
         
-     
+      
   
   // getting exact location information 
       country_name_nineteen = localdata_nineteen.geonames[0].countryName;
       city_name_nineteen = localdata_nineteen.geonames[0].name;
   
-      console.log(country_name_nineteen)
+   
       const uvi_round_nineteen = Math.round(uvi_nineteen);
        
      
@@ -3567,12 +3570,12 @@ else if (uvi_round_one == 3 )
        const uvi_twenty = data_twenty.daily[1].uvi;
         
      
-  
+       console.log(data_twenty)
   // getting exact location information 
       country_name_twenty = localdata_twenty.geonames[0].countryName;
       city_name_twenty = localdata_twenty.geonames[0].name;
   
-      console.log(country_name_twenty)
+      
       const uvi_round_twenty = Math.round(uvi_twenty);
        
      
@@ -3754,7 +3757,7 @@ else if (uvi_round_one == 3 )
       country_name_twentyone = localdata_twentyone.geonames[0].countryName;
       city_name_twentyone = localdata_twentyone.geonames[0].name;
   
-      console.log(country_name_twentyone)
+  
       const uvi_round_twentyone = Math.round(uvi_twentyone);
        
      
@@ -3936,7 +3939,7 @@ else if (uvi_round_one == 3 )
       country_name_twentytwo = localdata_twentytwo.geonames[0].countryName;
       city_name_twentytwo = localdata_twentytwo.geonames[0].name;
   
-      console.log(country_name_twentytwo)
+  
       const uvi_round_twentytwo = Math.round(uvi_twentytwo);
        
      
@@ -4117,8 +4120,7 @@ else if (uvi_round_one == 3 )
   // getting exact location information 
       country_name_twentythree = localdata_twentythree.geonames[0].countryName;
       city_name_twentythree = localdata_twentythree.geonames[0].name;
-  
-      console.log(country_name_twentythree)
+ 
       const uvi_round_twentythree = Math.round(uvi_twentythree);
        
      
@@ -4300,7 +4302,7 @@ else if (uvi_round_one == 3 )
       country_name_twentyfour = localdata_twentyfour.geonames[0].countryName;
       city_name_twentyfour = localdata_twentyfour.geonames[0].name;
   
-      console.log(country_name_twentyfour)
+     
       const uvi_round_twentyfour = Math.round(uvi_twentyfour);
        
      
@@ -4468,7 +4470,7 @@ else if (uvi_round_one == 3 )
   // check to see if data is being pulled 
   
   
-  
+  console.log(data_twentyfive)
   
   //getting co-ordinates 
        const latitude_twentyfive= data_twentyfive.lat;
@@ -4482,7 +4484,7 @@ else if (uvi_round_one == 3 )
       country_name_twentyfive = localdata_twentyfive.geonames[0].countryName;
       city_name_twentyfive = localdata_twentyfive.geonames[0].name;
   
-      console.log(country_name_twentyfive)
+      
       const uvi_round_twentyfive = Math.round(uvi_twentyfive);
        
      
@@ -4664,7 +4666,7 @@ else if (uvi_round_one == 3 )
       country_name_twentysix = localdata_twentysix.geonames[0].countryName;
       city_name_twentysix = localdata_twentysix.geonames[0].name;
   
-      console.log(country_name_twentysix)
+   
       const uvi_round_twentysix = Math.round(uvi_twentysix);
        
      
@@ -4846,7 +4848,7 @@ else if (uvi_round_one == 3 )
       country_name_twentyseven = localdata_twentyseven.geonames[0].countryName;
       city_name_twentyseven = localdata_twentyseven.geonames[0].name;
   
-      console.log(country_name_twentyseven)
+
       const uvi_round_twentyseven = Math.round(uvi_twentyseven);
        
      
@@ -5028,9 +5030,10 @@ else if (uvi_round_one == 3 )
       country_name_twentyeight = localdata_twentyeight.geonames[0].countryName;
       city_name_twentyeight = localdata_twentyeight.geonames[0].name;
   
-      console.log(country_name_twentyeight)
+ 
       const uvi_round_twentyeight = Math.round(uvi_twentyeight);
        
+      console.log(data_twentyeight)
      
       //display on html 
      //UVI
@@ -5210,7 +5213,7 @@ else if (uvi_round_one == 3 )
       country_name_twentynine = localdata_twentynine.geonames[0].countryName;
       city_name_twentynine = localdata_twentynine.geonames[0].name;
   
-      console.log(country_name_twentynine)
+    
       const uvi_round_twentynine = Math.round(uvi_twentynine);
        
      
@@ -5392,7 +5395,7 @@ else if (uvi_round_one == 3 )
       country_name_thirty = localdata_thirty.geonames[0].countryName;
       city_name_thirty = localdata_thirty.geonames[0].name;
   
-      console.log(country_name_thirty)
+     
       const uvi_round_thirty = Math.round(uvi_thirty);
        
      
@@ -5560,7 +5563,7 @@ else if (uvi_round_one == 3 )
   // check to see if data is being pulled 
   
   
-  
+  console.log(data_thirtyone)
   
   //getting co-ordinates 
        const latitude_thirtyone= data_thirtyone.lat;
@@ -5574,7 +5577,7 @@ else if (uvi_round_one == 3 )
       country_name_thirtyone = localdata_thirtyone.geonames[0].countryName;
       city_name_thirtyone = localdata_thirtyone.geonames[0].name;
   
-      console.log(country_name_thirtyone)
+     
       const uvi_round_thirtyone = Math.round(uvi_thirtyone);
        
      
@@ -5756,7 +5759,7 @@ else if (uvi_round_one == 3 )
       country_name_thirtytwo = localdata_thirtytwo.geonames[0].countryName;
       city_name_thirtytwo = localdata_thirtytwo.geonames[0].name;
   
-      console.log(country_name_thirtytwo)
+
       const uvi_round_thirtytwo = Math.round(uvi_thirtytwo);
        
      
@@ -5938,7 +5941,7 @@ else if (uvi_round_one == 3 )
       country_name_thirtythree = localdata_thirtythree.geonames[0].countryName;
       city_name_thirtythree = localdata_thirtythree.geonames[0].name;
   
-      console.log(country_name_thirtythree)
+      
       const uvi_round_thirtythree = Math.round(uvi_thirtythree);
        
      
@@ -6120,11 +6123,10 @@ else if (uvi_round_one == 3 )
       country_name_thirtyfour = localdata_thirtyfour.geonames[0].countryName;
       city_name_thirtyfour = localdata_thirtyfour.geonames[0].name;
   
-      console.log(country_name_thirtyfour)
+     
       const uvi_round_thirtyfour = Math.round(uvi_thirtyfour);
        
-     console.log(country_name_thirtyfour);
-     console.log(city_name_thirtyfour);
+     
       //display on html 
      //UVI
        document.getElementById('uvi_thirtyfour').textContent = uvi_round_thirtyfour;
@@ -6303,7 +6305,7 @@ else if (uvi_round_one == 3 )
       country_name_thirtyfive = localdata_thirtyfive.geonames[0].countryName;
       city_name_thirtyfive = localdata_thirtyfive.geonames[0].name;
   
-      console.log(country_name_thirtyfive)
+     
       const uvi_round_thirtyfive = Math.round(uvi_thirtyfive);
        
      
@@ -6485,7 +6487,7 @@ else if (uvi_round_one == 3 )
       country_name_thirtysix = localdata_thirtysix.geonames[0].countryName;
       city_name_thirtysix = localdata_thirtysix.geonames[0].name;
   
-      console.log(country_name_thirtysix)
+     
       const uvi_round_thirtysix = Math.round(uvi_thirtysix);
        
      
@@ -6667,7 +6669,7 @@ else if (uvi_round_one == 3 )
       country_name_thirtyeight = localdata_thirtyeight.geonames[0].countryName;
       city_name_thirtyeight = localdata_thirtyeight.geonames[0].name;
   
-      console.log(country_name_thirtyeight)
+      
       const uvi_round_thirtyeight = Math.round(uvi_thirtyeight);
        
      
@@ -6841,6 +6843,7 @@ else if (uvi_round_one == 3 )
        const latitude_thirtynine= data_thirtynine.lat;
         
         const longitude_thirtynine = data_thirtynine.lon;
+        
        const uvi_thirtynine = data_thirtynine.daily[1].uvi;
         
      
@@ -6849,7 +6852,7 @@ else if (uvi_round_one == 3 )
       country_name_thirtynine = localdata_thirtynine.geonames[0].countryName;
       city_name_thirtynine = localdata_thirtynine.geonames[0].name;
   
-      console.log(country_name_thirtynine)
+      
       const uvi_round_thirtynine = Math.round(uvi_thirtynine);
        
      
@@ -7031,7 +7034,7 @@ else if (uvi_round_one == 3 )
       country_name_forty = localdata_forty.geonames[0].countryName;
       city_name_forty = localdata_forty.geonames[0].name;
   
-      console.log(country_name_forty)
+      
       const uvi_round_forty = Math.round(uvi_forty);
        
      
@@ -7213,7 +7216,7 @@ else if (uvi_round_one == 3 )
       country_name_fortyone = localdata_fortyone.geonames[0].countryName;
       city_name_fortyone = localdata_fortyone.geonames[0].name;
   
-      console.log(country_name_fortyone)
+     
       const uvi_round_fortyone = Math.round(uvi_fortyone);
        
      
@@ -7395,7 +7398,7 @@ else if (uvi_round_one == 3 )
       country_name_fortytwo = localdata_fortytwo.geonames[0].countryName;
       city_name_fortytwo = localdata_fortytwo.geonames[0].name;
   
-      console.log(country_name_fortytwo)
+     
       const uvi_round_fortytwo = Math.round(uvi_fortytwo);
        
      
@@ -7577,7 +7580,7 @@ else if (uvi_round_one == 3 )
       country_name_fortythree = localdata_fortythree.geonames[0].countryName;
       city_name_fortythree = localdata_fortythree.geonames[0].name;
   
-      console.log(country_name_fortythree)
+      
       const uvi_round_fortythree = Math.round(uvi_fortythree);
        
      
@@ -7759,7 +7762,7 @@ else if (uvi_round_one == 3 )
       country_name_fortyfour = localdata_fortyfour.geonames[0].countryName;
       city_name_fortyfour = localdata_fortyfour.geonames[0].name;
   
-      console.log(country_name_fortyfour)
+    
       const uvi_round_fortyfour = Math.round(uvi_fortyfour);
        
      

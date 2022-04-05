@@ -1,6 +1,6 @@
 html, body {
     height: 100%;
-    
+    scroll-padding-top: 10%;
   }
   * {
     margin: 0;
@@ -10,17 +10,38 @@ html, body {
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+   
 }
+@font-face {
+  font-family: 'helvetica-thin';
+  src: url('/helvetica-thin.ttf') format('ttf');
+}
+
 .back{
     top: 0;
     left: 0;
+    padding-left: 2%;
+    padding-top: 2%;
+width: auto;
+height: 20px;
 }
 .back a{
-    color: red;
+  color: black;
+  text-decoration: none;
+    font-family: Helvetica;
+font-size:20px;
+font-weight: 600;
+
+}
+.back-arrow{
+    width: 20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .container-1{
-    width: 100vw;
-    height: 70vh;
+    width: 100%;
+  height: auto;
     
    
 }
@@ -28,13 +49,16 @@ html, body {
 .product-image{
     width: 55%;
     height: 84%;
-    border: 1px solid black;
-    margin-left: 6%;
+ 
+    margin-left: 9%;
     margin-top: 3%;
 float: left;
 
 }
 
+.glasses1{
+    width: 100%;
+}
 .product-info{
     float: left;
     height: 84%;
@@ -44,37 +68,63 @@ float: left;
     margin-top: 3%;
     margin-left: 2%;
 }
-.product-info p{ 
+.frame-spec{
+    font-family:helvetica;
+    font-size: 1.5vw;
+    }
+.lens-spec{
+    font-family:helvetica;
+    font-size: 1.5vw;
+}
+.price{
+    font-family: Helvetica;
+    font-size: 1.5vw;  
+    margin-bottom: 4%;
+}
+.atc-text{
+    font-weight: 700;
+    font-size: 1.5vw; 
     font-family: helvetica;
-    font-weight: lighter;
-    font-size: 1.3vw;
-}
-.container-2{
-    width: 100vw;
-    height: 70vh;
-    
-   text-align: center;
-}
-
-.product-image-2{
+   
+    }
+.spectrum-container{
     width: 55%;
     height: 84%;
-    border: 1px solid black;
-    margin-left: 6%;
-    margin-top: 3%;
+
+    margin-left: 9%;
+   
 float: left;
 
 }
-
-.product-info-2{
+.spectrum-image{
+    width: 100%;
+}
+.lens-container{
     float: left;
     height: 84%;
-    width: 20%;
+    width: 25%;
  
     
     margin-top: 3%;
     margin-left: 2%;
 }
+.lens-image{
+width: 100%;
+}
+
+.product-info p{ 
+    font-family: Helvetica;
+    font-weight:lighter;
+    font-size: 1.1vw;
+}
+.container-2{
+ 
+    
+    width: 100%;
+   text-align: center;
+}
+
+
 .circle{
     border-radius: 50%;
   width: 100%;
@@ -86,6 +136,9 @@ float: left;
 .inner-text{
     vertical-align: middle;
     text-align: center;
+    font-size: 1.2vw;
+    font-weight: bold;
+    font-family: helvetica;
 }     
  .container-3 {
     display: flex;
@@ -99,3 +152,165 @@ float: left;
   .container-3 > * {
     flex: 0 0 auto;
   }
+
+  /*SLIDER  */
+
+  
+  .slider {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    cursor: ew-resize;
+  }
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .slides::-webkit-scrollbar-thumb {
+  display: none;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width:100%;
+    height: 90%;
+    margin-right: 50px;
+   
+    
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
+  .slider > a {
+    display: inline-flex;
+    width: 3rem;
+    height: .1rem;
+  
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+   
+    border: 1px solid black;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+  }
+  .slider > a:active {
+    top: 1px;
+    background: #1c87c9;
+  }
+  .slider > a:focus {
+    background: purple;
+  }
+
+  /*SMARTPHONE MEDIA QUERIES */
+
+@media screen and (max-width: 480px) {
+
+  .back a{
+    color: black;
+    text-decoration: none;
+      font-family: Helvetica;
+  font-size:10px;
+  font-weight: 600;
+  
+  }
+  .back-arrow{
+      width: 10px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-98%);
+  }
+.product-image{
+    width: 100%;
+    margin-left: 0;
+    border: none;
+}
+
+.product-info{
+    width: 100%;
+    display: flex;
+    margin-left: 0;
+    
+}
+.product-info p{
+    font-family: Helvetica;
+}
+.spectrum-container{
+    width: 100%;
+    margin-left: 0;
+    border: none;
+
+}
+.spectrum-image{
+ width: 95%;
+ padding: 2%;
+}
+.temple-frame{
+    display:none;
+}
+.frame-spec{
+width: 50%;
+display: inline-block;
+margin-left: 2%;
+margin-right: -4%;
+font-family: Helvetica;
+font-size: 3vw;
+}
+.lens-spec{
+    width: 45%; 
+    display: inline-block;
+ 
+    font-family: Helvetica;
+    font-size: 3vw;
+}
+.add-and-price{
+    float: right;
+  
+  height: 50px;
+  margin-top: 16%;
+  margin-right: 1%;
+  width: 65px;
+}
+.price{
+    font-size: 2.8vw;
+    font-family: Helvetica;
+    float: right;
+}
+.atc-text{
+    font-family: Helvetica;
+    font-size:  2.4vw;
+    font-weight: bold;
+float: right;
+}
+.lens-container{
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    border: none;
+}
+.lens-image{
+width: 50%;
+}
+.inner-text{
+    vertical-align: middle;
+    width: 45%;
+    font-size: 3vw;
+margin-top: 25%;
+font-weight: 100;
+}
+}

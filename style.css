@@ -41,6 +41,7 @@ width: 100%;
     transform: translate(-50%, -50%);
     transition: opacity 1s;
     overflow-y: hidden;
+    
 }
 #loading-page img{
     width:850px;
@@ -108,15 +109,6 @@ margin-bottom: 1%;
     max-width: 65%;
 }
 
-.item{
-
-}
-.high img{
-
-}
-.veryhigh img{
-
-}
 .gradient-text{
     display: flex;
     justify-content: space-between;
@@ -129,6 +121,10 @@ margin-bottom: 1%;
 
     margin-top: -0.5%;
  
+}
+.now-button{
+   text-decoration: none;
+   color: #ff0000;
 }
 .no-bold{
     font-weight: 400;
@@ -214,8 +210,9 @@ margin-top: 3%;
     font-size: 3vw;
     color: #FF0000;
     font-weight: 700;
-    margin-top: 3%;
+    padding-top: 3%;
 }
+
 .here-details{
     font-family: helvetica;
     font-size: 3vw;
