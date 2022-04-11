@@ -73,20 +73,6 @@ document.getElementById("month").innerHTML = month;
 
 
 
-
-async function dailytest(){
-daily_uvi_url = 'https://api.openweathermap.org/data/2.5/onecall?lat=17.99702&lon=-76.79358&exclude=current,minutely,hourly,alerts&appid=d6d6e0cb2aa3c48b68dc152c9e3bb260'
-
-
-
-daily_uvi_response = await fetch (daily_uvi_url);
-daily_uvi_data = await daily_uvi_response.json();
-
-daily_uvi_value = daily_uvi_data.daily[1].uvi;
-
-}
-dailytest();
-
   var uvi_round_one;
   function rowOne_UV() {
    
