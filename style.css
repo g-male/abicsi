@@ -417,9 +417,15 @@ display: none;
   margin-right: 2%;
   }
   #left_eye{
-    width: 38%;
-    margin-right: 3%;
+    width: 42%;
+    margin-right: 2%;
     
+}
+.avail-now{
+font-size: 4.5vw;
+}
+.here-details{
+    font-size: 4.5vw;
 }
 .gradient-text:last-child{
     margin-left: auto;
@@ -451,10 +457,10 @@ float: right;
   }
   
   .daily-uv-text  {
-font-size: 1.5vh;
+font-size: 0.8rem;
 margin-bottom: 15px;
 float: right;
-margin-right: 4%;
+margin-right: 3%;
 margin-left: 18%;
   }
 
@@ -475,14 +481,14 @@ margin-left: 18%;
 
 .toggle-locations{
  margin-right: 8%;
- font-size: 0.7rem;
+ font-size: 0.5rem;
 
  margin-bottom: 3%;
 }
 
     .location{
 line-height: 50px;
-font-size: 8.5vh;
+font-size: 5rem;
   }
   .temis-credit{
       font-size: 0.5rem;
@@ -490,7 +496,7 @@ font-size: 8.5vh;
   }
 
   .hyperlink{
- font-size: 0.8rem;
+ font-size: 0.7rem;
 }
   .full-page{
       width: 100%;
@@ -515,37 +521,60 @@ margin-top: 4px;
       font-size: 1.2vh;
   
   }
- 
+ #city_name_four{
+     font-size: 4.3rem;
+ }
+ #city_name_seven{
+    font-size: 4.7rem;
+}
 #city_name_fourteen{
-    font-size: 14vw;
+    font-size: 3.4rem;
     
 }
 #city_name_nineteen{
-    font-size: 6.5vh;
+    font-size: 3.4rem;
     
 }
 #city_name_nine{
-    font-size: 7.4vh;
+    font-size: 3.7rem;
     
 }
+#city_name_sixteen{
+    font-size: 4.6rem;
+}
+#city_name_eighteen{
+    font-size: 4.6rem;
+}
 #city_name_twentyfour{
-    font-size: 7.8vh;
+    font-size: 4.1rem;
     
 }
 #city_name_thirtyone{
-    font-size: 7.8vh;
+    font-size: 4.2rem;
+    
+}
+#city_name_thirtytwo{
+    font-size: 4.9rem;
     
 }
 #city_name_thirtyfour{
-    font-size: 7.8vh;
+    font-size: 4.1rem;
+    
+}
+#city_name_thirtyfive{
+    font-size: 4.6rem;
     
 }
 #city_name_thirtyeight{
-    font-size: 6.5vh;
+    font-size: 3.3rem;
+    
+}
+#city_name_thirtynine{
+    font-size: 4.5rem;
     
 }
 #city_name_forty{
-    font-size: 7.8vh;
+    font-size: 4rem;
     
 }
   }

@@ -16,7 +16,9 @@ html, body {
   font-family: 'helvetica-thin';
   src: url('/helvetica-thin.ttf') format('ttf');
 }
-
+.add-and-price{
+  display: none;
+}
 .back{
     top: 0;
     left: 0;
@@ -46,11 +48,31 @@ font-weight: 600;
    
 }
 
+#image-selector a{
+  display: inline-flex;
+  width: 7rem;
+  height: .2rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+
+#image-selector > .active{
+  background-color: black;
+  }
+  #image-selector > .btn:hover{
+    background-color: black;
+  }
+
 .product-image{
-    width: 55%;
+    width: 65%;
     height: 84%;
  
-    margin-left: 9%;
+    margin-left: 5%;
     margin-top: 3%;
 float: left;
 
@@ -58,7 +80,7 @@ float: left;
 
 .glasses1{
     width: 100%;
-    cursor: w-resize;
+ 
 }
 .product-info{
     float: left;
@@ -99,14 +121,15 @@ float: left;
 }
 .spectrum-image{
     width: 100%;
+    margin-bottom: 5%;
 }
 .lens-container{
     float: left;
     height: 84%;
-    width: 25%;
+    width: 32%;
  
     
-    margin-top: 3%;
+   
     margin-left: 2%;
 }
 .lens-image{
@@ -138,7 +161,7 @@ width: 100%;
     vertical-align: middle;
     text-align: center;
     font-size: 1.2vw;
-    font-weight: bold;
+  
     font-family: helvetica;
 }     
  .container-3 {
@@ -168,7 +191,7 @@ width: 100%;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    cursor: ew-resize;
+  
   }
   .slides::-webkit-scrollbar {
     width: 10px;
@@ -283,7 +306,7 @@ font-weight: 100;
 }
 .add-and-price{
     float: right;
-  
+ 
   height: 50px;
   margin-top: 16%;
   margin-right: 1%;
