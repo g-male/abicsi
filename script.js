@@ -75,7 +75,7 @@ document.getElementById("month").innerHTML = month;
 
 var uvi_one;
 async function rowone_UV(){
-  uvi_url_one = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Paris&days=1'
+  uvi_url_one = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Paris&days=1'
 
  
 //Pull data for Weather Info
@@ -221,7 +221,7 @@ rowone_UV();
 
 var uvi_two;
 async function rowtwo_UV(){
-  uvi_url_two = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=florence&days=1'
+  uvi_url_two = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=florence&days=1'
 
  
 //Pull data for Weather Info
@@ -367,7 +367,7 @@ rowtwo_UV();
  
 var uvi_three;
 async function rowthree_UV(){
-  uvi_url_three = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=tokyo&days=1'
+  uvi_url_three = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=tokyo&days=1'
 
  
 //Pull data for Weather Info
@@ -511,7 +511,7 @@ rowthree_UV();
 
 var uvi_four;
 async function rowfour_UV(){
-  uvi_url_four = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Marrakesh&days=1'
+  uvi_url_four = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Marrakesh&days=1'
  
 //Pull data for Weather Info
   response_four = await fetch (uvi_url_four);
@@ -652,7 +652,7 @@ rowfour_UV();
 
 var uvi_five;
 async function rowfive_UV(){
-  uvi_url_five = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=new_delhi&days=1'
+  uvi_url_five = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=new_delhi&days=1'
  
 //Pull data for Weather Info
   response_five = await fetch (uvi_url_five);
@@ -794,7 +794,7 @@ rowfive_UV();
 
 var uvi_six;
 async function rowsix_UV(){
-  uvi_url_six = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=la_paz_mexico&days=1'
+  uvi_url_six = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=la_paz_mexico&days=1'
     
 //Pull data for Weather Info
   response_six = await fetch (uvi_url_six);
@@ -937,7 +937,7 @@ rowsix_UV();
 
 var uvi_seven;
 async function rowseven_UV(){
-  uvi_url_seven = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=kingston&days=1'
+  uvi_url_seven = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=kingston&days=1'
     
 //Pull data for Weather Info
   response_seven = await fetch (uvi_url_seven);
@@ -1079,7 +1079,7 @@ rowseven_UV();
  
 var uvi_eight;
 async function roweight_UV(){
-  uvi_url_eight = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=manila&days=1'
+  uvi_url_eight = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=manila&days=1'
     
 //Pull data for Weather Info
   response_eight = await fetch (uvi_url_eight);
@@ -1221,7 +1221,7 @@ roweight_UV();
 
 var uvi_nine;
 async function rownine_UV(){
-  uvi_url_nine = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=6.8334,80.985&days=1'
+  uvi_url_nine = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=6.8334,80.985&days=1'
     
 //Pull data for Weather Info
   response_nine = await fetch (uvi_url_nine);
@@ -1363,7 +1363,7 @@ rownine_UV();
 
 var uvi_ten;
 async function rowten_UV(){
-  uvi_url_ten = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Caracas&days=1'
+  uvi_url_ten = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Caracas&days=1'
     
 //Pull data for Weather Info
   response_ten = await fetch (uvi_url_ten);
@@ -1505,7 +1505,7 @@ rowten_UV();
 
 var uvi_eleven;
 async function roweleven_UV(){
-  uvi_url_eleven = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=santiago_chile&days=1'
+  uvi_url_eleven = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=santiago_chile&days=1'
     
 //Pull data for Weather Info
   response_eleven = await fetch (uvi_url_eleven);
@@ -1647,7 +1647,7 @@ roweleven_UV();
 
 var uvi_twelve;
 async function rowtwelve_UV(){
-  uvi_url_twelve = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=taipei&days=1'
+  uvi_url_twelve = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=taipei&days=1'
     
 //Pull data for Weather Info
   response_twelve = await fetch (uvi_url_twelve);
@@ -1789,7 +1789,7 @@ rowtwelve_UV();
   
 var uvi_thirteen;
 async function rowthirteen_UV(){
-  uvi_url_thirteen = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Sanaa&days=1'
+  uvi_url_thirteen = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Sanaa&days=1'
     
 //Pull data for Weather Info
   response_thirteen = await fetch (uvi_url_thirteen);
@@ -1931,7 +1931,7 @@ rowthirteen_UV();
  
 var uvi_fourteen;
 async function rowfourteen_UV(){
-  uvi_url_fourteen = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Rio_de_Janeiro&days=1'
+  uvi_url_fourteen = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Rio_de_Janeiro&days=1'
     
 //Pull data for Weather Info
   response_fourteen = await fetch (uvi_url_fourteen);
@@ -2075,7 +2075,7 @@ rowfourteen_UV();
  
 var uvi_fifteen;
 async function rowfifteen_UV(){
-  uvi_url_fifteen = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Seoul&days=1'
+  uvi_url_fifteen = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Seoul&days=1'
     
 //Pull data for Weather Info
   response_fifteen = await fetch (uvi_url_fifteen);
@@ -2219,7 +2219,7 @@ rowfifteen_UV();
 
 var uvi_sixteen;
 async function rowsixteen_UV(){
-  uvi_url_sixteen = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Singapore&days=1'
+  uvi_url_sixteen = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Singapore&days=1'
     
 //Pull data for Weather Info
   response_sixteen = await fetch (uvi_url_sixteen);
@@ -2362,7 +2362,7 @@ rowsixteen_UV();
 
 var uvi_seventeen;
 async function rowseventeen_UV(){
-  uvi_url_seventeen = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=london&days=1'
+  uvi_url_seventeen = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=london&days=1'
     
 //Pull data for Weather Info
   response_seventeen = await fetch (uvi_url_seventeen);
@@ -2504,7 +2504,7 @@ rowseventeen_UV();
 
 var uvi_eighteen;
 async function roweighteen_UV(){
-  uvi_url_eighteen = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=hong_kong&days=1'
+  uvi_url_eighteen = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=hong_kong&days=1'
     
 //Pull data for Weather Info
   response_eighteen = await fetch (uvi_url_eighteen);
@@ -2646,7 +2646,7 @@ roweighteen_UV();
 
 var uvi_nineteen;
 async function rownineteen_UV(){
-  uvi_url_nineteen = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Johannesburg&days=1'
+  uvi_url_nineteen = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Johannesburg&days=1'
     
 //Pull data for Weather Info
   response_nineteen = await fetch (uvi_url_nineteen);
@@ -2789,7 +2789,7 @@ rownineteen_UV();
 
 var uvi_twenty;
 async function rowtwenty_UV(){
-  uvi_url_twenty = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Karachi&days=1'
+  uvi_url_twenty = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Karachi&days=1'
     
 //Pull data for Weather Info
   response_twenty = await fetch (uvi_url_twenty);
@@ -2932,7 +2932,7 @@ rowtwenty_UV();
 
 var uvi_twentyone;
 async function rowtwentyone_UV(){
-  uvi_url_twentyone = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=lima_peru&days=1'
+  uvi_url_twentyone = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=lima_peru&days=1'
     
 //Pull data for Weather Info
   response_twentyone = await fetch (uvi_url_twentyone);
@@ -3077,7 +3077,7 @@ rowtwentyone_UV();
   
 var uvi_twentytwo;
 async function rowtwentytwo_UV(){
-  uvi_url_twentytwo = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=sydney_australia&days=1'
+  uvi_url_twentytwo = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=sydney_australia&days=1'
     
 //Pull data for Weather Info
   response_twentytwo = await fetch (uvi_url_twentytwo);
@@ -3220,7 +3220,7 @@ rowtwentytwo_UV();
 //CANADIAN FORCAST TORONTO
 var uvi_twentythree;
 async function rowtwentythree_UV(){
-  uvi_url_twentythree = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=toronto&days=1'
+  uvi_url_twentythree = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=toronto&days=1'
     
 //Pull data for Weather Info
   response_twentythree = await fetch (uvi_url_twentythree);
@@ -3364,7 +3364,7 @@ rowtwentythree_UV();
 
 var uvi_twentyfour;
 async function rowtwentyfour_UV(){
-  uvi_url_twentyfour = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=mexico_city&days=1'
+  uvi_url_twentyfour = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=mexico_city&days=1'
     
 //Pull data for Weather Info
   response_twentyfour = await fetch (uvi_url_twentyfour);
@@ -3508,7 +3508,7 @@ rowtwentyfour_UV();
 
 var uvi_twentyfive;
 async function rowtwentyfive_UV(){
-  uvi_url_twentyfive = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=lagos_nigeria&days=1'
+  uvi_url_twentyfive = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=lagos_nigeria&days=1'
     
 //Pull data for Weather Info
   response_twentyfive = await fetch (uvi_url_twentyfive);
@@ -3651,7 +3651,7 @@ rowtwentyfive_UV();
  
 var uvi_twentysix;
 async function rowtwentysix_UV(){
-  uvi_url_twentysix = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=new_york&days=1'
+  uvi_url_twentysix = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=new_york&days=1'
     
 //Pull data for Weather Info
   response_twentysix = await fetch (uvi_url_twentysix);
@@ -3795,7 +3795,7 @@ rowtwentysix_UV();
 
 var uvi_twentyseven;
 async function rowtwentyseven_UV(){
-  uvi_url_twentyseven = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Pokhara&days=1'
+  uvi_url_twentyseven = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Pokhara&days=1'
     
 //Pull data for Weather Info
   response_twentyseven = await fetch (uvi_url_twentyseven);
@@ -3940,7 +3940,7 @@ rowtwentyseven_UV();
 
 var uvi_twentyeight;
 async function rowtwentyeight_UV(){
-  uvi_url_twentyeight = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Asmara&days=1'
+  uvi_url_twentyeight = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Asmara&days=1'
     
 //Pull data for Weather Info
   response_twentyeight = await fetch (uvi_url_twentyeight);
@@ -4083,7 +4083,7 @@ rowtwentyeight_UV();
  
 var uvi_twentynine;
 async function rowtwentynine_UV(){
-  uvi_url_twentynine = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=berlin&days=1'
+  uvi_url_twentynine = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=berlin&days=1'
     
 //Pull data for Weather Info
   response_twentynine = await fetch (uvi_url_twentynine);
@@ -4227,7 +4227,7 @@ rowtwentynine_UV();
 
 var uvi_thirty;
 async function rowthirty_UV(){
-  uvi_url_thirty = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=accra&days=1'
+  uvi_url_thirty = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=accra&days=1'
     
 //Pull data for Weather Info
   response_thirty = await fetch (uvi_url_thirty);
@@ -4370,7 +4370,7 @@ rowthirty_UV();
 
 var uvi_thirtyone;
 async function rowthirtyone_UV(){
-  uvi_url_thirtyone = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Amsterdam&days=1'
+  uvi_url_thirtyone = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Amsterdam&days=1'
     
 //Pull data for Weather Info
   response_thirtyone = await fetch (uvi_url_thirtyone);
@@ -4513,7 +4513,7 @@ rowthirtyone_UV();
 
 var uvi_thirtytwo;
 async function rowthirtytwo_UV(){
-  uvi_url_thirtytwo = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=47.56494,-52.70931&days=1'
+  uvi_url_thirtytwo = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=47.56494,-52.70931&days=1'
     
 //Pull data for Weather Info
   response_thirtytwo = await fetch (uvi_url_thirtytwo);
@@ -4656,7 +4656,7 @@ rowthirtytwo_UV();
 
 var uvi_thirtythree;
 async function rowthirtythree_UV(){
-  uvi_url_thirtythree = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=calgary&days=1'
+  uvi_url_thirtythree = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=calgary&days=1'
     
 //Pull data for Weather Info
   response_thirtythree = await fetch (uvi_url_thirtythree);
@@ -4800,7 +4800,7 @@ rowthirtythree_UV();
 
 var uvi_thirtyfour;
 async function rowthirtyfour_UV(){
-  uvi_url_thirtyfour = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=yellowknife&days=1'
+  uvi_url_thirtyfour = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=yellowknife&days=1'
     
 //Pull data for Weather Info
   response_thirtyfour = await fetch (uvi_url_thirtyfour);
@@ -4946,7 +4946,7 @@ rowthirtyfour_UV();
 
 var uvi_thirtyfive;
 async function rowthirtyfive_UV(){
-  uvi_url_thirtyfive = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Saskatoon&days=1'
+  uvi_url_thirtyfive = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Saskatoon&days=1'
     
 //Pull data for Weather Info
   response_thirtyfive = await fetch (uvi_url_thirtyfive);
@@ -5090,7 +5090,7 @@ rowthirtyfive_UV();
 
 var uvi_thirtysix;
 async function rowthirtysix_UV(){
-  uvi_url_thirtysix = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Iqaluit&days=1'
+  uvi_url_thirtysix = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Iqaluit&days=1'
     
 //Pull data for Weather Info
   response_thirtysix = await fetch (uvi_url_thirtysix);
@@ -5232,7 +5232,7 @@ rowthirtysix_UV();
  
 var uvi_thirtyeight;
 async function rowthirtyeight_UV(){
-  uvi_url_thirtyeight = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Charlottetown&days=1'
+  uvi_url_thirtyeight = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=Charlottetown&days=1'
     
 //Pull data for Weather Info
   response_thirtyeight = await fetch (uvi_url_thirtyeight);
@@ -5374,7 +5374,7 @@ rowthirtyeight_UV();
  
 var uvi_thirtynine;
 async function rowthirtynine_UV(){
-  uvi_url_thirtynine = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=vancouver&days=1'
+  uvi_url_thirtynine = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=vancouver&days=1'
     
 //Pull data for Weather Info
   response_thirtynine = await fetch (uvi_url_thirtynine);
@@ -5516,7 +5516,7 @@ rowthirtynine_UV();
  
 var uvi_forty;
 async function rowforty_UV(){
-  uvi_url_forty = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=60.71611,-135.05375&days=1'
+  uvi_url_forty = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=60.71611,-135.05375&days=1'
     
 //Pull data for Weather Info
   response_forty = await fetch (uvi_url_forty);
@@ -5659,7 +5659,7 @@ rowforty_UV();
   
 var uvi_fortyone;
 async function rowfortyone_UV(){
-  uvi_url_fortyone = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=winnipeg&days=1'
+  uvi_url_fortyone = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=winnipeg&days=1'
     
 //Pull data for Weather Info
   response_fortyone = await fetch (uvi_url_fortyone);
@@ -5802,7 +5802,7 @@ rowfortyone_UV();
  
 var uvi_fortytwo;
 async function rowfortytwo_UV(){
-  uvi_url_fortytwo = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=moncton_New_Brunswick&days=1'
+  uvi_url_fortytwo = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=moncton_New_Brunswick&days=1'
     
 //Pull data for Weather Info
   response_fortytwo = await fetch (uvi_url_fortytwo);
@@ -5944,7 +5944,7 @@ rowfortytwo_UV();
  
 var uvi_fortythree;
 async function rowfortythree_UV(){
-  uvi_url_fortythree = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=halifax&days=1'
+  uvi_url_fortythree = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=halifax&days=1'
     
 //Pull data for Weather Info
   response_fortythree = await fetch (uvi_url_fortythree);
@@ -6087,7 +6087,7 @@ rowfortythree_UV();
  
 var uvi_fortyfour;
 async function rowfortyfour_UV(){
-  uvi_url_fortyfour = 'http://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=montreal&days=1'
+  uvi_url_fortyfour = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=montreal&days=1'
     
 //Pull data for Weather Info
   response_fortyfour = await fetch (uvi_url_fortyfour);
