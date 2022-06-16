@@ -4513,7 +4513,7 @@ rowthirtyone_UV();
 
 var uvi_thirtytwo;
 async function rowthirtytwo_UV(){
-  uvi_url_thirtytwo = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=47.56494,-52.70931&days=1'
+  uvi_url_thirtytwo = 'https://api.weatherapi.com/v1/forecast.json?key=326a2ebd97a64436aca145753222905&q=47.560539,-52.712830&days=1'
     
 //Pull data for Weather Info
   response_thirtytwo = await fetch (uvi_url_thirtytwo);
@@ -4537,7 +4537,7 @@ const city_name_thirtytwo = data_thirtytwo.location.name;
    //UVI
      document.getElementById('uvi_thirtytwo').textContent = uvi_thirtytwo;
    //Location name 
-     document.getElementById('city_name_thirtytwo').textContent = city_name_thirtytwo;
+   //  document.getElementById('city_name_thirtytwo').textContent = city_name_thirtytwo;
 
  //COUNTRY NAME IF NEEDED
  document.getElementById('country_name_thirtytwo').textContent = country_name_thirtytwo;
