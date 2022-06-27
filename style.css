@@ -340,15 +340,16 @@ margin-right:  0.5px;
     font-weight: bolder;
    
     font-family: helvetica;
-
+max-width: 190px;
+max-height:96px ;
 }
 
 
 .UV-icon{
 max-width: 85%;
 max-height: 110px;
-width: auto;
-
+width: 85%;
+align-self: flex-start;
 height: 100%;
 display:  inline-block;
 vertical-align: middle;

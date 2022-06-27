@@ -16,6 +16,13 @@ $('.carousel').on('touchstart', function(event){
   });
 });
 
+$('#carouselExampleIndicators').bind('mousewheel', function(e) {
+  if(e.originalEvent.wheelDelta /120 > 0) {
+      $(this).carousel('next');
+  } else {
+      $(this).carousel('prev');
+  }
+});
 
 // Get the container element
 var btnContainer = document.getElementById("image-selector");
