@@ -16,6 +16,11 @@ html, body {
     src: url(Linea.ttf);
   }
 
+  .vid-placehold.gif{
+    display: none;
+    
+        }
+
 #canadian-cities{
     opacity: 0;
 transition: opacity 2s;
@@ -45,7 +50,7 @@ width: 100%;
     
 }
 #loading-page img{
-    width:850px;
+    width:700px;
 }
 .loading-text{
     font-family: helvetica;
@@ -394,6 +399,10 @@ display: none;
 /*SMARTPHONE MEDIA QUERIES */
 
 @media screen and (max-width: 480px) {
+    .vid-placehold.video{
+display: none;
+
+    }
     #loading-page img{
         width:340px
     }

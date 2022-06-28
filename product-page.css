@@ -125,7 +125,7 @@ height: 20px;
   color: black;
   text-decoration: none;
     font-family: Helvetica;
-font-size:15px;
+font-size:  12px;
 font-weight: 600;
 
 }
@@ -133,7 +133,7 @@ font-weight: 600;
   margin-top: 20px;
 }
 .back-arrow{
-    width: 15px;
+    width: 12px;
     position: relative;
     top: 40%;
     transform: translateY(-50%);
