@@ -358,7 +358,7 @@ align-self: flex-start;
 height: 100%;
 display:  inline-block;
 vertical-align: middle;
-margin-top: 1px;
+
 
 }
 .center{
@@ -403,6 +403,10 @@ display: none;
 display: none;
 
     }
+    .vid-placehold.vid-placehold.gif{
+        display: block;
+        
+            }
     #loading-page img{
         width:340px
     }
@@ -477,6 +481,7 @@ margin-left: 18%;
 
   .date-text{
       font-size: 1.3vh;
+      margin-left: 0.5%;
   }
 .gradimg{
     max-height: 28px;
@@ -516,10 +521,13 @@ font-size: 5rem;
     width: 25%;
       position: right;
       margin-right: -3px;
+ 
   }
 .UV-icon{
 width: 90%;
 margin-top: 4px;
+vertical-align: middle;
+
 }
 
 .row{
