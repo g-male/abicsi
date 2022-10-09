@@ -117,6 +117,9 @@ flex-basis: 100%;
 .atc-mobile{
 display: none;
 }
+.atc-desktop{
+  display: none;
+}
 
 .add-and-price{
 
@@ -233,7 +236,7 @@ line-height: 1.1;
   font-family: 'helvetica-Light';
   font-size: 1.5vw;  
   margin-bottom: 4%;
-  display: block;
+  display: none;
 }
 #product-component-1665262700238{
 
@@ -501,7 +504,7 @@ margin-top: 48px;
   float: right;
   margin-bottom: -150px;
   margin-right: 20px;
-  display: block;
+  display: none;
 
 }
 .atc-text{
@@ -514,7 +517,7 @@ float: right;
 display: none;
 }
 .atc-mobile{
-display: block;
+display: none;
 }
 .shopify-buy__btn-wrapper{
 margin-left: 5px;
