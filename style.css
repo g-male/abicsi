@@ -72,8 +72,9 @@ width: 100%;
     margin-right: auto;
 text-align: center;
 width: 38%;
-margin-top: -10.5%;
-margin-bottom: 1%;
+
+margin-bottom: 1.5%;
+margin-top: 1.5%;
 
 }
 .daily-uv-text{
@@ -83,15 +84,26 @@ margin-bottom: 1%;
     color: #FF0000;
     font-style: oblique 20deg;
     font-family: helvetica;
-    margin-bottom: 30px;
+    margin-bottom: 1.5%;
+    margin-top: 1.5%;
 }
 .topheader{
-    margin-bottom: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     display: flex;
     align-items: center;
     justify-content: center
+  
 
 }
+.abicsi-logo{
+width: 38%;
+
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
 .top_eyes{
     width: 28%;
     display: inline-block;
@@ -167,7 +179,7 @@ line-height: normal;
     font-size: 1.5vw;
     font-weight: 700;
     font-family: helvetica;
- 
+ margin-left: 0.5%;
     margin-bottom: 0.7%;
 }
 .full-date{
@@ -420,15 +432,14 @@ display: none;
    #right_eye{
        display: none;
    }
-    .topheader{
-      margin-top: 2vh;
-  }
+    
   .topheader{
     margin-bottom: 1%;
     display: flex;
     align-items: center;
-    justify-content:right;
-
+    justify-content:center;
+margin-top: 3%;
+margin-bottom: 3%;
 }
   .toplogo{
   font-size: 25vw;
@@ -464,22 +475,28 @@ font-size: 4.5vw;
   width: 105%;
   }
 
-
+.abicsi-logo{
+    width: 55%;
+    text-align: center;
+}
   .UVIscale{
+    margin-left: auto;
+    margin-right: auto;
    
-    margin-left: none;
-    margin-right: 2%;
-text-align: right;
-float: right;
+text-align: center;
+
+
+margin-bottom: 2%;
+margin-top: 3%;
+
      width: 55%;
   }
   
   .daily-uv-text  {
-font-size: 1rem;
-margin-bottom: 15px;
-float: right;
-margin-right: 3%;
-margin-left: 18%;
+font-size: 0.80rem;
+
+
+
   }
 
   .date-text{
