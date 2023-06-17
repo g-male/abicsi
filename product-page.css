@@ -245,7 +245,7 @@ background-color: black;
 .product-info{
   float: right;
   margin-top: 15%;
-  margin-left: 10%;
+  margin-left: 13%;
 }
 .product-info.mobile{
   display: none;
