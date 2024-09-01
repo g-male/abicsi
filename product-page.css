@@ -499,7 +499,10 @@ display: none;
     width: 35%;
     margin-bottom: 0;
   }
-  
+  .carousel-indicators{
+    bottom: 1% !important;
+    position: relative;
+  }
 
   .temple-frame, .curvature-options {
     display: inline-block; /* Ensures elements stay on the same line */
@@ -556,6 +559,7 @@ padding-left: 0;
 }
 .carousel-indicators{
   bottom: -30px !important;
+ 
 }
 .back a{
   color: black;
