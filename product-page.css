@@ -497,7 +497,7 @@ display: none;
   }
   .small-logo img{
     width: 35%;
-    
+    margin-bottom: 0;
   }
   
 
@@ -542,7 +542,7 @@ margin-right: 0;
 }
 .d-block.w-100{
 
-width: 95% !important;
+width: 90% !important;
 height: auto;
 border: 1px solid black;
 }
