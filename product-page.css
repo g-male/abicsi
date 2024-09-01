@@ -603,6 +603,9 @@ width: 100%;
   align-items: center; /* Align content vertically in the center */
   margin-left: 0;
   margin-top: 7%;
+  clear: both;
+  z-index: 1; 
+  order: 2;
 }
 
 .info-left {
