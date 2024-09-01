@@ -38,7 +38,10 @@ src: url('/helveticaneueltstd-ultlt.otf') format('otf');
     src: url('/Hero-Regular-400.otf') format("opentype");
     }
 
-
+    .boldo{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+   }
 .d-block.w-100{
 
 width: 80% !important;
@@ -170,9 +173,9 @@ display: inline-block;
   display: inline-block;
 }
 .small-logo img{
-  width: 70px;
+  width: 10vw;
   height: auto;
- 
+ margin-bottom: 10%;
 }
 .container-1{
   width: 100%;
@@ -244,14 +247,53 @@ background-color: black;
 }
 .product-info{
   float: right;
-  margin-top: 15%;
+  margin-top: 5%;
   margin-left: 13%;
+}
+.product-info.desktop{
+display: flex;
+flex-direction: row;
+
+}
+.info-left{
+  flex: 1;
+}
+.info-right{
+  flex: 1;
+}
+.curvature-options a {
+  
+  border-radius: 2px;
+  text-decoration: none;
+  color: black;
+}
+.curvature-option{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.curvature-options a.active {
+  font-weight: bold;
+  border: 1px solid black;
+}
+.inline{
+  float: left;
+}
+.curve-silo{
+  width: 75%;
+  margin-right: 45%;
+  margin-top: 10%;
 }
 .product-info.mobile{
   display: none;
 }
 .temple-frame{
-  font-family: 'hero-regular';
+  font-family: "helvetica";
+  font-weight:600;
+  color: rgb(194, 71, 194);
+}
+.other-text{
+  font-size: 1vw;
 }
 .frame-spec{
   font-family:'hero-light';
@@ -287,9 +329,32 @@ margin-left: 10%;
 float: left;
 
 }
+.curvature-options a {
+ 
+  text-decoration: none;
+  color: black;
+}
+
+.curvature-options a.active {
+
+  font-weight: bold;
+  border: 1px solid black;
+}
 .spectrum-image{
   width: 100%;
   margin-bottom: 5%;
+}
+.status-button{
+  text-align: center;
+  background-color: black;
+  color: white;
+  min-height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica;
+  font-size: 0.9em;
+  font-weight: 600;
 }
 .lens-container{
   float: left;
@@ -423,12 +488,29 @@ display: none;
 /*SMARTPHONE MEDIA QUERIES */
 
 @media screen and (max-width: 770px) {
-.temple-frame{
-  font-style: oblique;
+.small-logo{
+  display: none;
 }
+  .small-logo.mobile{
+    display: block;
+   
+  }
+  .small-logo img{
+    width: 35%;
+    
+  }
+  
+
+  .temple-frame, .curvature-options {
+    display: inline-block; /* Ensures elements stay on the same line */
+  }
+  .curvature-option{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .frame-name.mobile{
     margin: 0 auto;
-    display: block;
+    display: none;
     font-family: 'hero-regular';
     padding: 2%;
     font-size: 3vw;
@@ -460,7 +542,7 @@ margin-right: 0;
 }
 .d-block.w-100{
 
-width: 80% !important;
+width: 95% !important;
 height: auto;
 border: 1px solid black;
 }
@@ -482,6 +564,9 @@ padding-left: 0;
 font-size:10px;
 font-weight: 600;
 
+}
+.other-text{
+  font-size: 3vw;
 }
 .back-arrow{
     width: 11px;
@@ -506,11 +591,37 @@ width: 100%;
 }
 
 
-.product-info.mobile{
-  width: 100%;
-  display: flex;
+
+.product-info.mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  gap: 20px; /* Adjust spacing between columns */
+  align-items: center; /* Align content vertically in the center */
   margin-left: 0;
   margin-top: 7%;
+}
+
+.info-left {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Two rows inside the left column */
+ margin-left: 5%;
+}
+
+.info-right {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+.curve-silo{
+  width: 108%;
+  margin-right: 45%;
+  margin-top: 25%;
+}
+.frame-spec{
+  display: flex;
+}
+.lens-spec{
+  display: flex;
 }
 .product-info p{
   font-family: Helvetica;
@@ -520,6 +631,7 @@ width: 100%;
   margin-left: 0;
   border: none;
 margin: 0 auto;
+padding: 3%;
 text-align: center;
 }
 .spectrum-image{
@@ -528,32 +640,31 @@ margin: 0 auto;
 padding-top: 2%;
 padding-bottom: 2%;
 }
-.temple-frame{
-  display:none;
-}
+
 .frame-spec{
-width: 45%;
+width: 100%;
 display: inline-block;
-margin-left: 5%;
+
 margin-right: -4%;
 font-family: 'hero-light';
 font-size: 3.5vw;
 font-weight: 100;
 }
 .lens-spec{
-  width: 40%; 
+  width: 100%; 
   display: inline-block;
 
+  margin-right: -4%;
   font-family: 'hero-light';
   font-size: 3.5vw;
   font-weight: 100;
 }
+.status-button{
+  padding: 3%;
+}
 .add-and-price{
-  float: right;
-
-
-margin-top: 48px;
-
+ 
+display: none;
 
 }
 
@@ -611,5 +722,44 @@ margin-left: 1%;
   font-size: 3.2vw;
 margin-top: 25%;
 font-weight: 100;
+}
+/* Ensure the carousel takes up the full viewport height */
+#carouselExampleIndicators {
+  height: 60vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+}
+
+.carousel-inner {
+  height: 100%;  /* Ensure the inner carousel takes up full height */
+}
+
+.carousel-item {
+  height: 100%;  /* Each carousel item should take full height */
+  display: none;
+  align-items: center; /* Vertically center the image */
+  justify-content: center; /* Horizontally center the image */
+}
+
+.d-block.w-100 {
+  height: auto;   /* Maintain aspect ratio */
+  max-height: 100%;  /* Ensure it doesn't exceed container */
+  width: auto;    /* Adjust width to maintain aspect ratio */
+  max-width: 100%;
+}
+
+.carousel-indicators {
+  bottom: 20px; /* Adjust position of indicators */
+}
+
+.curvature-options{
+  display: inline;
+}
+.curve-select{
+width: 60vw;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  align-items: center; /* Vertically centers content */
+  white-space: nowrap;
 }
 }
