@@ -46,7 +46,7 @@ src: url('/helveticaneueltstd-ultlt.otf') format('otf');
 
 width: 80% !important;
 height: auto;
-border: 1px solid black;
+
 }
 
 .carousel-control-next{
@@ -542,9 +542,9 @@ margin-right: 0;
 }
 .d-block.w-100{
 
-width: 90% !important;
+width: 90dvw !important;
 height: auto;
-border: 1px solid black;
+
 }
 .double-column{
   margin-top: 4px;
@@ -730,11 +730,11 @@ font-weight: 100;
 }
 
 .carousel-inner {
-  height: 100%;  /* Ensure the inner carousel takes up full height */
+  height: 100dvh;  /* Ensure the inner carousel takes up full height */
 }
 
 .carousel-item {
-  height: 100%;  /* Each carousel item should take full height */
+  height: 100dvh;  /* Each carousel item should take full height */
   display: none;
   align-items: center; /* Vertically center the image */
   justify-content: center; /* Horizontally center the image */
@@ -742,9 +742,9 @@ font-weight: 100;
 
 .d-block.w-100 {
   height: auto;   /* Maintain aspect ratio */
-  max-height: 100%;  /* Ensure it doesn't exceed container */
+  max-height: 100dvh;  /* Ensure it doesn't exceed container */
   width: auto;    /* Adjust width to maintain aspect ratio */
-  max-width: 100%;
+  max-width: 100dvw;
 }
 
 .carousel-indicators {
