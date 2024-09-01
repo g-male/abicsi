@@ -594,10 +594,14 @@ margin: 0;
 width: 100%;
 }
 
-
+.bottom{
+  display: inline-block;
+  clear: both;
+  height: auto;
+}
 
 .product-info.mobile {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 1fr 1fr; /* Two columns with equal width */
   gap: 20px; /* Adjust spacing between columns */
   align-items: center; /* Align content vertically in the center */
