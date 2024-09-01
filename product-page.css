@@ -730,11 +730,11 @@ font-weight: 100;
 }
 
 .carousel-inner {
-  height: 100dvh;  /* Ensure the inner carousel takes up full height */
+  /* Ensure the inner carousel takes up full height */
 }
 
 .carousel-item {
-  height: 100dvh;  /* Each carousel item should take full height */
+ /* Each carousel item should take full height */
   display: none;
   align-items: center; /* Vertically center the image */
   justify-content: center; /* Horizontally center the image */
@@ -747,9 +747,7 @@ font-weight: 100;
   max-width: 100dvw;
 }
 
-.carousel-indicators {
-  bottom: 20px; /* Adjust position of indicators */
-}
+
 
 .curvature-options{
   display: inline;
