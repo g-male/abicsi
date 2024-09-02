@@ -282,7 +282,7 @@ flex-direction: row;
 .curve-silo{
   width: 75%;
   margin-right: 45%;
-  margin-top: 10%;
+  margin-top: 25%;
 }
 .product-info.mobile{
   display: none;
@@ -290,7 +290,7 @@ flex-direction: row;
 .temple-frame{
   font-family: "helvetica";
   font-weight:600;
-  color: rgb(194, 71, 194);
+  color:#d63a88;
 }
 .other-text{
   font-size: 1vw;

@@ -63,6 +63,9 @@ html, body {
             font-weight: bold;
             font-size: 4vw;
           }
+          .glassestype img{
+            width: 80%;
+          }
 
 #canadian-cities{
     opacity: 0;
@@ -264,7 +267,7 @@ line-height: normal;
 .vid-placehold{
 margin: auto;
 width: 100%;
-margin-top: 3%;
+margin-top: 1%;
 }
 .arrow-graphic{
     margin: auto;
