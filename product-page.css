@@ -49,9 +49,6 @@ height: auto;
 
 }
 
-.carousel-control-next{
-
-}
 
 .carousel-control-next-icon{
 
@@ -223,6 +220,10 @@ padding-left: 1%;
 .carousel-indicators{
   bottom: 1% !important;
   position: absolute;
+  margin-top: 10% !important;
+}
+ol{
+  margin-bottom: -3%;
 }
 .container{
 
@@ -560,6 +561,9 @@ padding-left: 0;
 .carousel-indicators{
   bottom: -30px !important;
  
+}
+ol{
+  margin-bottom: 0;
 }
 .back a{
   color: black;
