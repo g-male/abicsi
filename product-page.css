@@ -503,6 +503,7 @@ display: none;
   .carousel-indicators{
     bottom: 1% !important;
     position: relative;
+    margin-top: 5% !important;
   }
 
   .temple-frame, .curvature-options {
