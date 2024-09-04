@@ -45,8 +45,8 @@ src: url('/helveticaneueltstd-ultlt.otf') format('otf');
 .d-block.w-100{
 
 width: 90dvw !important;
-min-height: 87vh;          /* Set a minimum height, e.g., 20% of the viewport height */
-max-height: 85vh; 
+        /* Set a minimum height, e.g., 20% of the viewport height */
+min-height: 87dvh;
 max-width: 81%;
 object-fit: cover;
 }
