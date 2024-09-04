@@ -44,9 +44,11 @@ src: url('/helveticaneueltstd-ultlt.otf') format('otf');
    }
 .d-block.w-100{
 
-width: 80% !important;
-height: auto;
-
+width: 90dvw !important;
+min-height: 87vh;          /* Set a minimum height, e.g., 20% of the viewport height */
+max-height: 85vh; 
+max-width: 81%;
+object-fit: cover;
 }
 
 
@@ -223,7 +225,7 @@ padding-left: 1%;
   margin-top: 10% !important;
 }
 ol{
-  margin-bottom: -1%;
+  margin-bottom: -5%;
 }
 .container{
 
@@ -488,7 +490,7 @@ display: none;
 
 /*SMARTPHONE MEDIA QUERIES */
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 850px) {
 .small-logo{
   display: none;
 }
@@ -547,7 +549,7 @@ display: inline-block;
 
 }
 .d-block.w-100{
-
+min-height: 60vh;
 width: 90dvw !important;
 height: auto;
 
@@ -755,7 +757,7 @@ font-weight: 100;
 }
 
 .d-block.w-100 {
-  height: auto;   /* Maintain aspect ratio */
+  height: auto !important;   /* Maintain aspect ratio */
   max-height: 100dvh;  /* Ensure it doesn't exceed container */
   width: auto;    /* Adjust width to maintain aspect ratio */
   max-width: 100dvw;
