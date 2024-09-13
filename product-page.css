@@ -47,8 +47,8 @@ src: url('/helveticaneueltstd-ultlt.otf') format('otf');
 width: 90dvw !important;
         /* Set a minimum height, e.g., 20% of the viewport height */
 min-height: 87dvh;
-max-width: 85%;
-object-fit: cover;
+max-width: 83%;
+object-fit: contain;
 }
 
 
@@ -550,10 +550,17 @@ display: inline-block;
 }
 .d-block.w-100{
 min-height: 60vh;
-width: 90dvw !important;
+
 height: auto;
 
 }
+.d-block.w-100 {
+  height: auto !important;   /* Maintain aspect ratio */
+  max-height: 100dvh;  /* Ensure it doesn't exceed container */
+  width: auto;    /* Adjust width to maintain aspect ratio */
+  max-width: 500px;
+}
+
 .double-column{
   margin-top: 4px;
 }
@@ -756,12 +763,6 @@ font-weight: 100;
   justify-content: center; /* Horizontally center the image */
 }
 
-.d-block.w-100 {
-  height: auto !important;   /* Maintain aspect ratio */
-  max-height: 100dvh;  /* Ensure it doesn't exceed container */
-  width: auto;    /* Adjust width to maintain aspect ratio */
-  max-width: 100dvw;
-}
 
 
 
