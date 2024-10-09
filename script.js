@@ -88,7 +88,7 @@ console.log(data_one)
 
 
 //DAILY UV MAX VALUE
- const uvi_one = data_one.forecast.forecastday[0].day.uv;
+  uvi_one = data_one.forecast.forecastday[0].day.uv;
  
  
  //LOCATION INFO VALUE
@@ -120,7 +120,7 @@ console.log(city_name_one)
 
 
    }
-   else if (uvi_one == 2 )
+   else if (uvi_one > 1 && uvi_one <= 2 )
    {
    // Adding row color
    var element = document.getElementById('one');
@@ -130,7 +130,7 @@ console.log(city_name_one)
    
    
    }  
-else if (uvi_one == 3 )
+else if (uvi_one > 2 && uvi_one <= 3 )
    {
      var element = document.getElementById('one');
      element.classList.add("levelthree");
@@ -139,7 +139,7 @@ else if (uvi_one == 3 )
    document.getElementById("uvi_icon_one").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_one == 4 )
+   else if (uvi_one > 3 && uvi_one <= 4 )
    {
      var element = document.getElementById('one');
      element.classList.add("levelfour");
@@ -149,7 +149,7 @@ else if (uvi_one == 3 )
 
   
    }  
-   else if (uvi_one == 5 )
+   else if (uvi_one > 4 && uvi_one <= 5 )
    {
      var element = document.getElementById('one');
      element.classList.add("levelfive");
@@ -158,7 +158,7 @@ else if (uvi_one == 3 )
    document.getElementById("uvi_icon_one").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_one == 6 )
+   else if (uvi_one > 5 && uvi_one <= 6 )
    {
      var element = document.getElementById('one');
      element.classList.add("levelsix");
@@ -167,7 +167,7 @@ else if (uvi_one == 3 )
    document.getElementById("uvi_icon_one").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_one == 7 )
+   else if (uvi_one > 6 && uvi_one <= 7 )
    {
      var element = document.getElementById('one');
      element.classList.add("levelseven");
@@ -176,7 +176,7 @@ else if (uvi_one == 3 )
    document.getElementById("uvi_icon_one").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_one == 8 )
+   else if (uvi_one > 7 && uvi_one <= 8 )
    {
      var element = document.getElementById('one');
      element.classList.add("leveleight");
@@ -185,7 +185,7 @@ else if (uvi_one == 3 )
    document.getElementById("uvi_icon_one").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_one == 9 )
+   else if (uvi_one > 8 && uvi_one <= 9 )
    {
      var element = document.getElementById('one');
      element.classList.add("levelnine");
@@ -194,7 +194,7 @@ else if (uvi_one == 3 )
    document.getElementById("uvi_icon_one").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_one == 10 )
+   else if (uvi_one > 9 && uvi_one <= 10 )
    {
      var element = document.getElementById('one');
      element.classList.add("levelten");
@@ -203,7 +203,7 @@ else if (uvi_one == 3 )
    document.getElementById("uvi_icon_one").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_one >= 11 )
+   else if (uvi_one > 10 )
    {
      var element = document.getElementById('one');
      element.classList.add("leveleleven");
@@ -266,7 +266,7 @@ const city_name_two = data_two.location.name;
 
 
    }
-   else if (uvi_two == 2 )
+   else if (uvi_two > 1 && uvi_two <= 2 )
    {
    // Adding row color
    var element = document.getElementById('two');
@@ -276,7 +276,7 @@ const city_name_two = data_two.location.name;
    
    
    }  
-else if (uvi_two == 3 )
+else if (uvi_two > 2 && uvi_two <= 3 )
    {
      var element = document.getElementById('two');
      element.classList.add("levelthree");
@@ -285,7 +285,7 @@ else if (uvi_two == 3 )
    document.getElementById("uvi_icon_two").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_two == 4 )
+   else if (uvi_two > 3 && uvi_two <= 4 )
    {
      var element = document.getElementById('two');
      element.classList.add("levelfour");
@@ -295,7 +295,7 @@ else if (uvi_two == 3 )
 
   
    }  
-   else if (uvi_two == 5 )
+   else if (uvi_two > 4 && uvi_two <= 5 )
    {
      var element = document.getElementById('two');
      element.classList.add("levelfive");
@@ -304,7 +304,7 @@ else if (uvi_two == 3 )
    document.getElementById("uvi_icon_two").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_two == 6 )
+   else if (uvi_two > 5 && uvi_two <= 6 )
    {
      var element = document.getElementById('two');
      element.classList.add("levelsix");
@@ -313,7 +313,7 @@ else if (uvi_two == 3 )
    document.getElementById("uvi_icon_two").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_two == 7 )
+   else if (uvi_two > 6 && uvi_two <= 7 )
    {
      var element = document.getElementById('two');
      element.classList.add("levelseven");
@@ -322,7 +322,7 @@ else if (uvi_two == 3 )
    document.getElementById("uvi_icon_two").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_two == 8 )
+   else if (uvi_two > 7 && uvi_two <= 8 )
    {
      var element = document.getElementById('two');
      element.classList.add("leveleight");
@@ -331,7 +331,7 @@ else if (uvi_two == 3 )
    document.getElementById("uvi_icon_two").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_two == 9 )
+   else if (uvi_two > 8 && uvi_two <= 9 )
    {
      var element = document.getElementById('two');
      element.classList.add("levelnine");
@@ -340,7 +340,7 @@ else if (uvi_two == 3 )
    document.getElementById("uvi_icon_two").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_two == 10 )
+   else if (uvi_two > 9 && uvi_two <= 10 )
    {
      var element = document.getElementById('two');
      element.classList.add("levelten");
@@ -349,7 +349,7 @@ else if (uvi_two == 3 )
    document.getElementById("uvi_icon_two").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_two >= 11 )
+   else if (uvi_two > 10 )
    {
      var element = document.getElementById('two');
      element.classList.add("leveleleven");
@@ -412,7 +412,7 @@ const city_name_three = data_three.location.name;
 
 
    }
-   else if (uvi_three == 2 )
+   else if (uvi_three > 1 && uvi_three <= 2 )
    {
    // Adding row color
    var element = document.getElementById('three');
@@ -422,7 +422,7 @@ const city_name_three = data_three.location.name;
    
    
    }  
-else if (uvi_three == 3 )
+else if (uvi_three > 2 && uvi_three <= 3 )
    {
      var element = document.getElementById('three');
      element.classList.add("levelthree");
@@ -431,7 +431,7 @@ else if (uvi_three == 3 )
    document.getElementById("uvi_icon_three").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_three == 4 )
+   else if (uvi_three > 3 && uvi_three <= 4 )
    {
      var element = document.getElementById('three');
      element.classList.add("levelfour");
@@ -441,7 +441,7 @@ else if (uvi_three == 3 )
 
   
    }  
-   else if (uvi_three == 5 )
+   else if (uvi_three > 4 && uvi_three <= 5 )
    {
      var element = document.getElementById('three');
      element.classList.add("levelfive");
@@ -450,7 +450,7 @@ else if (uvi_three == 3 )
    document.getElementById("uvi_icon_three").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_three == 6 )
+   else if (uvi_three > 5 && uvi_three <= 6 )
    {
      var element = document.getElementById('three');
      element.classList.add("levelsix");
@@ -459,7 +459,7 @@ else if (uvi_three == 3 )
    document.getElementById("uvi_icon_three").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_three == 7 )
+   else if (uvi_three > 6 && uvi_three <= 7 )
    {
      var element = document.getElementById('three');
      element.classList.add("levelseven");
@@ -468,7 +468,7 @@ else if (uvi_three == 3 )
    document.getElementById("uvi_icon_three").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_three == 8 )
+   else if (uvi_three > 7 && uvi_three <= 8 )
    {
      var element = document.getElementById('three');
      element.classList.add("leveleight");
@@ -477,7 +477,7 @@ else if (uvi_three == 3 )
    document.getElementById("uvi_icon_three").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_three == 9 )
+   else if (uvi_three > 8 && uvi_three <= 9 )
    {
      var element = document.getElementById('three');
      element.classList.add("levelnine");
@@ -486,7 +486,7 @@ else if (uvi_three == 3 )
    document.getElementById("uvi_icon_three").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_three == 10 )
+   else if (uvi_three > 9 && uvi_three <= 10 )
    {
      var element = document.getElementById('three');
      element.classList.add("levelten");
@@ -495,7 +495,7 @@ else if (uvi_three == 3 )
    document.getElementById("uvi_icon_three").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_three >= 11 )
+   else if (uvi_three > 10 )
    {
      var element = document.getElementById('three');
      element.classList.add("leveleleven");
@@ -557,7 +557,7 @@ const city_name_four = data_four.location.name;
 
 
    }
-   else if (uvi_four == 2 )
+   else if (uvi_four > 1 && uvi_four < 2 )
    {
    // Adding row color
    var element = document.getElementById('four');
@@ -567,7 +567,7 @@ const city_name_four = data_four.location.name;
    
    
    }  
-else if (uvi_four == 3 )
+else if (uvi_four > 2 && uvi_four < 3 )
    {
      var element = document.getElementById('four');
      element.classList.add("levelthree");
@@ -576,7 +576,7 @@ else if (uvi_four == 3 )
    document.getElementById("uvi_icon_four").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_four == 4 )
+   else if (uvi_four > 3 && uvi_four <= 4)
    {
      var element = document.getElementById('four');
      element.classList.add("levelfour");
@@ -586,7 +586,7 @@ else if (uvi_four == 3 )
 
   
    }  
-   else if (uvi_four == 5 )
+   else if (uvi_four > 4 && uvi_four <= 5 )
    {
      var element = document.getElementById('four');
      element.classList.add("levelfive");
@@ -595,7 +595,7 @@ else if (uvi_four == 3 )
    document.getElementById("uvi_icon_four").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_four == 6 )
+   else if (uvi_four > 5 && uvi_four <= 6)
    {
      var element = document.getElementById('four');
      element.classList.add("levelsix");
@@ -604,7 +604,7 @@ else if (uvi_four == 3 )
    document.getElementById("uvi_icon_four").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_four == 7 )
+   else if (uvi_four > 6 && uvi_four <= 7 )
    {
      var element = document.getElementById('four');
      element.classList.add("levelseven");
@@ -613,7 +613,7 @@ else if (uvi_four == 3 )
    document.getElementById("uvi_icon_four").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_four == 8 )
+   else if (uvi_four > 7 && uvi_four <= 8)
    {
      var element = document.getElementById('four');
      element.classList.add("leveleight");
@@ -622,7 +622,7 @@ else if (uvi_four == 3 )
    document.getElementById("uvi_icon_four").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_four == 9 )
+   else if (uvi_four > 8 && uvi_four <= 9 )
    {
      var element = document.getElementById('four');
      element.classList.add("levelnine");
@@ -631,7 +631,7 @@ else if (uvi_four == 3 )
    document.getElementById("uvi_icon_four").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_four == 10 )
+   else if (uvi_four > 9 && uvi_four <= 10 )
    {
      var element = document.getElementById('four');
      element.classList.add("levelten");
@@ -640,7 +640,7 @@ else if (uvi_four == 3 )
    document.getElementById("uvi_icon_four").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_four >= 11 )
+   else if (uvi_four > 10 )
    {
      var element = document.getElementById('four');
      element.classList.add("leveleleven");
@@ -698,7 +698,7 @@ const city_name_five = data_five.location.name;
 
 
    }
-   else if (uvi_five == 2 )
+   else if (uvi_five > 1 && uvi_five <= 2 )
    {
    // Adding row color
    var element = document.getElementById('five');
@@ -708,7 +708,7 @@ const city_name_five = data_five.location.name;
    
    
    }  
-else if (uvi_five == 3 )
+else if (uvi_five > 2 && uvi_five <=  3 )
    {
      var element = document.getElementById('five');
      element.classList.add("levelthree");
@@ -717,7 +717,7 @@ else if (uvi_five == 3 )
    document.getElementById("uvi_icon_five").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_five == 4 )
+   else if (uvi_five > 3 && uvi_five <=  4 )
    {
      var element = document.getElementById('five');
      element.classList.add("levelfour");
@@ -727,7 +727,7 @@ else if (uvi_five == 3 )
 
   
    }  
-   else if (uvi_five == 5 )
+   else if (uvi_five > 4 && uvi_five <= 5 )
    {
      var element = document.getElementById('five');
      element.classList.add("levelfive");
@@ -736,7 +736,7 @@ else if (uvi_five == 3 )
    document.getElementById("uvi_icon_five").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_five == 6 )
+   else if (uvi_five => 5 && uvi_five <= 6 )
    {
      var element = document.getElementById('five');
      element.classList.add("levelsix");
@@ -745,7 +745,7 @@ else if (uvi_five == 3 )
    document.getElementById("uvi_icon_five").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_five == 7 )
+   else if (uvi_five > 6 && uvi_five <= 7 )
    {
      var element = document.getElementById('five');
      element.classList.add("levelseven");
@@ -754,7 +754,7 @@ else if (uvi_five == 3 )
    document.getElementById("uvi_icon_five").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_five == 8 )
+   else if (uvi_five > 7 && uvi_five <= 8 )
    {
      var element = document.getElementById('five');
      element.classList.add("leveleight");
@@ -763,7 +763,7 @@ else if (uvi_five == 3 )
    document.getElementById("uvi_icon_five").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_five == 9 )
+   else if (uvi_five > 8 && uvi_five <= 9 )
    {
      var element = document.getElementById('five');
      element.classList.add("levelnine");
@@ -772,7 +772,7 @@ else if (uvi_five == 3 )
    document.getElementById("uvi_icon_five").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_five == 10 )
+   else if (uvi_five > 9 && uvi_five <= 10 )
    {
      var element = document.getElementById('five');
      element.classList.add("levelten");
@@ -781,7 +781,7 @@ else if (uvi_five == 3 )
    document.getElementById("uvi_icon_five").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_five >= 11 )
+   else if (uvi_five > 10 )
    {
      var element = document.getElementById('five');
      element.classList.add("leveleleven");
@@ -811,7 +811,7 @@ console.log(data_six)
 
 
 //DAILY UV MAX VALUE
- const uvi_six = data_six.forecast.forecastday[0].day.uv;
+  uvi_six = data_six.forecast.forecastday[0].day.uv;
  
  
  //LOCATION INFO VALUE
@@ -840,7 +840,7 @@ const city_name_six = data_six.location.name;
 
 
    }
-   else if (uvi_six == 2 )
+   else if (uvi_six > 1 && uvi_six <= 2 )
    {
    // Adding row color
    var element = document.getElementById('six');
@@ -850,7 +850,7 @@ const city_name_six = data_six.location.name;
    
    
    }  
-else if (uvi_six == 3 )
+else if (uvi_six > 2 && uvi_six <= 3 )
    {
      var element = document.getElementById('six');
      element.classList.add("levelthree");
@@ -859,7 +859,7 @@ else if (uvi_six == 3 )
    document.getElementById("uvi_icon_six").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_six == 4 )
+   else if (uvi_six > 3 && uvi_six <= 4 )
    {
      var element = document.getElementById('six');
      element.classList.add("levelfour");
@@ -869,7 +869,7 @@ else if (uvi_six == 3 )
 
   
    }  
-   else if (uvi_six == 5 )
+   else if (uvi_six > 4 && uvi_six <= 5 )
    {
      var element = document.getElementById('six');
      element.classList.add("levelfive");
@@ -878,7 +878,7 @@ else if (uvi_six == 3 )
    document.getElementById("uvi_icon_six").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_six == 6 )
+   else if (uvi_six > 5 && uvi_six <= 6 )
    {
      var element = document.getElementById('six');
      element.classList.add("levelsix");
@@ -887,7 +887,7 @@ else if (uvi_six == 3 )
    document.getElementById("uvi_icon_six").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_six == 7 )
+   else if (uvi_six > 6 && uvi_six <= 7 )
    {
      var element = document.getElementById('six');
      element.classList.add("levelseven");
@@ -896,7 +896,7 @@ else if (uvi_six == 3 )
    document.getElementById("uvi_icon_six").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_six == 8 )
+   else if (uvi_six > 7 && uvi_six <= 8 )
    {
      var element = document.getElementById('six');
      element.classList.add("leveleight");
@@ -905,7 +905,7 @@ else if (uvi_six == 3 )
    document.getElementById("uvi_icon_six").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_six == 9 )
+   else if (uvi_six > 8 && uvi_six <= 9 )
    {
      var element = document.getElementById('six');
      element.classList.add("levelnine");
@@ -914,7 +914,7 @@ else if (uvi_six == 3 )
    document.getElementById("uvi_icon_six").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_six == 10 )
+   else if (uvi_six > 9 && uvi_six <= 10 )
    {
      var element = document.getElementById('six');
      element.classList.add("levelten");
@@ -923,7 +923,7 @@ else if (uvi_six == 3 )
    document.getElementById("uvi_icon_six").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_six >= 11 )
+   else if (uvi_six > 10 )
    {
      var element = document.getElementById('six');
      element.classList.add("leveleleven");
@@ -983,7 +983,7 @@ const city_name_seven = data_seven.location.name;
 
 
    }
-   else if (uvi_seven == 2 )
+   else if (uvi_seven > 1 && uvi_seven <= 2 )
    {
    // Adding row color
    var element = document.getElementById('seven');
@@ -993,7 +993,7 @@ const city_name_seven = data_seven.location.name;
    
    
    }  
-else if (uvi_seven == 3 )
+else if (uvi_seven > 2 && uvi_seven <= 3 )
    {
      var element = document.getElementById('seven');
      element.classList.add("levelthree");
@@ -1002,7 +1002,7 @@ else if (uvi_seven == 3 )
    document.getElementById("uvi_icon_seven").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_seven == 4 )
+   else if (uvi_seven > 3 && uvi_seven <= 4 )
    {
      var element = document.getElementById('seven');
      element.classList.add("levelfour");
@@ -1012,7 +1012,7 @@ else if (uvi_seven == 3 )
 
   
    }  
-   else if (uvi_seven == 5 )
+   else if (uvi_seven > 4 && uvi_seven <= 5 )
    {
      var element = document.getElementById('seven');
      element.classList.add("levelfive");
@@ -1021,7 +1021,7 @@ else if (uvi_seven == 3 )
    document.getElementById("uvi_icon_seven").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_seven == 6 )
+   else if (uvi_seven > 5 && uvi_seven <= 6 )
    {
      var element = document.getElementById('seven');
      element.classList.add("levelsix");
@@ -1030,7 +1030,7 @@ else if (uvi_seven == 3 )
    document.getElementById("uvi_icon_seven").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_seven == 7 )
+   else if (uvi_seven > 6 && uvi_seven <= 7 )
    {
      var element = document.getElementById('seven');
      element.classList.add("levelseven");
@@ -1039,7 +1039,7 @@ else if (uvi_seven == 3 )
    document.getElementById("uvi_icon_seven").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_seven == 8 )
+   else if (uvi_seven > 7 && uvi_seven <= 8 )
    {
      var element = document.getElementById('seven');
      element.classList.add("leveleight");
@@ -1048,7 +1048,7 @@ else if (uvi_seven == 3 )
    document.getElementById("uvi_icon_seven").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_seven == 9 )
+   else if (uvi_seven > 8 && uvi_seven <= 9 )
    {
      var element = document.getElementById('seven');
      element.classList.add("levelnine");
@@ -1057,7 +1057,7 @@ else if (uvi_seven == 3 )
    document.getElementById("uvi_icon_seven").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_seven == 10 )
+   else if (uvi_seven > 9 && uvi_seven <= 10 )
    {
      var element = document.getElementById('seven');
      element.classList.add("levelten");
@@ -1066,7 +1066,7 @@ else if (uvi_seven == 3 )
    document.getElementById("uvi_icon_seven").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_seven >= 11 )
+   else if (uvi_seven > 10 )
    {
      var element = document.getElementById('seven');
      element.classList.add("leveleleven");
@@ -1125,7 +1125,7 @@ const city_name_eight = data_eight.location.name;
 
 
    }
-   else if (uvi_eight == 2 )
+   else if (uvi_eight > 1 && uvi_eight <= 2 )
    {
    // Adding row color
    var element = document.getElementById('eight');
@@ -1135,7 +1135,7 @@ const city_name_eight = data_eight.location.name;
    
    
    }  
-else if (uvi_eight == 3 )
+else if (uvi_eight > 2 && uvi_eight <= 3 )
    {
      var element = document.getElementById('eight');
      element.classList.add("levelthree");
@@ -1144,7 +1144,7 @@ else if (uvi_eight == 3 )
    document.getElementById("uvi_icon_eight").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_eight == 4 )
+   else if (uvi_eight > 3 && uvi_eight <= 4 )
    {
      var element = document.getElementById('eight');
      element.classList.add("levelfour");
@@ -1154,7 +1154,7 @@ else if (uvi_eight == 3 )
 
   
    }  
-   else if (uvi_eight == 5 )
+   else if (uvi_eight > 4 && uvi_eight <= 5 )
    {
      var element = document.getElementById('eight');
      element.classList.add("levelfive");
@@ -1163,7 +1163,7 @@ else if (uvi_eight == 3 )
    document.getElementById("uvi_icon_eight").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_eight == 6 )
+   else if (uvi_eight > 5 && uvi_eight <= 6 )
    {
      var element = document.getElementById('eight');
      element.classList.add("levelsix");
@@ -1172,7 +1172,7 @@ else if (uvi_eight == 3 )
    document.getElementById("uvi_icon_eight").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_eight == 7 )
+   else if (uvi_eight > 6 && uvi_eight <= 7 )
    {
      var element = document.getElementById('eight');
      element.classList.add("levelseven");
@@ -1181,7 +1181,7 @@ else if (uvi_eight == 3 )
    document.getElementById("uvi_icon_eight").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_eight == 8 )
+   else if (uvi_eight > 7 && uvi_eight <= 8 )
    {
      var element = document.getElementById('eight');
      element.classList.add("leveleight");
@@ -1190,7 +1190,7 @@ else if (uvi_eight == 3 )
    document.getElementById("uvi_icon_eight").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_eight == 9 )
+   else if (uvi_eight > 8 && uvi_eight <= 9 )
    {
      var element = document.getElementById('eight');
      element.classList.add("levelnine");
@@ -1199,7 +1199,7 @@ else if (uvi_eight == 3 )
    document.getElementById("uvi_icon_eight").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_eight == 10 )
+   else if (uvi_eight > 9 && uvi_eight <= 10 )
    {
      var element = document.getElementById('eight');
      element.classList.add("levelten");
@@ -1208,7 +1208,7 @@ else if (uvi_eight == 3 )
    document.getElementById("uvi_icon_eight").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_eight >= 11 )
+   else if (uvi_eight > 10 )
    {
      var element = document.getElementById('eight');
      element.classList.add("leveleleven");
@@ -1267,7 +1267,7 @@ const city_name_nine = data_nine.location.name;
 
 
    }
-   else if (uvi_nine == 2 )
+   else if (uvi_nine > 1 && uvi_nine <= 2 )
    {
    // Adding row color
    var element = document.getElementById('nine');
@@ -1277,7 +1277,7 @@ const city_name_nine = data_nine.location.name;
    
    
    }  
-else if (uvi_nine == 3 )
+else if (uvi_nine > 2 && uvi_nine <= 3 )
    {
      var element = document.getElementById('nine');
      element.classList.add("levelthree");
@@ -1286,7 +1286,7 @@ else if (uvi_nine == 3 )
    document.getElementById("uvi_icon_nine").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_nine == 4 )
+   else if (uvi_nine > 3 && uvi_nine <= 4 )
    {
      var element = document.getElementById('nine');
      element.classList.add("levelfour");
@@ -1296,7 +1296,7 @@ else if (uvi_nine == 3 )
 
   
    }  
-   else if (uvi_nine == 5 )
+   else if (uvi_nine > 4 && uvi_nine <= 5 )
    {
      var element = document.getElementById('nine');
      element.classList.add("levelfive");
@@ -1305,7 +1305,7 @@ else if (uvi_nine == 3 )
    document.getElementById("uvi_icon_nine").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_nine == 6 )
+   else if (uvi_nine > 5 && uvi_nine <= 6 )
    {
      var element = document.getElementById('nine');
      element.classList.add("levelsix");
@@ -1314,7 +1314,7 @@ else if (uvi_nine == 3 )
    document.getElementById("uvi_icon_nine").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_nine == 7 )
+   else if (uvi_nine > 6 && uvi_nine <= 7 )
    {
      var element = document.getElementById('nine');
      element.classList.add("levelseven");
@@ -1323,7 +1323,7 @@ else if (uvi_nine == 3 )
    document.getElementById("uvi_icon_nine").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_nine == 8 )
+   else if (uvi_nine > 7 && uvi_nine <= 8 )
    {
      var element = document.getElementById('nine');
      element.classList.add("leveleight");
@@ -1332,7 +1332,7 @@ else if (uvi_nine == 3 )
    document.getElementById("uvi_icon_nine").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_nine == 9 )
+   else if (uvi_nine > 8 && uvi_nine <= 9 )
    {
      var element = document.getElementById('nine');
      element.classList.add("levelnine");
@@ -1341,7 +1341,7 @@ else if (uvi_nine == 3 )
    document.getElementById("uvi_icon_nine").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_nine == 10 )
+   else if (uvi_nine > 9 && uvi_nine <= 10 )
    {
      var element = document.getElementById('nine');
      element.classList.add("levelten");
@@ -1350,7 +1350,7 @@ else if (uvi_nine == 3 )
    document.getElementById("uvi_icon_nine").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_nine >= 11 )
+   else if (uvi_nine > 10 )
    {
      var element = document.getElementById('nine');
      element.classList.add("leveleleven");
@@ -1409,7 +1409,7 @@ const city_name_ten = data_ten.location.name;
 
 
    }
-   else if (uvi_ten == 2 )
+   else if (uvi_ten > 1 && uvi_ten <= 2 )
    {
    // Adding row color
    var element = document.getElementById('ten');
@@ -1419,7 +1419,7 @@ const city_name_ten = data_ten.location.name;
    
    
    }  
-else if (uvi_ten == 3 )
+else if (uvi_ten > 2 && uvi_ten <= 3 )
    {
      var element = document.getElementById('ten');
      element.classList.add("levelthree");
@@ -1428,7 +1428,7 @@ else if (uvi_ten == 3 )
    document.getElementById("uvi_icon_ten").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_ten == 4 )
+   else if (uvi_ten > 3 && uvi_ten <= 4 )
    {
      var element = document.getElementById('ten');
      element.classList.add("levelfour");
@@ -1438,7 +1438,7 @@ else if (uvi_ten == 3 )
 
   
    }  
-   else if (uvi_ten == 5 )
+   else if (uvi_ten > 4 && uvi_ten <= 5 )
    {
      var element = document.getElementById('ten');
      element.classList.add("levelfive");
@@ -1447,7 +1447,7 @@ else if (uvi_ten == 3 )
    document.getElementById("uvi_icon_ten").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_ten == 6 )
+   else if (uvi_ten > 5 && uvi_ten <= 6 )
    {
      var element = document.getElementById('ten');
      element.classList.add("levelsix");
@@ -1456,7 +1456,7 @@ else if (uvi_ten == 3 )
    document.getElementById("uvi_icon_ten").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_ten == 7 )
+   else if (uvi_ten > 6 && uvi_ten <= 7 )
    {
      var element = document.getElementById('ten');
      element.classList.add("levelseven");
@@ -1465,7 +1465,7 @@ else if (uvi_ten == 3 )
    document.getElementById("uvi_icon_ten").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_ten == 8 )
+   else if (uvi_ten > 7 && uvi_ten <= 8 )
    {
      var element = document.getElementById('ten');
      element.classList.add("leveleight");
@@ -1474,7 +1474,7 @@ else if (uvi_ten == 3 )
    document.getElementById("uvi_icon_ten").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_ten == 9 )
+   else if (uvi_ten > 8 && uvi_ten <= 9 )
    {
      var element = document.getElementById('ten');
      element.classList.add("levelnine");
@@ -1483,7 +1483,7 @@ else if (uvi_ten == 3 )
    document.getElementById("uvi_icon_ten").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_ten == 10 )
+   else if (uvi_ten > 9 && uvi_ten <= 10 )
    {
      var element = document.getElementById('ten');
      element.classList.add("levelten");
@@ -1492,7 +1492,7 @@ else if (uvi_ten == 3 )
    document.getElementById("uvi_icon_ten").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_ten >= 11 )
+   else if (uvi_ten > 10 )
    {
      var element = document.getElementById('ten');
      element.classList.add("leveleleven");
@@ -1551,7 +1551,7 @@ const city_name_eleven = data_eleven.location.name;
 
 
    }
-   else if (uvi_eleven == 2 )
+   else if (uvi_eleven > 1 && uvi_eleven <= 2 )
    {
    // Adding row color
    var element = document.getElementById('eleven');
@@ -1561,7 +1561,7 @@ const city_name_eleven = data_eleven.location.name;
    
    
    }  
-else if (uvi_eleven == 3 )
+else if (uvi_eleven > 2 && uvi_eleven <= 3 )
    {
      var element = document.getElementById('eleven');
      element.classList.add("levelthree");
@@ -1570,7 +1570,7 @@ else if (uvi_eleven == 3 )
    document.getElementById("uvi_icon_eleven").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_eleven == 4 )
+   else if (uvi_eleven > 3 && uvi_eleven <= 4 )
    {
      var element = document.getElementById('eleven');
      element.classList.add("levelfour");
@@ -1580,7 +1580,7 @@ else if (uvi_eleven == 3 )
 
   
    }  
-   else if (uvi_eleven == 5 )
+   else if (uvi_eleven > 4 && uvi_eleven <= 5 )
    {
      var element = document.getElementById('eleven');
      element.classList.add("levelfive");
@@ -1589,7 +1589,7 @@ else if (uvi_eleven == 3 )
    document.getElementById("uvi_icon_eleven").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_eleven == 6 )
+   else if (uvi_eleven > 5 && uvi_eleven <= 6 )
    {
      var element = document.getElementById('eleven');
      element.classList.add("levelsix");
@@ -1598,7 +1598,7 @@ else if (uvi_eleven == 3 )
    document.getElementById("uvi_icon_eleven").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_eleven == 7 )
+   else if (uvi_eleven > 6 && uvi_eleven <= 7 )
    {
      var element = document.getElementById('eleven');
      element.classList.add("levelseven");
@@ -1607,7 +1607,7 @@ else if (uvi_eleven == 3 )
    document.getElementById("uvi_icon_eleven").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_eleven == 8 )
+   else if (uvi_eleven > 7 && uvi_eleven <= 8 )
    {
      var element = document.getElementById('eleven');
      element.classList.add("leveleight");
@@ -1616,7 +1616,7 @@ else if (uvi_eleven == 3 )
    document.getElementById("uvi_icon_eleven").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_eleven == 9 )
+   else if (uvi_eleven > 8 && uvi_eleven <= 9 )
    {
      var element = document.getElementById('eleven');
      element.classList.add("levelnine");
@@ -1625,7 +1625,7 @@ else if (uvi_eleven == 3 )
    document.getElementById("uvi_icon_eleven").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_eleven == 10 )
+   else if (uvi_eleven > 9 && uvi_eleven <= 10 )
    {
      var element = document.getElementById('eleven');
      element.classList.add("levelten");
@@ -1634,7 +1634,7 @@ else if (uvi_eleven == 3 )
    document.getElementById("uvi_icon_eleven").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_eleven >= 11 )
+   else if (uvi_eleven > 10 )
    {
      var element = document.getElementById('eleven');
      element.classList.add("leveleleven");
@@ -1693,7 +1693,7 @@ const city_name_twelve = data_twelve.location.name;
 
 
    }
-   else if (uvi_twelve == 2 )
+   else if (uvi_twelve > 1 && uvi_twelve <= 2 )
    {
    // Adding row color
    var element = document.getElementById('twelve');
@@ -1703,7 +1703,7 @@ const city_name_twelve = data_twelve.location.name;
    
    
    }  
-else if (uvi_twelve == 3 )
+else if (uvi_twelve > 2 && uvi_twelve <= 3 )
    {
      var element = document.getElementById('twelve');
      element.classList.add("levelthree");
@@ -1712,7 +1712,7 @@ else if (uvi_twelve == 3 )
    document.getElementById("uvi_icon_twelve").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_twelve == 4 )
+   else if (uvi_twelve > 3 && uvi_twelve <= 4 )
    {
      var element = document.getElementById('twelve');
      element.classList.add("levelfour");
@@ -1722,7 +1722,7 @@ else if (uvi_twelve == 3 )
 
   
    }  
-   else if (uvi_twelve == 5 )
+   else if (uvi_twelve > 4 && uvi_twelve <= 5 )
    {
      var element = document.getElementById('twelve');
      element.classList.add("levelfive");
@@ -1731,7 +1731,7 @@ else if (uvi_twelve == 3 )
    document.getElementById("uvi_icon_twelve").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_twelve == 6 )
+   else if (uvi_twelve > 5 && uvi_twelve <= 6 )
    {
      var element = document.getElementById('twelve');
      element.classList.add("levelsix");
@@ -1740,7 +1740,7 @@ else if (uvi_twelve == 3 )
    document.getElementById("uvi_icon_twelve").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_twelve == 7 )
+   else if (uvi_twelve > 6 && uvi_twelve <= 7 )
    {
      var element = document.getElementById('twelve');
      element.classList.add("levelseven");
@@ -1749,7 +1749,7 @@ else if (uvi_twelve == 3 )
    document.getElementById("uvi_icon_twelve").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_twelve == 8 )
+   else if (uvi_twelve > 7 && uvi_twelve <= 8 )
    {
      var element = document.getElementById('twelve');
      element.classList.add("leveleight");
@@ -1758,7 +1758,7 @@ else if (uvi_twelve == 3 )
    document.getElementById("uvi_icon_twelve").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_twelve == 9 )
+   else if (uvi_twelve > 8 && uvi_twelve <= 9 )
    {
      var element = document.getElementById('twelve');
      element.classList.add("levelnine");
@@ -1767,7 +1767,7 @@ else if (uvi_twelve == 3 )
    document.getElementById("uvi_icon_twelve").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_twelve == 10 )
+   else if (uvi_twelve > 9 && uvi_twelve <= 10 )
    {
      var element = document.getElementById('twelve');
      element.classList.add("levelten");
@@ -1776,7 +1776,7 @@ else if (uvi_twelve == 3 )
    document.getElementById("uvi_icon_twelve").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_twelve >= 11 )
+   else if (uvi_twelve > 10 )
    {
      var element = document.getElementById('twelve');
      element.classList.add("leveleleven");
@@ -1824,7 +1824,7 @@ const city_name_thirteen = data_thirteen.location.name;
  document.getElementById('country_name_thirteen').textContent = country_name_thirteen;
 
 
- if (uvi_thirteen <=1 ) {
+ if (uvi_thirteen <= 1 ) {
    // setting colour
    var element = document.getElementById('thirteen');
    element.classList.add("levelone");
@@ -1835,7 +1835,7 @@ const city_name_thirteen = data_thirteen.location.name;
 
 
    }
-   else if (uvi_thirteen == 2 )
+   else if (uvi_thirteen > 1 && uvi_thirteen <= 2 )
    {
    // Adding row color
    var element = document.getElementById('thirteen');
@@ -1845,7 +1845,7 @@ const city_name_thirteen = data_thirteen.location.name;
    
    
    }  
-else if (uvi_thirteen == 3 )
+else if (uvi_thirteen > 2 && uvi_thirteen <=  3 )
    {
      var element = document.getElementById('thirteen');
      element.classList.add("levelthree");
@@ -1854,7 +1854,7 @@ else if (uvi_thirteen == 3 )
    document.getElementById("uvi_icon_thirteen").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_thirteen == 4 )
+   else if (uvi_thirteen > 3 && uvi_thirteen <=  4 )
    {
      var element = document.getElementById('thirteen');
      element.classList.add("levelfour");
@@ -1864,7 +1864,7 @@ else if (uvi_thirteen == 3 )
 
   
    }  
-   else if (uvi_thirteen == 5 )
+   else if (uvi_thirteen > 4 && uvi_thirteen <=  5 )
    {
      var element = document.getElementById('thirteen');
      element.classList.add("levelfive");
@@ -1873,7 +1873,7 @@ else if (uvi_thirteen == 3 )
    document.getElementById("uvi_icon_thirteen").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_thirteen == 6 )
+   else if (uvi_thirteen > 5 && uvi_thirteen <=  6 )
    {
      var element = document.getElementById('thirteen');
      element.classList.add("levelsix");
@@ -1882,7 +1882,7 @@ else if (uvi_thirteen == 3 )
    document.getElementById("uvi_icon_thirteen").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_thirteen == 7 )
+   else if (uvi_thirteen > 6 && uvi_thirteen <=  7 )
    {
      var element = document.getElementById('thirteen');
      element.classList.add("levelseven");
@@ -1891,7 +1891,7 @@ else if (uvi_thirteen == 3 )
    document.getElementById("uvi_icon_thirteen").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_thirteen == 8 )
+   else if (uvi_thirteen > 7 && uvi_thirteen <=  8 )
    {
      var element = document.getElementById('thirteen');
      element.classList.add("leveleight");
@@ -1900,7 +1900,7 @@ else if (uvi_thirteen == 3 )
    document.getElementById("uvi_icon_thirteen").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_thirteen == 9 )
+   else if (uvi_thirteen > 8 && uvi_thirteen <=  9 )
    {
      var element = document.getElementById('thirteen');
      element.classList.add("levelnine");
@@ -1909,7 +1909,7 @@ else if (uvi_thirteen == 3 )
    document.getElementById("uvi_icon_thirteen").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_thirteen == 10 )
+   else if (uvi_thirteen > 9 && uvi_thirteen <=  10 )
    {
      var element = document.getElementById('thirteen');
      element.classList.add("levelten");
@@ -1918,7 +1918,7 @@ else if (uvi_thirteen == 3 )
    document.getElementById("uvi_icon_thirteen").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_thirteen >= 11 )
+   else if (uvi_thirteen > 10 )
    {
      var element = document.getElementById('thirteen');
      element.classList.add("leveleleven");
@@ -1977,7 +1977,7 @@ const city_name_fourteen = data_fourteen.location.name;
 
 
    }
-   else if (uvi_fourteen == 2 )
+   else if (uvi_fourteen > 1 && uvi_fourteen <=  2 )
    {
    // Adding row color
    var element = document.getElementById('fourteen');
@@ -1987,7 +1987,7 @@ const city_name_fourteen = data_fourteen.location.name;
    
    
    }  
-else if (uvi_fourteen == 3 )
+else if (uvi_fourteen > 2 && uvi_fourteen <= 3 )
    {
      var element = document.getElementById('fourteen');
      element.classList.add("levelthree");
@@ -1996,7 +1996,7 @@ else if (uvi_fourteen == 3 )
    document.getElementById("uvi_icon_fourteen").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_fourteen == 4 )
+   else if (uvi_fourteen > 3 && uvi_fourteen <= 4 )
    {
      var element = document.getElementById('fourteen');
      element.classList.add("levelfour");
@@ -2006,7 +2006,7 @@ else if (uvi_fourteen == 3 )
 
   
    }  
-   else if (uvi_fourteen == 5 )
+   else if (uvi_fourteen > 4 && uvi_fourteen <= 5 )
    {
      var element = document.getElementById('fourteen');
      element.classList.add("levelfive");
@@ -2015,7 +2015,7 @@ else if (uvi_fourteen == 3 )
    document.getElementById("uvi_icon_fourteen").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_fourteen == 6 )
+   else if (uvi_fourteen > 5 && uvi_fourteen <= 6 )
    {
      var element = document.getElementById('fourteen');
      element.classList.add("levelsix");
@@ -2024,7 +2024,7 @@ else if (uvi_fourteen == 3 )
    document.getElementById("uvi_icon_fourteen").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_fourteen == 7 )
+   else if (uvi_fourteen > 6 && uvi_fourteen <= 7 )
    {
      var element = document.getElementById('fourteen');
      element.classList.add("levelseven");
@@ -2033,7 +2033,7 @@ else if (uvi_fourteen == 3 )
    document.getElementById("uvi_icon_fourteen").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_fourteen == 8 )
+   else if (uvi_fourteen > 7 && uvi_fourteen <= 8 )
    {
      var element = document.getElementById('fourteen');
      element.classList.add("leveleight");
@@ -2042,7 +2042,7 @@ else if (uvi_fourteen == 3 )
    document.getElementById("uvi_icon_fourteen").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_fourteen == 9 )
+   else if (uvi_fourteen > 8 && uvi_fourteen <= 9 )
    {
      var element = document.getElementById('fourteen');
      element.classList.add("levelnine");
@@ -2051,7 +2051,7 @@ else if (uvi_fourteen == 3 )
    document.getElementById("uvi_icon_fourteen").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_fourteen == 10 )
+   else if (uvi_fourteen > 9 && uvi_fourteen <= 10 )
    {
      var element = document.getElementById('fourteen');
      element.classList.add("levelten");
@@ -2060,7 +2060,7 @@ else if (uvi_fourteen == 3 )
    document.getElementById("uvi_icon_fourteen").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_fourteen >= 11 )
+   else if (uvi_fourteen > 10 )
    {
      var element = document.getElementById('fourteen');
      element.classList.add("leveleleven");
@@ -2121,7 +2121,7 @@ const city_name_fifteen = data_fifteen.location.name;
 
 
    }
-   else if (uvi_fifteen == 2 )
+   else if (uvi_fifteen > 1 && uvi_fifteen <= 2 )
    {
    // Adding row color
    var element = document.getElementById('fifteen');
@@ -2131,7 +2131,7 @@ const city_name_fifteen = data_fifteen.location.name;
    
    
    }  
-else if (uvi_fifteen == 3 )
+else if (uvi_fifteen > 2 && uvi_fifteen <= 3 )
    {
      var element = document.getElementById('fifteen');
      element.classList.add("levelthree");
@@ -2140,7 +2140,7 @@ else if (uvi_fifteen == 3 )
    document.getElementById("uvi_icon_fifteen").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_fifteen == 4 )
+   else if (uvi_fifteen > 3 && uvi_fifteen <= 4 )
    {
      var element = document.getElementById('fifteen');
      element.classList.add("levelfour");
@@ -2150,7 +2150,7 @@ else if (uvi_fifteen == 3 )
 
   
    }  
-   else if (uvi_fifteen == 5 )
+   else if (uvi_fifteen > 4 && uvi_fifteen <= 5 )
    {
      var element = document.getElementById('fifteen');
      element.classList.add("levelfive");
@@ -2159,7 +2159,7 @@ else if (uvi_fifteen == 3 )
    document.getElementById("uvi_icon_fifteen").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_fifteen == 6 )
+   else if (uvi_fifteen > 5 && uvi_fifteen <= 6 )
    {
      var element = document.getElementById('fifteen');
      element.classList.add("levelsix");
@@ -2168,7 +2168,7 @@ else if (uvi_fifteen == 3 )
    document.getElementById("uvi_icon_fifteen").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_fifteen == 7 )
+   else if (uvi_fifteen > 6 && uvi_fifteen <= 7 )
    {
      var element = document.getElementById('fifteen');
      element.classList.add("levelseven");
@@ -2177,7 +2177,7 @@ else if (uvi_fifteen == 3 )
    document.getElementById("uvi_icon_fifteen").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_fifteen == 8 )
+   else if (uvi_fifteen > 7 && uvi_fifteen <= 8 )
    {
      var element = document.getElementById('fifteen');
      element.classList.add("leveleight");
@@ -2186,7 +2186,7 @@ else if (uvi_fifteen == 3 )
    document.getElementById("uvi_icon_fifteen").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_fifteen == 9 )
+   else if (uvi_fifteen > 8 && uvi_fifteen <= 9 )
    {
      var element = document.getElementById('fifteen');
      element.classList.add("levelnine");
@@ -2195,7 +2195,7 @@ else if (uvi_fifteen == 3 )
    document.getElementById("uvi_icon_fifteen").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_fifteen == 10 )
+   else if (uvi_fifteen > 9 && uvi_fifteen <= 10 )
    {
      var element = document.getElementById('fifteen');
      element.classList.add("levelten");
@@ -2204,7 +2204,7 @@ else if (uvi_fifteen == 3 )
    document.getElementById("uvi_icon_fifteen").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_fifteen >= 11 )
+   else if (uvi_fifteen > 10 )
    {
      var element = document.getElementById('fifteen');
      element.classList.add("leveleleven");
@@ -2265,7 +2265,7 @@ const city_name_sixteen = data_sixteen.location.name;
 
 
    }
-   else if (uvi_sixteen == 2 )
+   else if (uvi_sixteen > 1 && uvi_sixteen <= 2 )
    {
    // Adding row color
    var element = document.getElementById('sixteen');
@@ -2275,7 +2275,7 @@ const city_name_sixteen = data_sixteen.location.name;
    
    
    }  
-else if (uvi_sixteen == 3 )
+else if (uvi_sixteen > 2 && uvi_sixteen <= 3 )
    {
      var element = document.getElementById('sixteen');
      element.classList.add("levelthree");
@@ -2284,7 +2284,7 @@ else if (uvi_sixteen == 3 )
    document.getElementById("uvi_icon_sixteen").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_sixteen == 4 )
+   else if (uvi_sixteen > 3 && uvi_sixteen <= 4 )
    {
      var element = document.getElementById('sixteen');
      element.classList.add("levelfour");
@@ -2294,7 +2294,7 @@ else if (uvi_sixteen == 3 )
 
   
    }  
-   else if (uvi_sixteen == 5 )
+   else if (uvi_sixteen > 4 && uvi_sixteen <= 5 )
    {
      var element = document.getElementById('sixteen');
      element.classList.add("levelfive");
@@ -2303,7 +2303,7 @@ else if (uvi_sixteen == 3 )
    document.getElementById("uvi_icon_sixteen").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_sixteen == 6 )
+   else if (uvi_sixteen > 5 && uvi_sixteen <= 6 )
    {
      var element = document.getElementById('sixteen');
      element.classList.add("levelsix");
@@ -2312,7 +2312,7 @@ else if (uvi_sixteen == 3 )
    document.getElementById("uvi_icon_sixteen").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_sixteen == 7 )
+   else if (uvi_sixteen > 6 && uvi_sixteen <= 7 )
    {
      var element = document.getElementById('sixteen');
      element.classList.add("levelseven");
@@ -2321,7 +2321,7 @@ else if (uvi_sixteen == 3 )
    document.getElementById("uvi_icon_sixteen").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_sixteen == 8 )
+   else if (uvi_sixteen > 7 && uvi_sixteen <= 8 )
    {
      var element = document.getElementById('sixteen');
      element.classList.add("leveleight");
@@ -2330,7 +2330,7 @@ else if (uvi_sixteen == 3 )
    document.getElementById("uvi_icon_sixteen").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_sixteen == 9 )
+   else if (uvi_sixteen > 8 && uvi_sixteen <= 9 )
    {
      var element = document.getElementById('sixteen');
      element.classList.add("levelnine");
@@ -2339,7 +2339,7 @@ else if (uvi_sixteen == 3 )
    document.getElementById("uvi_icon_sixteen").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_sixteen == 10 )
+   else if (uvi_sixteen > 9 && uvi_sixteen <= 10 )
    {
      var element = document.getElementById('sixteen');
      element.classList.add("levelten");
@@ -2348,7 +2348,7 @@ else if (uvi_sixteen == 3 )
    document.getElementById("uvi_icon_sixteen").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_sixteen >= 11 )
+   else if (uvi_sixteen > 10 )
    {
      var element = document.getElementById('sixteen');
      element.classList.add("leveleleven");
@@ -2408,7 +2408,7 @@ const city_name_seventeen = data_seventeen.location.name;
 
 
    }
-   else if (uvi_seventeen == 2 )
+   else if (uvi_seventeen > 1 && uvi_seventeen <= 2 )
    {
    // Adding row color
    var element = document.getElementById('seventeen');
@@ -2418,7 +2418,7 @@ const city_name_seventeen = data_seventeen.location.name;
    
    
    }  
-else if (uvi_seventeen == 3 )
+else if (uvi_seventeen > 2 && uvi_seventeen <= 3 )
    {
      var element = document.getElementById('seventeen');
      element.classList.add("levelthree");
@@ -2427,7 +2427,7 @@ else if (uvi_seventeen == 3 )
    document.getElementById("uvi_icon_seventeen").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_seventeen == 4 )
+   else if (uvi_seventeen > 3 && uvi_seventeen <= 4 )
    {
      var element = document.getElementById('seventeen');
      element.classList.add("levelfour");
@@ -2437,7 +2437,7 @@ else if (uvi_seventeen == 3 )
 
   
    }  
-   else if (uvi_seventeen == 5 )
+   else if (uvi_seventeen > 4 && uvi_seventeen <= 5 )
    {
      var element = document.getElementById('seventeen');
      element.classList.add("levelfive");
@@ -2446,7 +2446,7 @@ else if (uvi_seventeen == 3 )
    document.getElementById("uvi_icon_seventeen").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_seventeen == 6 )
+   else if (uvi_seventeen > 5 && uvi_seventeen <= 6 )
    {
      var element = document.getElementById('seventeen');
      element.classList.add("levelsix");
@@ -2455,7 +2455,7 @@ else if (uvi_seventeen == 3 )
    document.getElementById("uvi_icon_seventeen").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_seventeen == 7 )
+   else if (uvi_seventeen > 6 && uvi_seventeen <= 7 )
    {
      var element = document.getElementById('seventeen');
      element.classList.add("levelseven");
@@ -2464,7 +2464,7 @@ else if (uvi_seventeen == 3 )
    document.getElementById("uvi_icon_seventeen").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_seventeen == 8 )
+   else if (uvi_seventeen > 7 && uvi_seventeen <= 8 )
    {
      var element = document.getElementById('seventeen');
      element.classList.add("leveleight");
@@ -2473,7 +2473,7 @@ else if (uvi_seventeen == 3 )
    document.getElementById("uvi_icon_seventeen").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_seventeen == 9 )
+   else if (uvi_seventeen > 8 && uvi_seventeen <= 9 )
    {
      var element = document.getElementById('seventeen');
      element.classList.add("levelnine");
@@ -2482,7 +2482,7 @@ else if (uvi_seventeen == 3 )
    document.getElementById("uvi_icon_seventeen").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_seventeen == 10 )
+   else if (uvi_seventeen > 9 && uvi_seventeen <= 10 )
    {
      var element = document.getElementById('seventeen');
      element.classList.add("levelten");
@@ -2491,7 +2491,7 @@ else if (uvi_seventeen == 3 )
    document.getElementById("uvi_icon_seventeen").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_seventeen >= 11 )
+   else if (uvi_seventeen > 10 )
    {
      var element = document.getElementById('seventeen');
      element.classList.add("leveleleven");
@@ -2550,7 +2550,7 @@ const city_name_eighteen = data_eighteen.location.name;
 
 
    }
-   else if (uvi_eighteen == 2 )
+   else if (uvi_eighteen > 1 && uvi_eighteen <= 2 )
    {
    // Adding row color
    var element = document.getElementById('eighteen');
@@ -2560,7 +2560,7 @@ const city_name_eighteen = data_eighteen.location.name;
    
    
    }  
-else if (uvi_eighteen == 3 )
+else if (uvi_eighteen > 2 && uvi_eighteen <= 3 )
    {
      var element = document.getElementById('eighteen');
      element.classList.add("levelthree");
@@ -2569,7 +2569,7 @@ else if (uvi_eighteen == 3 )
    document.getElementById("uvi_icon_eighteen").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_eighteen == 4 )
+   else if (uvi_eighteen > 3 && uvi_eighteen <= 4 )
    {
      var element = document.getElementById('eighteen');
      element.classList.add("levelfour");
@@ -2579,7 +2579,7 @@ else if (uvi_eighteen == 3 )
 
   
    }  
-   else if (uvi_eighteen == 5 )
+   else if (uvi_eighteen > 4 && uvi_eighteen <= 5 )
    {
      var element = document.getElementById('eighteen');
      element.classList.add("levelfive");
@@ -2588,7 +2588,7 @@ else if (uvi_eighteen == 3 )
    document.getElementById("uvi_icon_eighteen").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_eighteen == 6 )
+   else if (uvi_eighteen > 5 && uvi_eighteen <= 6 )
    {
      var element = document.getElementById('eighteen');
      element.classList.add("levelsix");
@@ -2597,7 +2597,7 @@ else if (uvi_eighteen == 3 )
    document.getElementById("uvi_icon_eighteen").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_eighteen == 7 )
+   else if (uvi_eighteen > 6 && uvi_eighteen <= 7 )
    {
      var element = document.getElementById('eighteen');
      element.classList.add("levelseven");
@@ -2606,7 +2606,7 @@ else if (uvi_eighteen == 3 )
    document.getElementById("uvi_icon_eighteen").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_eighteen == 8 )
+   else if (uvi_eighteen > 7 && uvi_eighteen <= 8 )
    {
      var element = document.getElementById('eighteen');
      element.classList.add("leveleight");
@@ -2615,7 +2615,7 @@ else if (uvi_eighteen == 3 )
    document.getElementById("uvi_icon_eighteen").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_eighteen == 9 )
+   else if (uvi_eighteen > 8 && uvi_eighteen <= 9 )
    {
      var element = document.getElementById('eighteen');
      element.classList.add("levelnine");
@@ -2624,7 +2624,7 @@ else if (uvi_eighteen == 3 )
    document.getElementById("uvi_icon_eighteen").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_eighteen == 10 )
+   else if (uvi_eighteen > 9 && uvi_eighteen <= 10 )
    {
      var element = document.getElementById('eighteen');
      element.classList.add("levelten");
@@ -2633,7 +2633,7 @@ else if (uvi_eighteen == 3 )
    document.getElementById("uvi_icon_eighteen").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_eighteen >= 11 )
+   else if (uvi_eighteen > 10 )
    {
      var element = document.getElementById('eighteen');
      element.classList.add("leveleleven");
@@ -2692,7 +2692,7 @@ const city_name_nineteen = data_nineteen.location.name;
 
 
    }
-   else if (uvi_nineteen == 2 )
+   else if (uvi_nineteen > 1 && uvi_nineteen <= 2 )
    {
    // Adding row color
    var element = document.getElementById('nineteen');
@@ -2702,7 +2702,7 @@ const city_name_nineteen = data_nineteen.location.name;
    
    
    }  
-else if (uvi_nineteen == 3 )
+else if (uvi_nineteen > 2 && uvi_nineteen <= 3 )
    {
      var element = document.getElementById('nineteen');
      element.classList.add("levelthree");
@@ -2711,7 +2711,7 @@ else if (uvi_nineteen == 3 )
    document.getElementById("uvi_icon_nineteen").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_nineteen == 4 )
+   else if (uvi_nineteen > 3 && uvi_nineteen <= 4 )
    {
      var element = document.getElementById('nineteen');
      element.classList.add("levelfour");
@@ -2721,7 +2721,7 @@ else if (uvi_nineteen == 3 )
 
   
    }  
-   else if (uvi_nineteen == 5 )
+   else if (uvi_nineteen > 4 && uvi_nineteen <= 5 )
    {
      var element = document.getElementById('nineteen');
      element.classList.add("levelfive");
@@ -2730,7 +2730,7 @@ else if (uvi_nineteen == 3 )
    document.getElementById("uvi_icon_nineteen").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_nineteen == 6 )
+   else if (uvi_nineteen > 5 && uvi_nineteen <= 6 )
    {
      var element = document.getElementById('nineteen');
      element.classList.add("levelsix");
@@ -2739,7 +2739,7 @@ else if (uvi_nineteen == 3 )
    document.getElementById("uvi_icon_nineteen").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_nineteen == 7 )
+   else if (uvi_nineteen > 6 && uvi_nineteen <= 7 )
    {
      var element = document.getElementById('nineteen');
      element.classList.add("levelseven");
@@ -2748,7 +2748,7 @@ else if (uvi_nineteen == 3 )
    document.getElementById("uvi_icon_nineteen").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_nineteen == 8 )
+   else if (uvi_nineteen > 7 && uvi_nineteen <= 8 )
    {
      var element = document.getElementById('nineteen');
      element.classList.add("leveleight");
@@ -2757,7 +2757,7 @@ else if (uvi_nineteen == 3 )
    document.getElementById("uvi_icon_nineteen").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_nineteen == 9 )
+   else if (uvi_nineteen > 8 && uvi_nineteen <= 9 )
    {
      var element = document.getElementById('nineteen');
      element.classList.add("levelnine");
@@ -2766,7 +2766,7 @@ else if (uvi_nineteen == 3 )
    document.getElementById("uvi_icon_nineteen").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_nineteen == 10 )
+   else if (uvi_nineteen > 9 && uvi_nineteen <= 10 )
    {
      var element = document.getElementById('nineteen');
      element.classList.add("levelten");
@@ -2775,7 +2775,7 @@ else if (uvi_nineteen == 3 )
    document.getElementById("uvi_icon_nineteen").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_nineteen >= 11 )
+   else if (uvi_nineteen > 10 )
    {
      var element = document.getElementById('nineteen');
      element.classList.add("leveleleven");
@@ -2835,7 +2835,7 @@ const city_name_twenty = data_twenty.location.name;
 
 
    }
-   else if (uvi_twenty == 2 )
+   else if (uvi_twenty > 1 && uvi_twenty <= 2 )
    {
    // Adding row color
    var element = document.getElementById('twenty');
@@ -2845,7 +2845,7 @@ const city_name_twenty = data_twenty.location.name;
    
    
    }  
-else if (uvi_twenty == 3 )
+else if (uvi_twenty > 2 && uvi_twenty <= 3 )
    {
      var element = document.getElementById('twenty');
      element.classList.add("levelthree");
@@ -2854,7 +2854,7 @@ else if (uvi_twenty == 3 )
    document.getElementById("uvi_icon_twenty").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_twenty == 4 )
+   else if (uvi_twenty > 3 && uvi_twenty <= 4 )
    {
      var element = document.getElementById('twenty');
      element.classList.add("levelfour");
@@ -2864,7 +2864,7 @@ else if (uvi_twenty == 3 )
 
   
    }  
-   else if (uvi_twenty == 5 )
+   else if (uvi_twenty > 4 && uvi_twenty <= 5 )
    {
      var element = document.getElementById('twenty');
      element.classList.add("levelfive");
@@ -2873,7 +2873,7 @@ else if (uvi_twenty == 3 )
    document.getElementById("uvi_icon_twenty").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_twenty == 6 )
+   else if (uvi_twenty > 5 && uvi_twenty <= 6 )
    {
      var element = document.getElementById('twenty');
      element.classList.add("levelsix");
@@ -2882,7 +2882,7 @@ else if (uvi_twenty == 3 )
    document.getElementById("uvi_icon_twenty").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_twenty == 7 )
+   else if (uvi_twenty > 6 && uvi_twenty <= 7 )
    {
      var element = document.getElementById('twenty');
      element.classList.add("levelseven");
@@ -2891,7 +2891,7 @@ else if (uvi_twenty == 3 )
    document.getElementById("uvi_icon_twenty").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_twenty == 8 )
+   else if (uvi_twenty > 7 && uvi_twenty <= 8 )
    {
      var element = document.getElementById('twenty');
      element.classList.add("leveleight");
@@ -2900,7 +2900,7 @@ else if (uvi_twenty == 3 )
    document.getElementById("uvi_icon_twenty").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_twenty == 9 )
+   else if (uvi_twenty > 8 && uvi_twenty <= 9 )
    {
      var element = document.getElementById('twenty');
      element.classList.add("levelnine");
@@ -2909,7 +2909,7 @@ else if (uvi_twenty == 3 )
    document.getElementById("uvi_icon_twenty").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_twenty == 10 )
+   else if (uvi_twenty > 9 && uvi_twenty <= 10 )
    {
      var element = document.getElementById('twenty');
      element.classList.add("levelten");
@@ -2918,7 +2918,7 @@ else if (uvi_twenty == 3 )
    document.getElementById("uvi_icon_twenty").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_twenty >= 11 )
+   else if (uvi_twenty > 10 )
    {
      var element = document.getElementById('twenty');
      element.classList.add("leveleleven");
@@ -2978,7 +2978,7 @@ const city_name_twentyone = data_twentyone.location.name;
 
 
    }
-   else if (uvi_twentyone == 2 )
+   else if (uvi_twentyone > 1 && uvi_twentyone <= 2 )
    {
    // Adding row color
    var element = document.getElementById('twentyone');
@@ -2988,7 +2988,7 @@ const city_name_twentyone = data_twentyone.location.name;
    
    
    }  
-else if (uvi_twentyone == 3 )
+else if (uvi_twentyone > 2 && uvi_twentyone <= 3 )
    {
      var element = document.getElementById('twentyone');
      element.classList.add("levelthree");
@@ -2997,7 +2997,7 @@ else if (uvi_twentyone == 3 )
    document.getElementById("uvi_icon_twentyone").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_twentyone == 4 )
+   else if (uvi_twentyone > 3 && uvi_twentyone <= 4 )
    {
      var element = document.getElementById('twentyone');
      element.classList.add("levelfour");
@@ -3007,7 +3007,7 @@ else if (uvi_twentyone == 3 )
 
   
    }  
-   else if (uvi_twentyone == 5 )
+   else if (uvi_twentyone > 4 && uvi_twentyone <= 5 )
    {
      var element = document.getElementById('twentyone');
      element.classList.add("levelfive");
@@ -3016,7 +3016,7 @@ else if (uvi_twentyone == 3 )
    document.getElementById("uvi_icon_twentyone").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_twentyone == 6 )
+   else if (uvi_twentyone > 5 && uvi_twentyone <= 6 )
    {
      var element = document.getElementById('twentyone');
      element.classList.add("levelsix");
@@ -3025,7 +3025,7 @@ else if (uvi_twentyone == 3 )
    document.getElementById("uvi_icon_twentyone").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_twentyone == 7 )
+   else if (uvi_twentyone > 6 && uvi_twentyone <= 7 )
    {
      var element = document.getElementById('twentyone');
      element.classList.add("levelseven");
@@ -3034,7 +3034,7 @@ else if (uvi_twentyone == 3 )
    document.getElementById("uvi_icon_twentyone").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_twentyone == 8 )
+   else if (uvi_twentyone > 7 && uvi_twentyone <= 8 )
    {
      var element = document.getElementById('twentyone');
      element.classList.add("leveleight");
@@ -3043,7 +3043,7 @@ else if (uvi_twentyone == 3 )
    document.getElementById("uvi_icon_twentyone").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_twentyone == 9 )
+   else if (uvi_twentyone > 8 && uvi_twentyone <= 9 )
    {
      var element = document.getElementById('twentyone');
      element.classList.add("levelnine");
@@ -3052,7 +3052,7 @@ else if (uvi_twentyone == 3 )
    document.getElementById("uvi_icon_twentyone").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_twentyone == 10 )
+   else if (uvi_twentyone > 9 && uvi_twentyone <= 10 )
    {
      var element = document.getElementById('twentyone');
      element.classList.add("levelten");
@@ -3061,7 +3061,7 @@ else if (uvi_twentyone == 3 )
    document.getElementById("uvi_icon_twentyone").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_twentyone >= 11 )
+   else if (uvi_twentyone > 10 )
    {
      var element = document.getElementById('twentyone');
      element.classList.add("leveleleven");
@@ -3123,7 +3123,7 @@ const city_name_twentytwo = data_twentytwo.location.name;
 
 
    }
-   else if (uvi_twentytwo == 2 )
+   else if (uvi_twentytwo > 1 && uvi_twentytwo <= 2 )
    {
    // Adding row color
    var element = document.getElementById('twentytwo');
@@ -3133,7 +3133,7 @@ const city_name_twentytwo = data_twentytwo.location.name;
    
    
    }  
-else if (uvi_twentytwo == 3 )
+else if (uvi_twentytwo > 2 && uvi_twentytwo <= 3 )
    {
      var element = document.getElementById('twentytwo');
      element.classList.add("levelthree");
@@ -3142,7 +3142,7 @@ else if (uvi_twentytwo == 3 )
    document.getElementById("uvi_icon_twentytwo").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_twentytwo == 4 )
+   else if (uvi_twentytwo > 3 && uvi_twentytwo <= 4 )
    {
      var element = document.getElementById('twentytwo');
      element.classList.add("levelfour");
@@ -3152,7 +3152,7 @@ else if (uvi_twentytwo == 3 )
 
   
    }  
-   else if (uvi_twentytwo == 5 )
+   else if (uvi_twentytwo > 4 && uvi_twentytwo <= 5 )
    {
      var element = document.getElementById('twentytwo');
      element.classList.add("levelfive");
@@ -3161,7 +3161,7 @@ else if (uvi_twentytwo == 3 )
    document.getElementById("uvi_icon_twentytwo").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_twentytwo == 6 )
+   else if (uvi_twentytwo > 5 && uvi_twentytwo <= 6 )
    {
      var element = document.getElementById('twentytwo');
      element.classList.add("levelsix");
@@ -3170,7 +3170,7 @@ else if (uvi_twentytwo == 3 )
    document.getElementById("uvi_icon_twentytwo").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_twentytwo == 7 )
+   else if (uvi_twentytwo > 6 && uvi_twentytwo <= 7 )
    {
      var element = document.getElementById('twentytwo');
      element.classList.add("levelseven");
@@ -3179,7 +3179,7 @@ else if (uvi_twentytwo == 3 )
    document.getElementById("uvi_icon_twentytwo").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_twentytwo == 8 )
+   else if (uvi_twentytwo > 7 && uvi_twentytwo <= 8 )
    {
      var element = document.getElementById('twentytwo');
      element.classList.add("leveleight");
@@ -3188,7 +3188,7 @@ else if (uvi_twentytwo == 3 )
    document.getElementById("uvi_icon_twentytwo").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_twentytwo == 9 )
+   else if (uvi_twentytwo > 8 && uvi_twentytwo <= 9 )
    {
      var element = document.getElementById('twentytwo');
      element.classList.add("levelnine");
@@ -3197,7 +3197,7 @@ else if (uvi_twentytwo == 3 )
    document.getElementById("uvi_icon_twentytwo").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_twentytwo == 10 )
+   else if (uvi_twentytwo > 9 && uvi_twentytwo <= 10 )
    {
      var element = document.getElementById('twentytwo');
      element.classList.add("levelten");
@@ -3206,7 +3206,7 @@ else if (uvi_twentytwo == 3 )
    document.getElementById("uvi_icon_twentytwo").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_twentytwo >= 11 )
+   else if (uvi_twentytwo > 10 )
    {
      var element = document.getElementById('twentytwo');
      element.classList.add("leveleleven");
@@ -3266,7 +3266,7 @@ const city_name_twentythree = data_twentythree.location.name;
 
 
    }
-   else if (uvi_twentythree == 2 )
+   else if (uvi_twentythree > 1 && uvi_twentythree <= 2 )
    {
    // Adding row color
    var element = document.getElementById('twentythree');
@@ -3276,7 +3276,7 @@ const city_name_twentythree = data_twentythree.location.name;
    
    
    }  
-else if (uvi_twentythree == 3 )
+else if (uvi_twentythree > 2 && uvi_twentythree <= 3 )
    {
      var element = document.getElementById('twentythree');
      element.classList.add("levelthree");
@@ -3285,7 +3285,7 @@ else if (uvi_twentythree == 3 )
    document.getElementById("uvi_icon_twentythree").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_twentythree == 4 )
+   else if (uvi_twentythree > 3 && uvi_twentythree <= 4 )
    {
      var element = document.getElementById('twentythree');
      element.classList.add("levelfour");
@@ -3295,7 +3295,7 @@ else if (uvi_twentythree == 3 )
 
   
    }  
-   else if (uvi_twentythree == 5 )
+   else if (uvi_twentythree > 4 && uvi_twentythree <= 5 )
    {
      var element = document.getElementById('twentythree');
      element.classList.add("levelfive");
@@ -3304,7 +3304,7 @@ else if (uvi_twentythree == 3 )
    document.getElementById("uvi_icon_twentythree").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_twentythree == 6 )
+   else if (uvi_twentythree > 5 && uvi_twentythree <= 6 )
    {
      var element = document.getElementById('twentythree');
      element.classList.add("levelsix");
@@ -3313,7 +3313,7 @@ else if (uvi_twentythree == 3 )
    document.getElementById("uvi_icon_twentythree").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_twentythree == 7 )
+   else if (uvi_twentythree > 6 && uvi_twentythree <= 7 )
    {
      var element = document.getElementById('twentythree');
      element.classList.add("levelseven");
@@ -3322,7 +3322,7 @@ else if (uvi_twentythree == 3 )
    document.getElementById("uvi_icon_twentythree").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_twentythree == 8 )
+   else if (uvi_twentythree > 7 && uvi_twentythree <= 8 )
    {
      var element = document.getElementById('twentythree');
      element.classList.add("leveleight");
@@ -3331,7 +3331,7 @@ else if (uvi_twentythree == 3 )
    document.getElementById("uvi_icon_twentythree").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_twentythree == 9 )
+   else if (uvi_twentythree > 8 && uvi_twentythree <= 9 )
    {
      var element = document.getElementById('twentythree');
      element.classList.add("levelnine");
@@ -3340,7 +3340,7 @@ else if (uvi_twentythree == 3 )
    document.getElementById("uvi_icon_twentythree").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_twentythree == 10 )
+   else if (uvi_twentythree > 9 && uvi_twentythree <= 10 )
    {
      var element = document.getElementById('twentythree');
      element.classList.add("levelten");
@@ -3349,7 +3349,7 @@ else if (uvi_twentythree == 3 )
    document.getElementById("uvi_icon_twentythree").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_twentythree >= 11 )
+   else if (uvi_twentythree > 10 )
    {
      var element = document.getElementById('twentythree');
      element.classList.add("leveleleven");
@@ -3410,7 +3410,7 @@ const city_name_twentyfour = data_twentyfour.location.name;
 
 
    }
-   else if (uvi_twentyfour == 2 )
+   else if (uvi_twentyfour > 1 && uvi_twentyfour <= 2 )
    {
    // Adding row color
    var element = document.getElementById('twentyfour');
@@ -3420,7 +3420,7 @@ const city_name_twentyfour = data_twentyfour.location.name;
    
    
    }  
-else if (uvi_twentyfour == 3 )
+else if (uvi_twentyfour > 2 && uvi_twentyfour <= 3 )
    {
      var element = document.getElementById('twentyfour');
      element.classList.add("levelthree");
@@ -3429,7 +3429,7 @@ else if (uvi_twentyfour == 3 )
    document.getElementById("uvi_icon_twentyfour").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_twentyfour == 4 )
+   else if (uvi_twentyfour > 3 && uvi_twentyfour <= 4 )
    {
      var element = document.getElementById('twentyfour');
      element.classList.add("levelfour");
@@ -3439,7 +3439,7 @@ else if (uvi_twentyfour == 3 )
 
   
    }  
-   else if (uvi_twentyfour == 5 )
+   else if (uvi_twentyfour > 4 && uvi_twentyfour <= 5 )
    {
      var element = document.getElementById('twentyfour');
      element.classList.add("levelfive");
@@ -3448,7 +3448,7 @@ else if (uvi_twentyfour == 3 )
    document.getElementById("uvi_icon_twentyfour").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_twentyfour == 6 )
+   else if (uvi_twentyfour > 5 && uvi_twentyfour <= 6 )
    {
      var element = document.getElementById('twentyfour');
      element.classList.add("levelsix");
@@ -3457,7 +3457,7 @@ else if (uvi_twentyfour == 3 )
    document.getElementById("uvi_icon_twentyfour").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_twentyfour == 7 )
+   else if (uvi_twentyfour > 6 && uvi_twentyfour <= 7 )
    {
      var element = document.getElementById('twentyfour');
      element.classList.add("levelseven");
@@ -3466,7 +3466,7 @@ else if (uvi_twentyfour == 3 )
    document.getElementById("uvi_icon_twentyfour").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_twentyfour == 8 )
+   else if (uvi_twentyfour > 7 && uvi_twentyfour <= 8 )
    {
      var element = document.getElementById('twentyfour');
      element.classList.add("leveleight");
@@ -3475,7 +3475,7 @@ else if (uvi_twentyfour == 3 )
    document.getElementById("uvi_icon_twentyfour").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_twentyfour == 9 )
+   else if (uvi_twentyfour > 8 && uvi_twentyfour <= 9 )
    {
      var element = document.getElementById('twentyfour');
      element.classList.add("levelnine");
@@ -3484,7 +3484,7 @@ else if (uvi_twentyfour == 3 )
    document.getElementById("uvi_icon_twentyfour").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_twentyfour == 10 )
+   else if (uvi_twentyfour > 9 && uvi_twentyfour <= 10 )
    {
      var element = document.getElementById('twentyfour');
      element.classList.add("levelten");
@@ -3493,7 +3493,7 @@ else if (uvi_twentyfour == 3 )
    document.getElementById("uvi_icon_twentyfour").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_twentyfour >= 11 )
+   else if (uvi_twentyfour > 10 )
    {
      var element = document.getElementById('twentyfour');
      element.classList.add("leveleleven");
@@ -3554,7 +3554,7 @@ const city_name_twentyfive = data_twentyfive.location.name;
 
 
    }
-   else if (uvi_twentyfive == 2 )
+   else if (uvi_twentyfive > 1 && uvi_twentyfive <= 2 )
    {
    // Adding row color
    var element = document.getElementById('twentyfive');
@@ -3564,7 +3564,7 @@ const city_name_twentyfive = data_twentyfive.location.name;
    
    
    }  
-else if (uvi_twentyfive == 3 )
+else if (uvi_twentyfive > 2 && uvi_twentyfive <= 3 )
    {
      var element = document.getElementById('twentyfive');
      element.classList.add("levelthree");
@@ -3573,7 +3573,7 @@ else if (uvi_twentyfive == 3 )
    document.getElementById("uvi_icon_twentyfive").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_twentyfive == 4 )
+   else if (uvi_twentyfive > 3 && uvi_twentyfive <= 4 )
    {
      var element = document.getElementById('twentyfive');
      element.classList.add("levelfour");
@@ -3583,7 +3583,7 @@ else if (uvi_twentyfive == 3 )
 
   
    }  
-   else if (uvi_twentyfive == 5 )
+   else if (uvi_twentyfive > 4 && uvi_twentyfive <= 5 )
    {
      var element = document.getElementById('twentyfive');
      element.classList.add("levelfive");
@@ -3592,7 +3592,7 @@ else if (uvi_twentyfive == 3 )
    document.getElementById("uvi_icon_twentyfive").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_twentyfive == 6 )
+   else if (uvi_twentyfive > 5 && uvi_twentyfive <= 6 )
    {
      var element = document.getElementById('twentyfive');
      element.classList.add("levelsix");
@@ -3601,7 +3601,7 @@ else if (uvi_twentyfive == 3 )
    document.getElementById("uvi_icon_twentyfive").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_twentyfive == 7 )
+   else if (uvi_twentyfive > 6 && uvi_twentyfive <= 7 )
    {
      var element = document.getElementById('twentyfive');
      element.classList.add("levelseven");
@@ -3610,7 +3610,7 @@ else if (uvi_twentyfive == 3 )
    document.getElementById("uvi_icon_twentyfive").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_twentyfive == 8 )
+   else if (uvi_twentyfive > 7 && uvi_twentyfive <= 8 )
    {
      var element = document.getElementById('twentyfive');
      element.classList.add("leveleight");
@@ -3619,7 +3619,7 @@ else if (uvi_twentyfive == 3 )
    document.getElementById("uvi_icon_twentyfive").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_twentyfive == 9 )
+   else if (uvi_twentyfive > 8 && uvi_twentyfive <= 9 )
    {
      var element = document.getElementById('twentyfive');
      element.classList.add("levelnine");
@@ -3628,7 +3628,7 @@ else if (uvi_twentyfive == 3 )
    document.getElementById("uvi_icon_twentyfive").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_twentyfive == 10 )
+   else if (uvi_twentyfive > 9 && uvi_twentyfive <= 10 )
    {
      var element = document.getElementById('twentyfive');
      element.classList.add("levelten");
@@ -3637,7 +3637,7 @@ else if (uvi_twentyfive == 3 )
    document.getElementById("uvi_icon_twentyfive").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_twentyfive >= 11 )
+   else if (uvi_twentyfive > 10 )
    {
      var element = document.getElementById('twentyfive');
      element.classList.add("leveleleven");
@@ -3697,7 +3697,7 @@ const city_name_twentysix = data_twentysix.location.name;
 
 
    }
-   else if (uvi_twentysix == 2 )
+   else if (uvi_twentysix > 1 && uvi_twentysix <= 2 )
    {
    // Adding row color
    var element = document.getElementById('twentysix');
@@ -3707,7 +3707,7 @@ const city_name_twentysix = data_twentysix.location.name;
    
    
    }  
-else if (uvi_twentysix == 3 )
+else if (uvi_twentysix > 2 && uvi_twentysix <= 3 )
    {
      var element = document.getElementById('twentysix');
      element.classList.add("levelthree");
@@ -3716,7 +3716,7 @@ else if (uvi_twentysix == 3 )
    document.getElementById("uvi_icon_twentysix").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_twentysix == 4 )
+   else if (uvi_twentysix > 3 && uvi_twentysix <= 4 )
    {
      var element = document.getElementById('twentysix');
      element.classList.add("levelfour");
@@ -3726,7 +3726,7 @@ else if (uvi_twentysix == 3 )
 
   
    }  
-   else if (uvi_twentysix == 5 )
+   else if (uvi_twentysix > 4 && uvi_twentysix <= 5 )
    {
      var element = document.getElementById('twentysix');
      element.classList.add("levelfive");
@@ -3735,7 +3735,7 @@ else if (uvi_twentysix == 3 )
    document.getElementById("uvi_icon_twentysix").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_twentysix == 6 )
+   else if (uvi_twentysix > 5 && uvi_twentysix <= 6 )
    {
      var element = document.getElementById('twentysix');
      element.classList.add("levelsix");
@@ -3744,7 +3744,7 @@ else if (uvi_twentysix == 3 )
    document.getElementById("uvi_icon_twentysix").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_twentysix == 7 )
+   else if (uvi_twentysix > 6 && uvi_twentysix <= 7 )
    {
      var element = document.getElementById('twentysix');
      element.classList.add("levelseven");
@@ -3753,7 +3753,7 @@ else if (uvi_twentysix == 3 )
    document.getElementById("uvi_icon_twentysix").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_twentysix == 8 )
+   else if (uvi_twentysix > 7 && uvi_twentysix <= 8 )
    {
      var element = document.getElementById('twentysix');
      element.classList.add("leveleight");
@@ -3762,7 +3762,7 @@ else if (uvi_twentysix == 3 )
    document.getElementById("uvi_icon_twentysix").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_twentysix == 9 )
+   else if (uvi_twentysix > 8 && uvi_twentysix <= 9 )
    {
      var element = document.getElementById('twentysix');
      element.classList.add("levelnine");
@@ -3771,7 +3771,7 @@ else if (uvi_twentysix == 3 )
    document.getElementById("uvi_icon_twentysix").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_twentysix == 10 )
+   else if (uvi_twentysix > 9 && uvi_twentysix <= 10 )
    {
      var element = document.getElementById('twentysix');
      element.classList.add("levelten");
@@ -3780,7 +3780,7 @@ else if (uvi_twentysix == 3 )
    document.getElementById("uvi_icon_twentysix").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_twentysix >= 11 )
+   else if (uvi_twentysix > 10 )
    {
      var element = document.getElementById('twentysix');
      element.classList.add("leveleleven");
@@ -3841,7 +3841,7 @@ const city_name_twentyseven = data_twentyseven.location.name;
 
 
    }
-   else if (uvi_twentyseven == 2 )
+   else if (uvi_twentyseven > 1 && uvi_twentyseven <= 2 )
    {
    // Adding row color
    var element = document.getElementById('twentyseven');
@@ -3851,7 +3851,7 @@ const city_name_twentyseven = data_twentyseven.location.name;
    
    
    }  
-else if (uvi_twentyseven == 3 )
+else if (uvi_twentyseven > 2 && uvi_twentyseven <= 3 )
    {
      var element = document.getElementById('twentyseven');
      element.classList.add("levelthree");
@@ -3860,7 +3860,7 @@ else if (uvi_twentyseven == 3 )
    document.getElementById("uvi_icon_twentyseven").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_twentyseven == 4 )
+   else if (uvi_twentyseven > 3 && uvi_twentyseven <= 4 )
    {
      var element = document.getElementById('twentyseven');
      element.classList.add("levelfour");
@@ -3870,7 +3870,7 @@ else if (uvi_twentyseven == 3 )
 
   
    }  
-   else if (uvi_twentyseven == 5 )
+   else if (uvi_twentyseven > 4 && uvi_twentyseven <= 5 )
    {
      var element = document.getElementById('twentyseven');
      element.classList.add("levelfive");
@@ -3879,7 +3879,7 @@ else if (uvi_twentyseven == 3 )
    document.getElementById("uvi_icon_twentyseven").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_twentyseven == 6 )
+   else if (uvi_twentyseven > 5 && uvi_twentyseven <= 6 )
    {
      var element = document.getElementById('twentyseven');
      element.classList.add("levelsix");
@@ -3888,7 +3888,7 @@ else if (uvi_twentyseven == 3 )
    document.getElementById("uvi_icon_twentyseven").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_twentyseven == 7 )
+   else if (uvi_twentyseven > 6 && uvi_twentyseven <= 7 )
    {
      var element = document.getElementById('twentyseven');
      element.classList.add("levelseven");
@@ -3897,7 +3897,7 @@ else if (uvi_twentyseven == 3 )
    document.getElementById("uvi_icon_twentyseven").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_twentyseven == 8 )
+   else if (uvi_twentyseven > 7 && uvi_twentyseven <= 8 )
    {
      var element = document.getElementById('twentyseven');
      element.classList.add("leveleight");
@@ -3906,7 +3906,7 @@ else if (uvi_twentyseven == 3 )
    document.getElementById("uvi_icon_twentyseven").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_twentyseven == 9 )
+   else if (uvi_twentyseven > 8 && uvi_twentyseven <= 9 )
    {
      var element = document.getElementById('twentyseven');
      element.classList.add("levelnine");
@@ -3915,7 +3915,7 @@ else if (uvi_twentyseven == 3 )
    document.getElementById("uvi_icon_twentyseven").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_twentyseven == 10 )
+   else if (uvi_twentyseven > 9 && uvi_twentyseven <= 10 )
    {
      var element = document.getElementById('twentyseven');
      element.classList.add("levelten");
@@ -3924,7 +3924,7 @@ else if (uvi_twentyseven == 3 )
    document.getElementById("uvi_icon_twentyseven").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_twentyseven >= 11 )
+   else if (uvi_twentyseven > 10 )
    {
      var element = document.getElementById('twentyseven');
      element.classList.add("leveleleven");
@@ -3986,7 +3986,7 @@ const city_name_twentyeight = data_twentyeight.location.name;
 
 
    }
-   else if (uvi_twentyeight == 2 )
+   else if (uvi_twentyeight > 1 && uvi_twentyeight <= 2 )
    {
    // Adding row color
    var element = document.getElementById('twentyeight');
@@ -3996,7 +3996,7 @@ const city_name_twentyeight = data_twentyeight.location.name;
    
    
    }  
-else if (uvi_twentyeight == 3 )
+else if (uvi_twentyeight > 2 && uvi_twentyeight <= 3 )
    {
      var element = document.getElementById('twentyeight');
      element.classList.add("levelthree");
@@ -4005,7 +4005,7 @@ else if (uvi_twentyeight == 3 )
    document.getElementById("uvi_icon_twentyeight").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_twentyeight == 4 )
+   else if (uvi_twentyeight > 3 && uvi_twentyeight <= 4 )
    {
      var element = document.getElementById('twentyeight');
      element.classList.add("levelfour");
@@ -4015,7 +4015,7 @@ else if (uvi_twentyeight == 3 )
 
   
    }  
-   else if (uvi_twentyeight == 5 )
+   else if (uvi_twentyeight > 4 && uvi_twentyeight <= 5 )
    {
      var element = document.getElementById('twentyeight');
      element.classList.add("levelfive");
@@ -4024,7 +4024,7 @@ else if (uvi_twentyeight == 3 )
    document.getElementById("uvi_icon_twentyeight").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_twentyeight == 6 )
+   else if (uvi_twentyeight > 5 && uvi_twentyeight <= 6 )
    {
      var element = document.getElementById('twentyeight');
      element.classList.add("levelsix");
@@ -4033,7 +4033,7 @@ else if (uvi_twentyeight == 3 )
    document.getElementById("uvi_icon_twentyeight").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_twentyeight == 7 )
+   else if (uvi_twentyeight > 6 && uvi_twentyeight <= 7 )
    {
      var element = document.getElementById('twentyeight');
      element.classList.add("levelseven");
@@ -4042,7 +4042,7 @@ else if (uvi_twentyeight == 3 )
    document.getElementById("uvi_icon_twentyeight").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_twentyeight == 8 )
+   else if (uvi_twentyeight > 7 && uvi_twentyeight <= 8 )
    {
      var element = document.getElementById('twentyeight');
      element.classList.add("leveleight");
@@ -4051,7 +4051,7 @@ else if (uvi_twentyeight == 3 )
    document.getElementById("uvi_icon_twentyeight").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_twentyeight == 9 )
+   else if (uvi_twentyeight > 8 && uvi_twentyeight <= 9 )
    {
      var element = document.getElementById('twentyeight');
      element.classList.add("levelnine");
@@ -4060,7 +4060,7 @@ else if (uvi_twentyeight == 3 )
    document.getElementById("uvi_icon_twentyeight").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_twentyeight == 10 )
+   else if (uvi_twentyeight > 9 && uvi_twentyeight <= 10 )
    {
      var element = document.getElementById('twentyeight');
      element.classList.add("levelten");
@@ -4069,7 +4069,7 @@ else if (uvi_twentyeight == 3 )
    document.getElementById("uvi_icon_twentyeight").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_twentyeight >= 11 )
+   else if (uvi_twentyeight > 10 )
    {
      var element = document.getElementById('twentyeight');
      element.classList.add("leveleleven");
@@ -4129,7 +4129,7 @@ const city_name_twentynine = data_twentynine.location.name;
 
 
    }
-   else if (uvi_twentynine == 2 )
+   else if (uvi_twentynine > 1 && uvi_twentynine <= 2 )
    {
    // Adding row color
    var element = document.getElementById('twentynine');
@@ -4139,7 +4139,7 @@ const city_name_twentynine = data_twentynine.location.name;
    
    
    }  
-else if (uvi_twentynine == 3 )
+else if (uvi_twentynine > 2 && uvi_twentynine <= 3 )
    {
      var element = document.getElementById('twentynine');
      element.classList.add("levelthree");
@@ -4148,7 +4148,7 @@ else if (uvi_twentynine == 3 )
    document.getElementById("uvi_icon_twentynine").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_twentynine == 4 )
+   else if (uvi_twentynine > 3 && uvi_twentynine <= 4 )
    {
      var element = document.getElementById('twentynine');
      element.classList.add("levelfour");
@@ -4158,7 +4158,7 @@ else if (uvi_twentynine == 3 )
 
   
    }  
-   else if (uvi_twentynine == 5 )
+   else if (uvi_twentynine > 4 && uvi_twentynine <= 5 )
    {
      var element = document.getElementById('twentynine');
      element.classList.add("levelfive");
@@ -4167,7 +4167,7 @@ else if (uvi_twentynine == 3 )
    document.getElementById("uvi_icon_twentynine").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_twentynine == 6 )
+   else if (uvi_twentynine > 5 && uvi_twentynine <= 6 )
    {
      var element = document.getElementById('twentynine');
      element.classList.add("levelsix");
@@ -4176,7 +4176,7 @@ else if (uvi_twentynine == 3 )
    document.getElementById("uvi_icon_twentynine").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_twentynine == 7 )
+   else if (uvi_twentynine > 6 && uvi_twentynine <= 7 )
    {
      var element = document.getElementById('twentynine');
      element.classList.add("levelseven");
@@ -4185,7 +4185,7 @@ else if (uvi_twentynine == 3 )
    document.getElementById("uvi_icon_twentynine").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_twentynine == 8 )
+   else if (uvi_twentynine > 7 && uvi_twentynine <= 8 )
    {
      var element = document.getElementById('twentynine');
      element.classList.add("leveleight");
@@ -4194,7 +4194,7 @@ else if (uvi_twentynine == 3 )
    document.getElementById("uvi_icon_twentynine").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_twentynine == 9 )
+   else if (uvi_twentynine > 8 && uvi_twentynine <= 9 )
    {
      var element = document.getElementById('twentynine');
      element.classList.add("levelnine");
@@ -4203,7 +4203,7 @@ else if (uvi_twentynine == 3 )
    document.getElementById("uvi_icon_twentynine").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_twentynine == 10 )
+   else if (uvi_twentynine > 9 && uvi_twentynine <= 10 )
    {
      var element = document.getElementById('twentynine');
      element.classList.add("levelten");
@@ -4212,7 +4212,7 @@ else if (uvi_twentynine == 3 )
    document.getElementById("uvi_icon_twentynine").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_twentynine >= 11 )
+   else if (uvi_twentynine > 10 )
    {
      var element = document.getElementById('twentynine');
      element.classList.add("leveleleven");
@@ -4246,7 +4246,7 @@ console.log(data_thirty)
 //DAILY UV MAX VALUE
  const uvi_thirty = data_thirty.forecast.forecastday[0].day.uv;
  
- 
+ console.log(uvi_thirty)
  //LOCATION INFO VALUE
 const city_name_thirty = data_thirty.location.name;
  //COUNTRY NAME  VALUE IF NEEDED
@@ -4273,7 +4273,7 @@ const city_name_thirty = data_thirty.location.name;
 
 
    }
-   else if (uvi_thirty == 2 )
+   else if (uvi_thirty > 1 && uvi_thirty <= 2 )
    {
    // Adding row color
    var element = document.getElementById('thirty');
@@ -4283,7 +4283,7 @@ const city_name_thirty = data_thirty.location.name;
    
    
    }  
-else if (uvi_thirty == 3 )
+else if (uvi_thirty > 2 && uvi_thirty <= 3 )
    {
      var element = document.getElementById('thirty');
      element.classList.add("levelthree");
@@ -4292,7 +4292,7 @@ else if (uvi_thirty == 3 )
    document.getElementById("uvi_icon_thirty").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_thirty == 4 )
+   else if (uvi_thirty > 3 && uvi_thirty <= 4 )
    {
      var element = document.getElementById('thirty');
      element.classList.add("levelfour");
@@ -4302,7 +4302,7 @@ else if (uvi_thirty == 3 )
 
   
    }  
-   else if (uvi_thirty == 5 )
+   else if (uvi_thirty > 4 && uvi_thirty <= 5 )
    {
      var element = document.getElementById('thirty');
      element.classList.add("levelfive");
@@ -4311,7 +4311,7 @@ else if (uvi_thirty == 3 )
    document.getElementById("uvi_icon_thirty").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_thirty == 6 )
+   else if (uvi_thirty > 5 && uvi_thirty <= 6 )
    {
      var element = document.getElementById('thirty');
      element.classList.add("levelsix");
@@ -4320,7 +4320,7 @@ else if (uvi_thirty == 3 )
    document.getElementById("uvi_icon_thirty").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_thirty == 7 )
+   else if (uvi_thirty > 6 && uvi_thirty <= 7 )
    {
      var element = document.getElementById('thirty');
      element.classList.add("levelseven");
@@ -4329,7 +4329,7 @@ else if (uvi_thirty == 3 )
    document.getElementById("uvi_icon_thirty").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_thirty == 8 )
+   else if (uvi_thirty > 7 && uvi_thirty <= 8 )
    {
      var element = document.getElementById('thirty');
      element.classList.add("leveleight");
@@ -4338,7 +4338,7 @@ else if (uvi_thirty == 3 )
    document.getElementById("uvi_icon_thirty").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_thirty == 9 )
+   else if (uvi_thirty > 8 && uvi_thirty <= 9 )
    {
      var element = document.getElementById('thirty');
      element.classList.add("levelnine");
@@ -4347,7 +4347,7 @@ else if (uvi_thirty == 3 )
    document.getElementById("uvi_icon_thirty").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_thirty == 10 )
+   else if (uvi_thirty > 9 && uvi_thirty <= 10 )
    {
      var element = document.getElementById('thirty');
      element.classList.add("levelten");
@@ -4356,7 +4356,7 @@ else if (uvi_thirty == 3 )
    document.getElementById("uvi_icon_thirty").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_thirty >= 11 )
+   else if (uvi_thirty > 10 )
    {
      var element = document.getElementById('thirty');
      element.classList.add("leveleleven");
@@ -4416,7 +4416,7 @@ const city_name_thirtyone = data_thirtyone.location.name;
 
 
    }
-   else if (uvi_thirtyone == 2 )
+   else if (uvi_thirtyone > 1 && uvi_thirtyone <= 2 )
    {
    // Adding row color
    var element = document.getElementById('thirtyone');
@@ -4426,7 +4426,7 @@ const city_name_thirtyone = data_thirtyone.location.name;
    
    
    }  
-else if (uvi_thirtyone == 3 )
+else if (uvi_thirtyone > 2 && uvi_thirtyone <= 3 )
    {
      var element = document.getElementById('thirtyone');
      element.classList.add("levelthree");
@@ -4435,7 +4435,7 @@ else if (uvi_thirtyone == 3 )
    document.getElementById("uvi_icon_thirtyone").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_thirtyone == 4 )
+   else if (uvi_thirtyone > 3 && uvi_thirtyone <= 4 )
    {
      var element = document.getElementById('thirtyone');
      element.classList.add("levelfour");
@@ -4445,7 +4445,7 @@ else if (uvi_thirtyone == 3 )
 
   
    }  
-   else if (uvi_thirtyone == 5 )
+   else if (uvi_thirtyone > 4 && uvi_thirtyone <= 5 )
    {
      var element = document.getElementById('thirtyone');
      element.classList.add("levelfive");
@@ -4454,7 +4454,7 @@ else if (uvi_thirtyone == 3 )
    document.getElementById("uvi_icon_thirtyone").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_thirtyone == 6 )
+   else if (uvi_thirtyone > 5 && uvi_thirtyone <= 6 )
    {
      var element = document.getElementById('thirtyone');
      element.classList.add("levelsix");
@@ -4463,7 +4463,7 @@ else if (uvi_thirtyone == 3 )
    document.getElementById("uvi_icon_thirtyone").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_thirtyone == 7 )
+   else if (uvi_thirtyone > 6 && uvi_thirtyone <= 7 )
    {
      var element = document.getElementById('thirtyone');
      element.classList.add("levelseven");
@@ -4472,7 +4472,7 @@ else if (uvi_thirtyone == 3 )
    document.getElementById("uvi_icon_thirtyone").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_thirtyone == 8 )
+   else if (uvi_thirtyone > 7 && uvi_thirtyone <= 8 )
    {
      var element = document.getElementById('thirtyone');
      element.classList.add("leveleight");
@@ -4481,7 +4481,7 @@ else if (uvi_thirtyone == 3 )
    document.getElementById("uvi_icon_thirtyone").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_thirtyone == 9 )
+   else if (uvi_thirtyone > 8 && uvi_thirtyone <= 9 )
    {
      var element = document.getElementById('thirtyone');
      element.classList.add("levelnine");
@@ -4490,7 +4490,7 @@ else if (uvi_thirtyone == 3 )
    document.getElementById("uvi_icon_thirtyone").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_thirtyone == 10 )
+   else if (uvi_thirtyone > 9 && uvi_thirtyone <= 10 )
    {
      var element = document.getElementById('thirtyone');
      element.classList.add("levelten");
@@ -4499,7 +4499,7 @@ else if (uvi_thirtyone == 3 )
    document.getElementById("uvi_icon_thirtyone").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_thirtyone >= 11 )
+   else if (uvi_thirtyone > 10 )
    {
      var element = document.getElementById('thirtyone');
      element.classList.add("leveleleven");
@@ -4559,7 +4559,7 @@ const city_name_thirtytwo = data_thirtytwo.location.name;
 
 
    }
-   else if (uvi_thirtytwo == 2 )
+   else if (uvi_thirtytwo > 1 && uvi_thirtytwo <= 2 )
    {
    // Adding row color
    var element = document.getElementById('thirtytwo');
@@ -4569,7 +4569,7 @@ const city_name_thirtytwo = data_thirtytwo.location.name;
    
    
    }  
-else if (uvi_thirtytwo == 3 )
+else if (uvi_thirtytwo > 2 && uvi_thirtytwo <= 3 )
    {
      var element = document.getElementById('thirtytwo');
      element.classList.add("levelthree");
@@ -4578,7 +4578,7 @@ else if (uvi_thirtytwo == 3 )
    document.getElementById("uvi_icon_thirtytwo").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_thirtytwo == 4 )
+   else if (uvi_thirtytwo > 3 && uvi_thirtytwo <= 4 )
    {
      var element = document.getElementById('thirtytwo');
      element.classList.add("levelfour");
@@ -4588,7 +4588,7 @@ else if (uvi_thirtytwo == 3 )
 
   
    }  
-   else if (uvi_thirtytwo == 5 )
+   else if (uvi_thirtytwo > 4 && uvi_thirtytwo <= 5 )
    {
      var element = document.getElementById('thirtytwo');
      element.classList.add("levelfive");
@@ -4597,7 +4597,7 @@ else if (uvi_thirtytwo == 3 )
    document.getElementById("uvi_icon_thirtytwo").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_thirtytwo == 6 )
+   else if (uvi_thirtytwo > 5 && uvi_thirtytwo <= 6 )
    {
      var element = document.getElementById('thirtytwo');
      element.classList.add("levelsix");
@@ -4606,7 +4606,7 @@ else if (uvi_thirtytwo == 3 )
    document.getElementById("uvi_icon_thirtytwo").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_thirtytwo == 7 )
+   else if (uvi_thirtytwo > 6 && uvi_thirtytwo <= 7 )
    {
      var element = document.getElementById('thirtytwo');
      element.classList.add("levelseven");
@@ -4615,7 +4615,7 @@ else if (uvi_thirtytwo == 3 )
    document.getElementById("uvi_icon_thirtytwo").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_thirtytwo == 8 )
+   else if (uvi_thirtytwo > 7 && uvi_thirtytwo <= 8 )
    {
      var element = document.getElementById('thirtytwo');
      element.classList.add("leveleight");
@@ -4624,7 +4624,7 @@ else if (uvi_thirtytwo == 3 )
    document.getElementById("uvi_icon_thirtytwo").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_thirtytwo == 9 )
+   else if (uvi_thirtytwo > 9 && uvi_thirtytwo <= 9 )
    {
      var element = document.getElementById('thirtytwo');
      element.classList.add("levelnine");
@@ -4633,7 +4633,7 @@ else if (uvi_thirtytwo == 3 )
    document.getElementById("uvi_icon_thirtytwo").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_thirtytwo == 10 )
+   else if (uvi_thirtytwo > 9 && uvi_thirtytwo <= 10 )
    {
      var element = document.getElementById('thirtytwo');
      element.classList.add("levelten");
@@ -4642,7 +4642,7 @@ else if (uvi_thirtytwo == 3 )
    document.getElementById("uvi_icon_thirtytwo").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_thirtytwo >= 11 )
+   else if (uvi_thirtytwo > 10 )
    {
      var element = document.getElementById('thirtytwo');
      element.classList.add("leveleleven");
@@ -4702,7 +4702,7 @@ const city_name_thirtythree = data_thirtythree.location.name;
 
 
    }
-   else if (uvi_thirtythree == 2 )
+   else if (uvi_thirtythree > 1 && uvi_thirtythree <= 2 )
    {
    // Adding row color
    var element = document.getElementById('thirtythree');
@@ -4712,7 +4712,7 @@ const city_name_thirtythree = data_thirtythree.location.name;
    
    
    }  
-else if (uvi_thirtythree == 3 )
+else if (uvi_thirtythree > 2 && uvi_thirtythree <= 3 )
    {
      var element = document.getElementById('thirtythree');
      element.classList.add("levelthree");
@@ -4721,7 +4721,7 @@ else if (uvi_thirtythree == 3 )
    document.getElementById("uvi_icon_thirtythree").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_thirtythree == 4 )
+   else if (uvi_thirtythree > 3 && uvi_thirtythree <= 4 )
    {
      var element = document.getElementById('thirtythree');
      element.classList.add("levelfour");
@@ -4731,7 +4731,7 @@ else if (uvi_thirtythree == 3 )
 
   
    }  
-   else if (uvi_thirtythree == 5 )
+   else if (uvi_thirtythree > 4 && uvi_thirtythree <= 5 )
    {
      var element = document.getElementById('thirtythree');
      element.classList.add("levelfive");
@@ -4740,7 +4740,7 @@ else if (uvi_thirtythree == 3 )
    document.getElementById("uvi_icon_thirtythree").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_thirtythree == 6 )
+   else if (uvi_thirtythree > 5 && uvi_thirtythree <= 6 )
    {
      var element = document.getElementById('thirtythree');
      element.classList.add("levelsix");
@@ -4749,7 +4749,7 @@ else if (uvi_thirtythree == 3 )
    document.getElementById("uvi_icon_thirtythree").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_thirtythree == 7 )
+   else if (uvi_thirtythree > 6 && uvi_thirtythree <= 7 )
    {
      var element = document.getElementById('thirtythree');
      element.classList.add("levelseven");
@@ -4758,7 +4758,7 @@ else if (uvi_thirtythree == 3 )
    document.getElementById("uvi_icon_thirtythree").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_thirtythree == 8 )
+   else if (uvi_thirtythree > 7 && uvi_thirtythree <= 8 )
    {
      var element = document.getElementById('thirtythree');
      element.classList.add("leveleight");
@@ -4767,7 +4767,7 @@ else if (uvi_thirtythree == 3 )
    document.getElementById("uvi_icon_thirtythree").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_thirtythree == 9 )
+   else if (uvi_thirtythree > 8 && uvi_thirtythree <= 9 )
    {
      var element = document.getElementById('thirtythree');
      element.classList.add("levelnine");
@@ -4776,7 +4776,7 @@ else if (uvi_thirtythree == 3 )
    document.getElementById("uvi_icon_thirtythree").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_thirtythree == 10 )
+   else if (uvi_thirtythree > 9 && uvi_thirtythree <= 10 )
    {
      var element = document.getElementById('thirtythree');
      element.classList.add("levelten");
@@ -4785,7 +4785,7 @@ else if (uvi_thirtythree == 3 )
    document.getElementById("uvi_icon_thirtythree").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_thirtythree >= 11 )
+   else if (uvi_thirtythree > 10 )
    {
      var element = document.getElementById('thirtythree');
      element.classList.add("leveleleven");
@@ -4846,7 +4846,7 @@ const city_name_thirtyfour = data_thirtyfour.location.name;
 
 
    }
-   else if (uvi_thirtyfour == 2 )
+   else if (uvi_thirtyfour > 1 && uvi_thirtyfour <= 2 )
    {
    // Adding row color
    var element = document.getElementById('thirtyfour');
@@ -4856,7 +4856,7 @@ const city_name_thirtyfour = data_thirtyfour.location.name;
    
    
    }  
-else if (uvi_thirtyfour == 3 )
+else if (uvi_thirtyfour > 2 && uvi_thirtyfour <= 3 )
    {
      var element = document.getElementById('thirtyfour');
      element.classList.add("levelthree");
@@ -4865,7 +4865,7 @@ else if (uvi_thirtyfour == 3 )
    document.getElementById("uvi_icon_thirtyfour").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_thirtyfour == 4 )
+   else if (uvi_thirtyfour > 3 && uvi_thirtyfour <= 4 )
    {
      var element = document.getElementById('thirtyfour');
      element.classList.add("levelfour");
@@ -4875,7 +4875,7 @@ else if (uvi_thirtyfour == 3 )
 
   
    }  
-   else if (uvi_thirtyfour == 5 )
+   else if (uvi_thirtyfour > 4 && uvi_thirtyfour <= 5 )
    {
      var element = document.getElementById('thirtyfour');
      element.classList.add("levelfive");
@@ -4884,7 +4884,7 @@ else if (uvi_thirtyfour == 3 )
    document.getElementById("uvi_icon_thirtyfour").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_thirtyfour == 6 )
+   else if (uvi_thirtyfour > 5 && uvi_thirtyfour <= 6 )
    {
      var element = document.getElementById('thirtyfour');
      element.classList.add("levelsix");
@@ -4893,7 +4893,7 @@ else if (uvi_thirtyfour == 3 )
    document.getElementById("uvi_icon_thirtyfour").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_thirtyfour == 7 )
+   else if (uvi_thirtyfour > 6 && uvi_thirtyfour <= 7 )
    {
      var element = document.getElementById('thirtyfour');
      element.classList.add("levelseven");
@@ -4902,7 +4902,7 @@ else if (uvi_thirtyfour == 3 )
    document.getElementById("uvi_icon_thirtyfour").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_thirtyfour == 8 )
+   else if (uvi_thirtyfour > 7 && uvi_thirtyfour <= 8 )
    {
      var element = document.getElementById('thirtyfour');
      element.classList.add("leveleight");
@@ -4911,7 +4911,7 @@ else if (uvi_thirtyfour == 3 )
    document.getElementById("uvi_icon_thirtyfour").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_thirtyfour == 9 )
+   else if (uvi_thirtyfour > 8 && uvi_thirtyfour <= 9 )
    {
      var element = document.getElementById('thirtyfour');
      element.classList.add("levelnine");
@@ -4920,7 +4920,7 @@ else if (uvi_thirtyfour == 3 )
    document.getElementById("uvi_icon_thirtyfour").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_thirtyfour == 10 )
+   else if (uvi_thirtyfour > 9 && uvi_thirtyfour <= 10 )
    {
      var element = document.getElementById('thirtyfour');
      element.classList.add("levelten");
@@ -4929,7 +4929,7 @@ else if (uvi_thirtyfour == 3 )
    document.getElementById("uvi_icon_thirtyfour").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_thirtyfour >= 11 )
+   else if (uvi_thirtyfour > 10 )
    {
      var element = document.getElementById('thirtyfour');
      element.classList.add("leveleleven");
@@ -4992,7 +4992,7 @@ const city_name_thirtyfive = data_thirtyfive.location.name;
 
 
    }
-   else if (uvi_thirtyfive == 2 )
+   else if (uvi_thirtyfive > 1 && uvi_thirtyfive <= 2 )
    {
    // Adding row color
    var element = document.getElementById('thirtyfive');
@@ -5002,7 +5002,7 @@ const city_name_thirtyfive = data_thirtyfive.location.name;
    
    
    }  
-else if (uvi_thirtyfive == 3 )
+else if (uvi_thirtyfive > 2 && uvi_thirtyfive <= 3 )
    {
      var element = document.getElementById('thirtyfive');
      element.classList.add("levelthree");
@@ -5011,7 +5011,7 @@ else if (uvi_thirtyfive == 3 )
    document.getElementById("uvi_icon_thirtyfive").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_thirtyfive == 4 )
+   else if (uvi_thirtyfive > 3 && uvi_thirtyfive <= 4 )
    {
      var element = document.getElementById('thirtyfive');
      element.classList.add("levelfour");
@@ -5021,7 +5021,7 @@ else if (uvi_thirtyfive == 3 )
 
   
    }  
-   else if (uvi_thirtyfive == 5 )
+   else if (uvi_thirtyfive > 4 && uvi_thirtyfive <= 5 )
    {
      var element = document.getElementById('thirtyfive');
      element.classList.add("levelfive");
@@ -5030,7 +5030,7 @@ else if (uvi_thirtyfive == 3 )
    document.getElementById("uvi_icon_thirtyfive").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_thirtyfive == 6 )
+   else if (uvi_thirtyfive > 5 && uvi_thirtyfive <= 6 )
    {
      var element = document.getElementById('thirtyfive');
      element.classList.add("levelsix");
@@ -5039,7 +5039,7 @@ else if (uvi_thirtyfive == 3 )
    document.getElementById("uvi_icon_thirtyfive").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_thirtyfive == 7 )
+   else if (uvi_thirtyfive > 6 && uvi_thirtyfive <= 7 )
    {
      var element = document.getElementById('thirtyfive');
      element.classList.add("levelseven");
@@ -5048,7 +5048,7 @@ else if (uvi_thirtyfive == 3 )
    document.getElementById("uvi_icon_thirtyfive").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_thirtyfive == 8 )
+   else if (uvi_thirtyfive > 7 && uvi_thirtyfive <= 8 )
    {
      var element = document.getElementById('thirtyfive');
      element.classList.add("leveleight");
@@ -5057,7 +5057,7 @@ else if (uvi_thirtyfive == 3 )
    document.getElementById("uvi_icon_thirtyfive").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_thirtyfive == 9 )
+   else if (uvi_thirtyfive > 8 && uvi_thirtyfive <= 9 )
    {
      var element = document.getElementById('thirtyfive');
      element.classList.add("levelnine");
@@ -5066,7 +5066,7 @@ else if (uvi_thirtyfive == 3 )
    document.getElementById("uvi_icon_thirtyfive").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_thirtyfive == 10 )
+   else if (uvi_thirtyfive > 9 && uvi_thirtyfive <= 10 )
    {
      var element = document.getElementById('thirtyfive');
      element.classList.add("levelten");
@@ -5075,7 +5075,7 @@ else if (uvi_thirtyfive == 3 )
    document.getElementById("uvi_icon_thirtyfive").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_thirtyfive >= 11 )
+   else if (uvi_thirtyfive > 10 )
    {
      var element = document.getElementById('thirtyfive');
      element.classList.add("leveleleven");
@@ -5136,7 +5136,7 @@ const city_name_thirtysix = data_thirtysix.location.name;
 
 
    }
-   else if (uvi_thirtysix == 2 )
+   else if (uvi_thirtysix > 1 && uvi_thirtysix <= 2 )
    {
    // Adding row color
    var element = document.getElementById('thirtysix');
@@ -5146,7 +5146,7 @@ const city_name_thirtysix = data_thirtysix.location.name;
    
    
    }  
-else if (uvi_thirtysix == 3 )
+else if (uvi_thirtysix > 2 && uvi_thirtysix <= 3 )
    {
      var element = document.getElementById('thirtysix');
      element.classList.add("levelthree");
@@ -5155,7 +5155,7 @@ else if (uvi_thirtysix == 3 )
    document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_thirtysix == 4 )
+   else if (uvi_thirtysix > 3 && uvi_thirtysix <= 4 )
    {
      var element = document.getElementById('thirtysix');
      element.classList.add("levelfour");
@@ -5165,7 +5165,7 @@ else if (uvi_thirtysix == 3 )
 
   
    }  
-   else if (uvi_thirtysix == 5 )
+   else if (uvi_thirtysix > 4 && uvi_thirtysix <= 5 )
    {
      var element = document.getElementById('thirtysix');
      element.classList.add("levelfive");
@@ -5174,7 +5174,7 @@ else if (uvi_thirtysix == 3 )
    document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_thirtysix == 6 )
+   else if (uvi_thirtysix > 5 && uvi_thirtysix <= 6 )
    {
      var element = document.getElementById('thirtysix');
      element.classList.add("levelsix");
@@ -5183,7 +5183,7 @@ else if (uvi_thirtysix == 3 )
    document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_thirtysix == 7 )
+   else if (uvi_thirtysix > 6 && uvi_thirtysix <= 7 )
    {
      var element = document.getElementById('thirtysix');
      element.classList.add("levelseven");
@@ -5192,7 +5192,7 @@ else if (uvi_thirtysix == 3 )
    document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_thirtysix == 8 )
+   else if (uvi_thirtysix > 7 && uvi_thirtysix <= 8 )
    {
      var element = document.getElementById('thirtysix');
      element.classList.add("leveleight");
@@ -5201,7 +5201,7 @@ else if (uvi_thirtysix == 3 )
    document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_thirtysix == 9 )
+   else if (uvi_thirtysix > 8 && uvi_thirtysix <= 9 )
    {
      var element = document.getElementById('thirtysix');
      element.classList.add("levelnine");
@@ -5210,7 +5210,7 @@ else if (uvi_thirtysix == 3 )
    document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_thirtysix == 10 )
+   else if (uvi_thirtysix > 9 && uvi_thirtysix <= 10 )
    {
      var element = document.getElementById('thirtysix');
      element.classList.add("levelten");
@@ -5219,7 +5219,7 @@ else if (uvi_thirtysix == 3 )
    document.getElementById("uvi_icon_thirtysix").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_thirtysix >= 11 )
+   else if (uvi_thirtysix > 10 )
    {
      var element = document.getElementById('thirtysix');
      element.classList.add("leveleleven");
@@ -5278,7 +5278,7 @@ const city_name_thirtyeight = data_thirtyeight.location.name;
 
 
    }
-   else if (uvi_thirtyeight == 2 )
+   else if (uvi_thirtyeight > 1 && uvi_thirtyeight <= 2 )
    {
    // Adding row color
    var element = document.getElementById('thirtyeight');
@@ -5288,7 +5288,7 @@ const city_name_thirtyeight = data_thirtyeight.location.name;
    
    
    }  
-else if (uvi_thirtyeight == 3 )
+else if (uvi_thirtyeight > 2 && uvi_thirtyeight <= 3 )
    {
      var element = document.getElementById('thirtyeight');
      element.classList.add("levelthree");
@@ -5297,7 +5297,7 @@ else if (uvi_thirtyeight == 3 )
    document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_thirtyeight == 4 )
+   else if (uvi_thirtyeight > 3 && uvi_thirtyeight <= 4 )
    {
      var element = document.getElementById('thirtyeight');
      element.classList.add("levelfour");
@@ -5307,7 +5307,7 @@ else if (uvi_thirtyeight == 3 )
 
   
    }  
-   else if (uvi_thirtyeight == 5 )
+   else if (uvi_thirtyeight > 4 && uvi_thirtyeight <= 5 )
    {
      var element = document.getElementById('thirtyeight');
      element.classList.add("levelfive");
@@ -5316,7 +5316,7 @@ else if (uvi_thirtyeight == 3 )
    document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_thirtyeight == 6 )
+   else if (uvi_thirtyeight > 5 && uvi_thirtyeight <= 6 )
    {
      var element = document.getElementById('thirtyeight');
      element.classList.add("levelsix");
@@ -5325,7 +5325,7 @@ else if (uvi_thirtyeight == 3 )
    document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_thirtyeight == 7 )
+   else if (uvi_thirtyeight > 6 && uvi_thirtyeight <= 7 )
    {
      var element = document.getElementById('thirtyeight');
      element.classList.add("levelseven");
@@ -5334,7 +5334,7 @@ else if (uvi_thirtyeight == 3 )
    document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_thirtyeight == 8 )
+   else if (uvi_thirtyeight > 7 && uvi_thirtyeight <= 8 )
    {
      var element = document.getElementById('thirtyeight');
      element.classList.add("leveleight");
@@ -5343,7 +5343,7 @@ else if (uvi_thirtyeight == 3 )
    document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_thirtyeight == 9 )
+   else if (uvi_thirtyeight > 8 && uvi_thirtyeight <= 9 )
    {
      var element = document.getElementById('thirtyeight');
      element.classList.add("levelnine");
@@ -5352,7 +5352,7 @@ else if (uvi_thirtyeight == 3 )
    document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_thirtyeight == 10 )
+   else if (uvi_thirtyeight > 9 && uvi_thirtyeight <= 10 )
    {
      var element = document.getElementById('thirtyeight');
      element.classList.add("levelten");
@@ -5361,7 +5361,7 @@ else if (uvi_thirtyeight == 3 )
    document.getElementById("uvi_icon_thirtyeight").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_thirtyeight >= 11 )
+   else if (uvi_thirtyeight > 10 )
    {
      var element = document.getElementById('thirtyeight');
      element.classList.add("leveleleven");
@@ -5420,7 +5420,7 @@ const city_name_thirtynine = data_thirtynine.location.name;
 
 
    }
-   else if (uvi_thirtynine == 2 )
+   else if (uvi_thirtynine > 1 && uvi_thirtynine <= 2 )
    {
    // Adding row color
    var element = document.getElementById('thirtynine');
@@ -5430,7 +5430,7 @@ const city_name_thirtynine = data_thirtynine.location.name;
    
    
    }  
-else if (uvi_thirtynine == 3 )
+else if (uvi_thirtynine > 2 && uvi_thirtynine <= 3 )
    {
      var element = document.getElementById('thirtynine');
      element.classList.add("levelthree");
@@ -5439,7 +5439,7 @@ else if (uvi_thirtynine == 3 )
    document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_thirtynine == 4 )
+   else if (uvi_thirtynine > 3 && uvi_thirtynine <= 4 )
    {
      var element = document.getElementById('thirtynine');
      element.classList.add("levelfour");
@@ -5449,7 +5449,7 @@ else if (uvi_thirtynine == 3 )
 
   
    }  
-   else if (uvi_thirtynine == 5 )
+   else if (uvi_thirtynine > 4 && uvi_thirtynine <= 5 )
    {
      var element = document.getElementById('thirtynine');
      element.classList.add("levelfive");
@@ -5458,7 +5458,7 @@ else if (uvi_thirtynine == 3 )
    document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_thirtynine == 6 )
+   else if (uvi_thirtynine > 5 && uvi_thirtynine <= 6 )
    {
      var element = document.getElementById('thirtynine');
      element.classList.add("levelsix");
@@ -5467,7 +5467,7 @@ else if (uvi_thirtynine == 3 )
    document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_thirtynine == 7 )
+   else if (uvi_thirtynine > 6 && uvi_thirtynine <= 7 )
    {
      var element = document.getElementById('thirtynine');
      element.classList.add("levelseven");
@@ -5476,7 +5476,7 @@ else if (uvi_thirtynine == 3 )
    document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_thirtynine == 8 )
+   else if (uvi_thirtynine > 7 && uvi_thirtynine <= 8 )
    {
      var element = document.getElementById('thirtynine');
      element.classList.add("leveleight");
@@ -5485,7 +5485,7 @@ else if (uvi_thirtynine == 3 )
    document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_thirtynine == 9 )
+   else if (uvi_thirtynine > 8 && uvi_thirtynine <= 9 )
    {
      var element = document.getElementById('thirtynine');
      element.classList.add("levelnine");
@@ -5494,7 +5494,7 @@ else if (uvi_thirtynine == 3 )
    document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_thirtynine == 10 )
+   else if (uvi_thirtynine > 9 && uvi_thirtynine <= 10 )
    {
      var element = document.getElementById('thirtynine');
      element.classList.add("levelten");
@@ -5503,7 +5503,7 @@ else if (uvi_thirtynine == 3 )
    document.getElementById("uvi_icon_thirtynine").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_thirtynine >= 11 )
+   else if (uvi_thirtynine > 10 )
    {
      var element = document.getElementById('thirtynine');
      element.classList.add("leveleleven");
@@ -5562,7 +5562,7 @@ const city_name_forty = data_forty.location.name;
 
 
    }
-   else if (uvi_forty == 2 )
+   else if (uvi_forty > 1 && uvi_forty <= 2 )
    {
    // Adding row color
    var element = document.getElementById('forty');
@@ -5572,7 +5572,7 @@ const city_name_forty = data_forty.location.name;
    
    
    }  
-else if (uvi_forty == 3 )
+else if (uvi_forty > 2 && uvi_forty <= 3 )
    {
      var element = document.getElementById('forty');
      element.classList.add("levelthree");
@@ -5581,7 +5581,7 @@ else if (uvi_forty == 3 )
    document.getElementById("uvi_icon_forty").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_forty == 4 )
+   else if (uvi_forty > 3 && uvi_forty <= 4 )
    {
      var element = document.getElementById('forty');
      element.classList.add("levelfour");
@@ -5591,7 +5591,7 @@ else if (uvi_forty == 3 )
 
   
    }  
-   else if (uvi_forty == 5 )
+   else if (uvi_forty > 4 && uvi_forty <= 5 )
    {
      var element = document.getElementById('forty');
      element.classList.add("levelfive");
@@ -5600,7 +5600,7 @@ else if (uvi_forty == 3 )
    document.getElementById("uvi_icon_forty").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_forty == 6 )
+   else if (uvi_forty > 5 && uvi_forty <= 6 )
    {
      var element = document.getElementById('forty');
      element.classList.add("levelsix");
@@ -5609,7 +5609,7 @@ else if (uvi_forty == 3 )
    document.getElementById("uvi_icon_forty").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_forty == 7 )
+   else if (uvi_forty > 6 && uvi_forty <= 7 )
    {
      var element = document.getElementById('forty');
      element.classList.add("levelseven");
@@ -5618,7 +5618,7 @@ else if (uvi_forty == 3 )
    document.getElementById("uvi_icon_forty").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_forty == 8 )
+   else if (uvi_forty > 7 && uvi_forty <= 8 )
    {
      var element = document.getElementById('forty');
      element.classList.add("leveleight");
@@ -5627,7 +5627,7 @@ else if (uvi_forty == 3 )
    document.getElementById("uvi_icon_forty").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_forty == 9 )
+   else if (uvi_forty > 8 && uvi_forty <= 9 )
    {
      var element = document.getElementById('forty');
      element.classList.add("levelnine");
@@ -5636,7 +5636,7 @@ else if (uvi_forty == 3 )
    document.getElementById("uvi_icon_forty").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_forty == 10 )
+   else if (uvi_forty > 9 && uvi_forty <= 10 )
    {
      var element = document.getElementById('forty');
      element.classList.add("levelten");
@@ -5645,7 +5645,7 @@ else if (uvi_forty == 3 )
    document.getElementById("uvi_icon_forty").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_forty >= 11 )
+   else if (uvi_forty > 10 )
    {
      var element = document.getElementById('forty');
      element.classList.add("leveleleven");
@@ -5705,7 +5705,7 @@ const city_name_fortyone = data_fortyone.location.name;
 
 
    }
-   else if (uvi_fortyone == 2 )
+   else if (uvi_fortyone > 1 && uvi_fortyone <= 2 )
    {
    // Adding row color
    var element = document.getElementById('fortyone');
@@ -5715,7 +5715,7 @@ const city_name_fortyone = data_fortyone.location.name;
    
    
    }  
-else if (uvi_fortyone == 3 )
+else if (uvi_fortyone > 2 && uvi_fortyone <= 3 )
    {
      var element = document.getElementById('fortyone');
      element.classList.add("levelthree");
@@ -5724,7 +5724,7 @@ else if (uvi_fortyone == 3 )
    document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_fortyone == 4 )
+   else if (uvi_fortyone > 3 && uvi_fortyone <= 4 )
    {
      var element = document.getElementById('fortyone');
      element.classList.add("levelfour");
@@ -5734,7 +5734,7 @@ else if (uvi_fortyone == 3 )
 
   
    }  
-   else if (uvi_fortyone == 5 )
+   else if (uvi_fortyone > 4 && uvi_fortyone <= 5 )
    {
      var element = document.getElementById('fortyone');
      element.classList.add("levelfive");
@@ -5743,7 +5743,7 @@ else if (uvi_fortyone == 3 )
    document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_fortyone == 6 )
+   else if (uvi_fortyone > 5 && uvi_fortyone <= 6 )
    {
      var element = document.getElementById('fortyone');
      element.classList.add("levelsix");
@@ -5752,7 +5752,7 @@ else if (uvi_fortyone == 3 )
    document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_fortyone == 7 )
+   else if (uvi_fortyone > 6 && uvi_fortyone <= 7 )
    {
      var element = document.getElementById('fortyone');
      element.classList.add("levelseven");
@@ -5761,7 +5761,7 @@ else if (uvi_fortyone == 3 )
    document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_fortyone == 8 )
+   else if (uvi_fortyone > 7 && uvi_fortyone <= 8 )
    {
      var element = document.getElementById('fortyone');
      element.classList.add("leveleight");
@@ -5770,7 +5770,7 @@ else if (uvi_fortyone == 3 )
    document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_fortyone == 9 )
+   else if (uvi_fortyone > 8 && uvi_fortyone <= 9 )
    {
      var element = document.getElementById('fortyone');
      element.classList.add("levelnine");
@@ -5779,7 +5779,7 @@ else if (uvi_fortyone == 3 )
    document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_fortyone == 10 )
+   else if (uvi_fortyone > 9 && uvi_fortyone <= 10 )
    {
      var element = document.getElementById('fortyone');
      element.classList.add("levelten");
@@ -5788,7 +5788,7 @@ else if (uvi_fortyone == 3 )
    document.getElementById("uvi_icon_fortyone").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_fortyone >= 11 )
+   else if (uvi_fortyone > 10 )
    {
      var element = document.getElementById('fortyone');
      element.classList.add("leveleleven");
@@ -5848,7 +5848,7 @@ const city_name_fortytwo = data_fortytwo.location.name;
 
 
    }
-   else if (uvi_fortytwo == 2 )
+   else if (uvi_fortytwo > 1 && uvi_fortytwo <= 2 )
    {
    // Adding row color
    var element = document.getElementById('fortytwo');
@@ -5858,7 +5858,7 @@ const city_name_fortytwo = data_fortytwo.location.name;
    
    
    }  
-else if (uvi_fortytwo == 3 )
+else if (uvi_fortytwo > 2 && uvi_fortytwo <= 3 )
    {
      var element = document.getElementById('fortytwo');
      element.classList.add("levelthree");
@@ -5867,7 +5867,7 @@ else if (uvi_fortytwo == 3 )
    document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_fortytwo == 4 )
+   else if (uvi_fortytwo > 3 && uvi_fortytwo <= 4 )
    {
      var element = document.getElementById('fortytwo');
      element.classList.add("levelfour");
@@ -5877,7 +5877,7 @@ else if (uvi_fortytwo == 3 )
 
   
    }  
-   else if (uvi_fortytwo == 5 )
+   else if (uvi_fortytwo > 4 && uvi_fortytwo <= 5 )
    {
      var element = document.getElementById('fortytwo');
      element.classList.add("levelfive");
@@ -5886,7 +5886,7 @@ else if (uvi_fortytwo == 3 )
    document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_fortytwo == 6 )
+   else if (uvi_fortytwo > 5 && uvi_fortytwo <= 6 )
    {
      var element = document.getElementById('fortytwo');
      element.classList.add("levelsix");
@@ -5895,7 +5895,7 @@ else if (uvi_fortytwo == 3 )
    document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_fortytwo == 7 )
+   else if (uvi_fortytwo > 6 && uvi_fortytwo <= 7 )
    {
      var element = document.getElementById('fortytwo');
      element.classList.add("levelseven");
@@ -5904,7 +5904,7 @@ else if (uvi_fortytwo == 3 )
    document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_fortytwo == 8 )
+   else if (uvi_fortytwo > 7 && uvi_fortytwo <= 8 )
    {
      var element = document.getElementById('fortytwo');
      element.classList.add("leveleight");
@@ -5913,7 +5913,7 @@ else if (uvi_fortytwo == 3 )
    document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_fortytwo == 9 )
+   else if (uvi_fortytwo > 8 && uvi_fortytwo <= 9 )
    {
      var element = document.getElementById('fortytwo');
      element.classList.add("levelnine");
@@ -5922,7 +5922,7 @@ else if (uvi_fortytwo == 3 )
    document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_fortytwo == 10 )
+   else if (uvi_fortytwo > 9 && uvi_fortytwo <= 10 )
    {
      var element = document.getElementById('fortytwo');
      element.classList.add("levelten");
@@ -5931,7 +5931,7 @@ else if (uvi_fortytwo == 3 )
    document.getElementById("uvi_icon_fortytwo").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_fortytwo >= 11 )
+   else if (uvi_fortytwo > 10 )
    {
      var element = document.getElementById('fortytwo');
      element.classList.add("leveleleven");
@@ -5990,7 +5990,7 @@ const city_name_fortythree = data_fortythree.location.name;
 
 
    }
-   else if (uvi_fortythree == 2 )
+   else if (uvi_fortythree > 1 && uvi_fortythree <= 2 )
    {
    // Adding row color
    var element = document.getElementById('fortythree');
@@ -6000,7 +6000,7 @@ const city_name_fortythree = data_fortythree.location.name;
    
    
    }  
-else if (uvi_fortythree == 3 )
+else if (uvi_fortythree > 2 && uvi_fortythree <= 3 )
    {
      var element = document.getElementById('fortythree');
      element.classList.add("levelthree");
@@ -6009,7 +6009,7 @@ else if (uvi_fortythree == 3 )
    document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_fortythree == 4 )
+   else if (uvi_fortythree > 3 && uvi_fortythree <= 4 )
    {
      var element = document.getElementById('fortythree');
      element.classList.add("levelfour");
@@ -6019,7 +6019,7 @@ else if (uvi_fortythree == 3 )
 
   
    }  
-   else if (uvi_fortythree == 5 )
+   else if (uvi_fortythree > 4 && uvi_fortythree <= 5 )
    {
      var element = document.getElementById('fortythree');
      element.classList.add("levelfive");
@@ -6028,7 +6028,7 @@ else if (uvi_fortythree == 3 )
    document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_fortythree == 6 )
+   else if (uvi_fortythree > 5 && uvi_fortythree <= 6 )
    {
      var element = document.getElementById('fortythree');
      element.classList.add("levelsix");
@@ -6037,7 +6037,7 @@ else if (uvi_fortythree == 3 )
    document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_fortythree == 7 )
+   else if (uvi_fortythree > 6 && uvi_fortythree <= 7 )
    {
      var element = document.getElementById('fortythree');
      element.classList.add("levelseven");
@@ -6046,7 +6046,7 @@ else if (uvi_fortythree == 3 )
    document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_fortythree == 8 )
+   else if (uvi_fortythree > 7 && uvi_fortythree <= 8 )
    {
      var element = document.getElementById('fortythree');
      element.classList.add("leveleight");
@@ -6055,7 +6055,7 @@ else if (uvi_fortythree == 3 )
    document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_fortythree == 9 )
+   else if (uvi_fortythree > 8 && uvi_fortythree <= 9 )
    {
      var element = document.getElementById('fortythree');
      element.classList.add("levelnine");
@@ -6064,7 +6064,7 @@ else if (uvi_fortythree == 3 )
    document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_fortythree == 10 )
+   else if (uvi_fortythree > 9 && uvi_fortythree <= 10 )
    {
      var element = document.getElementById('fortythree');
      element.classList.add("levelten");
@@ -6073,7 +6073,7 @@ else if (uvi_fortythree == 3 )
    document.getElementById("uvi_icon_fortythree").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_fortythree >= 11 )
+   else if (uvi_fortythree > 10 )
    {
      var element = document.getElementById('fortythree');
      element.classList.add("leveleleven");
@@ -6133,7 +6133,7 @@ const city_name_fortyfour = data_fortyfour.location.name;
 
 
    }
-   else if (uvi_fortyfour == 2 )
+   else if (uvi_fortyfour > 1 && uvi_fortyfour <= 2 )
    {
    // Adding row color
    var element = document.getElementById('fortyfour');
@@ -6143,7 +6143,7 @@ const city_name_fortyfour = data_fortyfour.location.name;
    
    
    }  
-else if (uvi_fortyfour == 3 )
+else if (uvi_fortyfour > 2 && uvi_fortyfour <= 3 )
    {
      var element = document.getElementById('fortyfour');
      element.classList.add("levelthree");
@@ -6152,7 +6152,7 @@ else if (uvi_fortyfour == 3 )
    document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv3.png";
      
    }  
-   else if (uvi_fortyfour == 4 )
+   else if (uvi_fortyfour > 3 && uvi_fortyfour <= 4 )
    {
      var element = document.getElementById('fortyfour');
      element.classList.add("levelfour");
@@ -6162,7 +6162,7 @@ else if (uvi_fortyfour == 3 )
 
   
    }  
-   else if (uvi_fortyfour == 5 )
+   else if (uvi_fortyfour > 4 && uvi_fortyfour <= 5 )
    {
      var element = document.getElementById('fortyfour');
      element.classList.add("levelfive");
@@ -6171,7 +6171,7 @@ else if (uvi_fortyfour == 3 )
    document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv5.png";
   
    }  
-   else if (uvi_fortyfour == 6 )
+   else if (uvi_fortyfour > 5 && uvi_fortyfour <= 6 )
    {
      var element = document.getElementById('fortyfour');
      element.classList.add("levelsix");
@@ -6180,7 +6180,7 @@ else if (uvi_fortyfour == 3 )
    document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv6.png";
   
    }  
-   else if (uvi_fortyfour == 7 )
+   else if (uvi_fortyfour > 6 && uvi_fortyfour <= 7 )
    {
      var element = document.getElementById('fortyfour');
      element.classList.add("levelseven");
@@ -6189,7 +6189,7 @@ else if (uvi_fortyfour == 3 )
    document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv7.png";
    
    }  
-   else if (uvi_fortyfour == 8 )
+   else if (uvi_fortyfour > 7 && uvi_fortyfour <= 8 )
    {
      var element = document.getElementById('fortyfour');
      element.classList.add("leveleight");
@@ -6198,7 +6198,7 @@ else if (uvi_fortyfour == 3 )
    document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv8.png";
   
    }  
-   else if (uvi_fortyfour == 9 )
+   else if (uvi_fortyfour > 8 && uvi_fortyfour <= 9 )
    {
      var element = document.getElementById('fortyfour');
      element.classList.add("levelnine");
@@ -6207,7 +6207,7 @@ else if (uvi_fortyfour == 3 )
    document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv9.png";
   
    }  
-   else if (uvi_fortyfour == 10 )
+   else if (uvi_fortyfour > 9 && uvi_fortyfour <= 10 )
    {
      var element = document.getElementById('fortyfour');
      element.classList.add("levelten");
@@ -6216,7 +6216,7 @@ else if (uvi_fortyfour == 3 )
    document.getElementById("uvi_icon_fortyfour").src="../uv-icons/uv10.png";
     
    }  
-   else if (uvi_fortyfour >= 11 )
+   else if (uvi_fortyfour > 10 )
    {
      var element = document.getElementById('fortyfour');
      element.classList.add("leveleleven");
