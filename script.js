@@ -96,6 +96,9 @@ const city_name_one = data_one.location.name;
  //COUNTRY NAME  VALUE IF NEEDED
  //const country_name_one = data_one.location.country;
 
+console.log(uvi_one)
+console.log(city_name_one)
+
 // **** DISPLAYING ON HTML *****
    //UVI
      document.getElementById('uvi_one').textContent = uvi_one;
@@ -531,6 +534,8 @@ const city_name_four = data_four.location.name;
  //COUNTRY NAME  VALUE IF NEEDED
  //const country_name_four = data_four.location.country;
 
+ console.log(uvi_four)
+ console.log(city_name_four)
 // **** DISPLAYING ON HTML *****
    //UVI
      document.getElementById('uvi_four').textContent = uvi_four;
