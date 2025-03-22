@@ -16,6 +16,13 @@ $('.carousel').on('touchstart', function(event){
   });
 });
 
+setTimeout(() => {
+  document.querySelectorAll('iframe').forEach(iframe => {
+    iframe.style.width = '100%';
+    iframe.style.maxWidth = '100%';
+  });
+}, 1500);
+
 
 // Get the container element
 var btnContainer = document.getElementById("image-selector");
