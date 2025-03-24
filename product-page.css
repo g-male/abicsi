@@ -67,7 +67,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
   max-width: 1000px !important;
   margin: 0 auto !important;
 align-items: center;
-margin-left: 10% !important;
+
 }
 
 #product-component-1742674743721{
@@ -75,7 +75,23 @@ margin-left: 10% !important;
   max-width: 1000px !important;
   margin: 0 auto !important;
 align-items: center;
-margin-left: 10% !important;
+
+}
+
+#product-component-1742784025373{
+  width: 600px !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+align-items: center;
+
+}
+
+#product-component-1742785189622{  /* Temple frame 3.5 */
+  width: 600px !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+align-items: center;
+
 }
 
 .shopify-buy__btn {
@@ -795,9 +811,7 @@ font-weight: 100;
   width: 100vw;  /* Full viewport width */
 }
 
-.carousel-inner {
-  /* Ensure the inner carousel takes up full height */
-}
+
 
 .carousel-item {
  /* Each carousel item should take full height */
