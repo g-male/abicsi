@@ -309,33 +309,85 @@ flex-direction: row;
 .info-left{
   flex: 1;
 }
+.info-left.wormhole{
+  flex: 4;
+}
+
 .info-right{
   flex: 1;
 }
+
+.info-right .wormhole{
+ flex: 0 !important;
+overflow: hidden;
+}
+
 .curvature-options a {
   
-  border-radius: 2px;
+ vertical-align: middle;
   text-decoration: none;
   color: black;
+  margin-top: 4vw;
+
 }
+
+.curvature-options.colour a{
+    border-radius: 30vw;
+    vertical-align: middle;
+}
+
 .curvature-option{
   padding-left: 1em;
   padding-right: 1em;
+  
+}
+.curvature-option-wormhole{
+   padding-left: 1.9vw;
+  padding-top: 0.4vw;
+  margin-left: 4%;
+  width: 1vw;
+  
+}
+.curvature-option.colour{
+  margin-left: 5%;
+}
+#brown{
+background-color: #591b23;
+color: #591b23;
+}
+#black{
+  background-color: black;
 }
 
+#green{
+  background-color: #615b46;
+}
+#maroon{
+
+  background-color: #79233c;
+}
 .curvature-options a.active {
   font-weight: bold;
-  border: 1px solid black;
+  border: 3px dotted pink;
+
+}
+.curvature-options .colour.active{
+border: black solid 2px;
 }
 .inline{
   float: left;
 }
 .curve-silo{
-  width: 75%;
+  width: 23%;
   margin-right: 45%;
   margin-top: 15%;
 }
 .product-info.mobile{
+  display: none;
+}
+
+#mblwormholes{
+  grid-template-columns: 1fr 0fr;
   display: none;
 }
 .temple-frame{
@@ -389,7 +441,7 @@ float: left;
 .curvature-options a.active {
 
   font-weight: bold;
-  border: 1px solid black;
+  border: 0.3px solid black;
 }
 .spectrum-image{
   width: 100%;
@@ -540,7 +592,19 @@ display: none;
 
 @media screen and (max-width: 800px) {
 
+  .inline{
+    font-size: 4vw;
+  }
 
+  .curvature-option-wormhole{
+   padding-left: 5vw;}
+
+
+.templeframe{
+  width: 45% !important;
+  margin-top: -2vh !important;
+  margin-right: -5vw !important;
+}
   .buy_button_mbl{
     max-width: 100% !important;
     width: 100% !important;
@@ -568,7 +632,9 @@ display: none;
   }
 
   .temple-frame, .curvature-options {
-    display: inline-block; /* Ensures elements stay on the same line */
+    display: inline-block; 
+    font-size: 4vw;
+    /* Ensures elements stay on the same line */
   }
   .curvature-option{
     padding-left: 15px;
@@ -587,6 +653,10 @@ display: none;
 .double-column.mobile{
 display: block;
 
+}
+#mblwormholes{
+  grid-template-columns: 1fr 0fr;
+  display: block;
 }
 .product-info.desktop{
   display: none;
@@ -688,6 +758,9 @@ width: 100%;
   grid-template-rows: 1fr 1fr; /* Two rows inside the left column */
  margin-left: 5%;
 }
+#wormholeinfo{
+  display: block;
+}
 
 .info-right {
   display: flex;
@@ -731,6 +804,9 @@ margin-right: -4%;
 font-family: 'hero-light';
 font-size: 3.5vw;
 font-weight: 100;
+}
+.collab{
+  font-size: 2vw;
 }
 .lens-spec{
   width: 100%; 
@@ -825,6 +901,7 @@ font-weight: 100;
 
 .curvature-options{
   display: inline;
+  margin-top: 1vw;
 }
 .curve-select{
 width: 60vw;
@@ -833,5 +910,8 @@ width: 60vw;
   margin-top: 5%;
   align-items: center; /* Vertically centers content */
   white-space: nowrap;
+}
+.temple{
+  font-size: 4vw;
 }
 }

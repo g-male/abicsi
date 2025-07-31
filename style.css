@@ -64,7 +64,11 @@ html, body {
             font-size: 4vw;
           }
           .glassestype img{
-            width: 80%;
+            width: 75%;
+          }
+          .glassestype.wormhole img{
+
+            width: 25%;
           }
 
 #canadian-cities{
