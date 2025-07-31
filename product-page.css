@@ -93,6 +93,96 @@ align-items: center;
 align-items: center;
 
 }
+#product-component-1753944639761{  /* Temple frame 3.5 */
+  width: 600px !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+align-items: center;
+
+}
+
+#product-component-1753944749010{  /* Temple frame 3.5 */
+  width: 600px !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+align-items: center;
+
+}
+
+#product-component-1753945293758{  /* Temple frame 3.5 pyrobe */ 
+  width: 600px !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+align-items: center;
+
+}
+
+#product-component-1753945677474{  /* Temple frame 6 pyrobe */ 
+  width: 600px !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+align-items: center;
+
+}
+
+
+#product-component-1753946114397{  /* Temple frame 3.5 pyrobe */ 
+  width: 600px !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+align-items: center;
+
+}
+
+
+
+
+
+#product-component-1753941429385{  /* drop temple 6 */
+  width: 600px !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+align-items: center;
+
+}
+
+#product-component-1753944255191{  /* drop temple 6 */
+  width: 600px !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+align-items: center;
+
+}
+#product-component-1753944404590{  /* drop temple 6 */
+  width: 600px !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+align-items: center;
+
+}
+
+#product-component-1753946970442{  /*  wormhole 6 */
+  width: 600px !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+align-items: center;
+
+}
+#product-component-1753947291772{  /*  wormhole 6 */
+  width: 600px !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+align-items: center;
+
+}
+#product-component-1753947644702{  /*  temple frame 6 pyrobe */
+  width: 600px !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+align-items: center;
+
+}
+
 
 .shopify-buy__btn {
   width: 100% !important;
@@ -181,7 +271,7 @@ display: none;
 .buy_button_mbl{
   max-width: 100% !important;
   width: 100% !important;
-  display: none;
+  display: none !important;
 }
 .back{
   top: 0;
@@ -343,7 +433,7 @@ overflow: hidden;
 }
 .curvature-option-wormhole{
    padding-left: 1.9vw;
-  padding-top: 0.4vw;
+  padding-top: 0.6vw;
   margin-left: 4%;
   width: 1vw;
   
@@ -608,6 +698,7 @@ display: none;
   .buy_button_mbl{
     max-width: 100% !important;
     width: 100% !important;
+    display: block !important;
   }
   button.shopify-buy__btn  {
     width: auto;
